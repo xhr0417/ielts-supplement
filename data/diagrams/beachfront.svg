@@ -1,0 +1,55 @@
+<svg class="chart-svg dg" viewBox="0 0 640 600" role="img" aria-label="A beachfront area in Australia in 1950 and today">
+  <text class="dg-title" x="320" y="22" text-anchor="middle">1950</text>
+  <rect class="dg-frame" x="20" y="32" width="600" height="250" rx="14"/>
+  <path class="dg-road" d="M 26 66 H 470"/>
+  <path class="dg-road-line" d="M 26 66 H 470"/>
+  <text class="dg-small" x="34" y="52">ê City</text>
+  <rect class="dg-box" x="470" y="48" width="118" height="36" rx="8"/>
+  <text class="dg-text" x="529" y="71" text-anchor="middle">Car park</text>
+  <rect class="dg-box" x="44" y="92" width="112" height="38" rx="6"/>
+  <text class="dg-text" x="100" y="116" text-anchor="middle">Playground</text>
+  <rect class="dg-box" x="196" y="92" width="112" height="38" rx="6"/>
+  <text class="dg-text" x="252" y="116" text-anchor="middle">Dining tables</text>
+  <rect class="dg-box" x="336" y="92" width="100" height="38" rx="6"/>
+  <text class="dg-text" x="386" y="116" text-anchor="middle">Pavilion</text>
+  <path class="dg-sand" d="M 22 280 C 140 168, 500 168, 618 280 Z"/>
+  <path class="dg-water" d="M 104 280 C 210 196, 430 196, 536 280 Z"/>
+  <text class="dg-title" x="320" y="258" text-anchor="middle">Beach</text>
+  <rect class="dg-pool" x="66" y="218" width="44" height="18" rx="3" transform="rotate(-18 88 227)"/>
+  <text class="dg-small" x="58" y="206">25m pool</text>
+  <rect class="dg-pool" x="456" y="196" width="44" height="18" rx="3" transform="rotate(18 478 205)"/>
+  <text class="dg-small" x="446" y="186">25m pool</text>
+  <rect class="dg-dark" x="560" y="176" width="16" height="48"/>
+  <path class="dg-dark" d="M 556 176 L 568 160 L 580 176 Z"/>
+  <text class="dg-small" x="568" y="242" text-anchor="middle">Lighthouse</text>
+
+  <text class="dg-title" x="320" y="320" text-anchor="middle">Now</text>
+  <rect class="dg-frame" x="20" y="330" width="600" height="250" rx="14"/>
+  <path class="dg-road" d="M 26 364 H 576 Q 600 364 600 388 V 520"/>
+  <path class="dg-road-line" d="M 26 364 H 576 Q 600 364 600 388 V 520"/>
+  <text class="dg-small" x="34" y="350">ê City</text>
+  <rect class="dg-box" x="44" y="380" width="112" height="38" rx="8"/>
+  <text class="dg-text" x="100" y="404" text-anchor="middle">Car park</text>
+  <rect class="dg-box" x="196" y="390" width="112" height="38" rx="6"/>
+  <text class="dg-text" x="252" y="414" text-anchor="middle">Dining tables</text>
+  <rect class="dg-box" x="336" y="390" width="100" height="38" rx="6"/>
+  <text class="dg-text" x="386" y="414" text-anchor="middle">Pavilion</text>
+  <rect class="dg-box" x="460" y="380" width="118" height="36" rx="8"/>
+  <text class="dg-text" x="519" y="403" text-anchor="middle">Car park</text>
+  <path class="dg-sand" d="M 22 578 C 140 466, 500 466, 618 578 Z"/>
+  <path class="dg-water" d="M 104 578 C 210 494, 430 494, 536 578 Z"/>
+  <text class="dg-title" x="320" y="556" text-anchor="middle">Beach</text>
+  <rect class="dg-box" x="36" y="450" width="54" height="86" rx="4"/>
+  <text class="dg-small" x="63" y="444" text-anchor="middle">Restaurant</text>
+  <rect class="dg-box" x="100" y="472" width="34" height="44" rx="4"/>
+  <text class="dg-small" x="117" y="466" text-anchor="middle">Surf Club</text>
+  <rect class="dg-pool" x="140" y="522" width="70" height="18" rx="3" transform="rotate(-20 175 531)"/>
+  <text class="dg-small" x="196" y="514">50m pool</text>
+  <rect class="dg-pool" x="456" y="494" width="44" height="18" rx="3" transform="rotate(18 478 503)"/>
+  <text class="dg-small" x="420" y="486">25m pool</text>
+  <rect class="dg-box" x="516" y="454" width="30" height="44" rx="4"/>
+  <text class="dg-small" x="531" y="448" text-anchor="middle">Surf Club</text>
+  <rect class="dg-dark" x="560" y="474" width="16" height="48"/>
+  <path class="dg-dark" d="M 556 474 L 568 458 L 580 474 Z"/>
+  <text class="dg-small" x="568" y="540" text-anchor="middle">Lighthouse</text>
+</svg>

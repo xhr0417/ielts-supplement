@@ -1,0 +1,51 @@
+<svg class="chart-svg dg" viewBox="0 0 640 650" role="img" aria-label="Coal mining site before and after redevelopment">
+  <text class="dg-title" x="20" y="26">Before redevelopment: working mine</text>
+  <rect class="dg-box" x="20" y="42" width="170" height="70" rx="6"/>
+  <text class="dg-text" x="105" y="82" text-anchor="middle">Office</text>
+  <rect class="dg-box" x="20" y="118" width="170" height="86" rx="6"/>
+  <text class="dg-text" x="105" y="156" text-anchor="middle">Staff changing</text>
+  <text class="dg-text" x="105" y="174" text-anchor="middle">room</text>
+  <rect class="dg-box" x="20" y="226" width="170" height="62" rx="6"/>
+  <text class="dg-text" x="105" y="262" text-anchor="middle">Car park</text>
+  <rect class="dg-box" x="214" y="42" width="196" height="78" rx="6"/>
+  <text class="dg-text" x="312" y="74" text-anchor="middle">Entrance to underground</text>
+  <text class="dg-text" x="312" y="93" text-anchor="middle">mine for workers</text>
+  <rect class="dg-box" x="238" y="138" width="148" height="58" rx="6"/>
+  <text class="dg-text" x="312" y="172" text-anchor="middle">Medical room</text>
+  <rect class="dg-box" x="214" y="226" width="196" height="62" rx="6"/>
+  <text class="dg-text" x="312" y="262" text-anchor="middle">Lorry park</text>
+  <ellipse class="dg-dark" cx="528" cy="84" rx="92" ry="40"/>
+  <text class="dg-text dg-inv" x="528" y="89" text-anchor="middle">Waste tip 1</text>
+  <ellipse class="dg-dark" cx="528" cy="214" rx="92" ry="40"/>
+  <text class="dg-text dg-inv" x="528" y="219" text-anchor="middle">Waste tip 2</text>
+  <circle class="dg-tree" cx="440" cy="60" r="11"/>
+  <circle class="dg-tree" cx="606" cy="196" r="11"/>
+  <circle class="dg-tree" cx="592" cy="236" r="9"/>
+
+  <line class="dg-sep" x1="20" x2="620" y1="318" y2="318"/>
+
+  <text class="dg-title" x="20" y="352">After redevelopment: visitors' attraction</text>
+  <rect class="dg-box" x="20" y="368" width="170" height="162" rx="6"/>
+  <text class="dg-text" x="105" y="454" text-anchor="middle">Museum</text>
+  <rect class="dg-box" x="20" y="552" width="170" height="62" rx="6"/>
+  <text class="dg-text" x="105" y="588" text-anchor="middle">Car park</text>
+  <rect class="dg-box" x="214" y="368" width="196" height="78" rx="6"/>
+  <text class="dg-text" x="312" y="400" text-anchor="middle">Entrance to underground</text>
+  <text class="dg-text" x="312" y="419" text-anchor="middle">mine for visitors</text>
+  <rect class="dg-box" x="238" y="466" width="148" height="56" rx="6"/>
+  <text class="dg-text" x="312" y="499" text-anchor="middle">Cafe</text>
+  <rect class="dg-box" x="238" y="552" width="148" height="62" rx="6"/>
+  <text class="dg-text" x="312" y="588" text-anchor="middle">Souvenir shop</text>
+  <rect class="dg-soil" x="432" y="368" width="188" height="44" rx="22"/>
+  <text class="dg-text" x="526" y="395" text-anchor="middle">Digger driving track</text>
+  <ellipse class="dg-grass" cx="526" cy="470" rx="94" ry="40"/>
+  <text class="dg-text" x="526" y="475" text-anchor="middle">Picnic area</text>
+  <circle class="dg-tree" cx="446" cy="446" r="11"/>
+  <circle class="dg-tree" cx="604" cy="452" r="11"/>
+  <circle class="dg-tree" cx="592" cy="492" r="9"/>
+  <rect class="dg-water" x="452" y="538" width="168" height="80" rx="18"/>
+  <text class="dg-text" x="536" y="574" text-anchor="middle">Children's</text>
+  <text class="dg-text" x="536" y="592" text-anchor="middle">play area</text>
+  <path class="dg-path" d="M 420 366 V 532 H 228 V 632 H 440"/>
+  <text class="dg-small" x="300" y="645" text-anchor="middle">footpath (dashed line)</text>
+</svg>

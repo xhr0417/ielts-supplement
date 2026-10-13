@@ -4,9 +4,11 @@
 // 输出：site/index.html（单文件，离线可用）
 //       笔记/口语/P1|P2|P3/新题_2026年9-12月.md、笔记/作文/近期真题_2026年9-10月.md
 
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { Marked } from 'marked';
+import { chartText, dataTable, renderChart } from './charts.mjs';
 import { authorPages, supplementPages, writingTypes } from './site.config.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
@@ -18,6 +20,26 @@ const write = (p, s) => {
 
 const speaking = JSON.parse(read('data/speaking-2026-09.json'));
 const recent = JSON.parse(read('data/writing-recent-2026.json'));
+const task1Charts = JSON.parse(read('data/task1-charts.json'));
+
+const warnings = [];
+
+// 每道真题一个稳定的 id，写作草稿按它存在浏览器里
+const qid = (q) => crypto.createHash('sha1').update(q).digest('hex').slice(0, 10);
+recent.task2.forEach((q) => (q.id = qid(q.q)));
+recent.task1.forEach((q) => {
+  q.id = qid(q.q);
+  if (!q.chart) return;
+  const spec = task1Charts.charts[q.chart];
+  if (!spec) {
+    warnings.push(`小作文图表不存在：${q.chart}`);
+    return;
+  }
+  q.chartHtml = renderChart(spec, root);
+  q.chartData = chartText(spec);
+  q.chartTable = dataTable(spec);
+  if (q.img) q.imgUrl = task1Charts.imageBase + q.img;
+});
 
 // ---------- Markdown 页面 ----------
 
@@ -52,8 +74,6 @@ const entities = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;
 const decodeEntities = (s) => s.replace(/&(amp|lt|gt|quot|#39|nbsp);/g, (m) => entities[m]);
 const stripTags = (s) => decodeEntities(s.replace(/<[^>]+>/g, '')).trim();
 const plain = (html) => stripTags(html.replace(/<(br|\/p|\/li|\/tr|\/h\d|\/td|\/th)[^>]*>/g, ' ')).replace(/\s+/g, ' ');
-
-const warnings = [];
 
 function rewriteLink(href, fromFile) {
   const raw = decodeEntities(href);
@@ -264,12 +284,16 @@ function recentMarkdown() {
     });
     lines.push('');
   }
-  lines.push('## 小作文', '');
+  const withChart = recent.task1.filter((q) => q.chart).length;
+  lines.push('## 小作文', '', `${recent.task1.length} 道里有 ${withChart} 道配了图：网页版按原图数据重绘了图表，可以直接看图写作；下面的“原图”链接指向来源网站的图片。`, '');
   for (const [type, label] of Object.entries(recent.task1Types)) {
     const items = recent.task1.filter((q) => q.type === type);
     if (!items.length) continue;
     lines.push(`### ${label}（${items.length} 道）`, '');
-    items.forEach((q) => lines.push(`- **${q.week}** ${q.q} ${flagText(q.flags)}${q.note ? `（${q.note}）` : ''}`.trimEnd()));
+    items.forEach((q) => {
+      lines.push(`- **${q.week}** ${q.q} ${flagText(q.flags)}${q.note ? `（${q.note}）` : ''}`.trimEnd());
+      lines.push(q.imgUrl ? `  - [原图](${q.imgUrl})` : '  - 来源暂时没有这道题的图');
+    });
     lines.push('');
   }
   lines.push('## 来源', '', ...Object.values(S).map((s) => `- ${s.name}（${s.date}）：${s.url}`), '');

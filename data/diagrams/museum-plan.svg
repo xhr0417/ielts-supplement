@@ -1,0 +1,61 @@
+<svg class="chart-svg dg" viewBox="0 0 640 590" role="img" aria-label="Museum floor plans in 1998 and 2008">
+  <defs>
+    <pattern id="mus-hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect class="dg-hatch-bg" width="9" height="9"/>
+      <line class="dg-hatch-line" x1="0" y1="0" x2="0" y2="9"/>
+    </pattern>
+  </defs>
+  <rect x="410" y="8" width="22" height="16" fill="url(#mus-hatch)" class="dg-outline"/>
+  <text class="dg-small" x="440" y="21">Permanent exhibition rooms</text>
+
+  <text class="dg-title" x="20" y="26">Museum 1998</text>
+  <rect x="20" y="36" width="200" height="50" fill="url(#mus-hatch)" class="dg-outline"/>
+  <rect class="dg-box" x="220" y="36" width="80" height="50"/>
+  <text class="dg-text" x="260" y="66" text-anchor="middle">Cafe</text>
+  <rect x="300" y="36" width="320" height="50" fill="url(#mus-hatch)" class="dg-outline"/>
+  <rect x="20" y="86" width="150" height="104" fill="url(#mus-hatch)" class="dg-outline"/>
+  <rect class="dg-grass" x="170" y="86" width="210" height="104" stroke-width="1.3"/>
+  <text class="dg-text" x="275" y="143" text-anchor="middle">Garden</text>
+  <rect x="380" y="86" width="240" height="104" fill="url(#mus-hatch)" class="dg-outline"/>
+  <rect class="dg-box" x="20" y="190" width="190" height="74"/>
+  <text class="dg-text" x="115" y="221" text-anchor="middle">Temporary</text>
+  <text class="dg-text" x="115" y="239" text-anchor="middle">exhibition room</text>
+  <rect class="dg-box" x="210" y="190" width="140" height="74"/>
+  <text class="dg-text" x="280" y="222" text-anchor="middle">TICKETS</text>
+  <text class="dg-text" x="280" y="240" text-anchor="middle">Entrance/Exit</text>
+  <rect class="dg-box" x="350" y="190" width="120" height="74"/>
+  <text class="dg-text" x="410" y="232" text-anchor="middle">Shop</text>
+  <rect class="dg-box" x="470" y="190" width="150" height="30"/>
+  <text class="dg-text" x="545" y="210" text-anchor="middle">WC</text>
+  <rect class="dg-box" x="470" y="220" width="150" height="44"/>
+  <text class="dg-text" x="545" y="247" text-anchor="middle">Bags and coats</text>
+
+  <text class="dg-title" x="20" y="316">Museum 2008</text>
+  <rect class="dg-box" x="20" y="326" width="210" height="60"/>
+  <text class="dg-text" x="125" y="361" text-anchor="middle">Restaurant</text>
+  <rect class="dg-box" x="230" y="326" width="80" height="60"/>
+  <text class="dg-text" x="270" y="361" text-anchor="middle">Cafe</text>
+  <rect class="dg-box" x="310" y="326" width="60" height="60"/>
+  <text class="dg-text" x="340" y="361" text-anchor="middle">WC</text>
+  <rect x="370" y="326" width="250" height="234" fill="url(#mus-hatch)" class="dg-outline"/>
+  <rect class="dg-box" x="20" y="386" width="170" height="100"/>
+  <text class="dg-text" x="105" y="432" text-anchor="middle">Temporary</text>
+  <text class="dg-text" x="105" y="450" text-anchor="middle">exhibition room</text>
+  <rect class="dg-grass" x="190" y="386" width="180" height="100" stroke-width="1.3"/>
+  <path class="dg-box" d="M 190 386 H 262 C 262 420, 232 446, 190 452 Z"/>
+  <text class="dg-small" x="222" y="408" text-anchor="middle">Cafe sitting</text>
+  <text class="dg-small" x="214" y="422" text-anchor="middle">area</text>
+  <text class="dg-text" x="320" y="432" text-anchor="middle">Garden</text>
+  <circle class="dg-water" cx="246" cy="470" r="7"/>
+  <circle class="dg-water" cx="270" cy="470" r="7"/>
+  <text class="dg-small" x="316" y="475" text-anchor="middle">Fountains</text>
+  <rect class="dg-box" x="20" y="486" width="84" height="74"/>
+  <text class="dg-small" x="62" y="519" text-anchor="middle">Bags and</text>
+  <text class="dg-small" x="62" y="533" text-anchor="middle">coats</text>
+  <rect class="dg-box" x="104" y="486" width="116" height="74"/>
+  <text class="dg-text" x="162" y="528" text-anchor="middle">Shop</text>
+  <rect class="dg-box" x="220" y="486" width="150" height="74"/>
+  <text class="dg-text" x="295" y="518" text-anchor="middle">TICKETS</text>
+  <text class="dg-text" x="295" y="536" text-anchor="middle">Entrance/Exit</text>
+  <text class="dg-small" x="320" y="584" text-anchor="middle">€:	ŸþÍØ</text>
+</svg>

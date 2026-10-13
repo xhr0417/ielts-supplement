@@ -1,0 +1,56 @@
+<svg class="chart-svg dg" viewBox="0 0 640 520" role="img" aria-label="Two road tunnels in two Australian cities">
+  <text class="dg-title" x="20" y="22">Tunnel 1</text>
+  <rect class="dg-sky" x="70" y="32" width="330" height="70"/>
+  <rect class="dg-box" x="140" y="38" width="16" height="62"/>
+  <rect class="dg-box" x="300" y="38" width="16" height="62"/>
+  <path class="dg-line" d="M 156 44 Q 228 84 300 44 M 76 92 H 394"/>
+  <rect class="dg-water" x="70" y="102" width="330" height="24"/>
+  <rect class="dg-sand" x="70" y="126" width="330" height="96"/>
+  <text class="dg-text" x="235" y="154" text-anchor="middle">Sand</text>
+  <rect class="dg-tube" x="96" y="176" width="278" height="26" rx="13"/>
+  <path class="dg-dim" d="M 52 126 V 202 M 46 126 H 58 M 46 202 H 58"/>
+  <text class="dg-small" x="44" y="168" text-anchor="end">1.5 m</text>
+  <path class="dg-dim" d="M 70 236 H 400 M 70 230 V 242 M 400 230 V 242"/>
+  <text class="dg-small" x="235" y="254" text-anchor="middle">2.2 km</text>
+  <rect class="dg-frame" x="426" y="32" width="194" height="190" rx="8"/>
+  <text class="dg-text" x="440" y="56">Built: 19861998</text>
+  <text class="dg-text" x="440" y="76">Cost: $555 million</text>
+  <path class="dg-arch" d="M 440 206 V 136 Q 440 104 476 104 Q 512 104 512 136 V 206"/>
+  <path class="dg-arch" d="M 534 206 V 136 Q 534 104 570 104 Q 606 104 606 136 V 206"/>
+  <rect class="dg-car" x="447" y="186" width="26" height="14" rx="4"/>
+  <rect class="dg-car" x="479" y="186" width="26" height="14" rx="4"/>
+  <rect class="dg-car" x="541" y="186" width="26" height="14" rx="4"/>
+  <rect class="dg-car" x="573" y="186" width="26" height="14" rx="4"/>
+  <text class="dg-small" x="523" y="218" text-anchor="middle">2 tubes × 2 lanes</text>
+
+  <text class="dg-title" x="20" y="288">Tunnel 2</text>
+  <rect class="dg-sky" x="70" y="298" width="330" height="58"/>
+  <rect class="dg-box" x="86" y="318" width="34" height="38"/>
+  <rect class="dg-box" x="126" y="304" width="30" height="52"/>
+  <rect class="dg-box" x="164" y="324" width="40" height="32"/>
+  <rect class="dg-box" x="212" y="308" width="28" height="48"/>
+  <rect class="dg-box" x="248" y="320" width="44" height="36"/>
+  <rect class="dg-box" x="300" y="302" width="30" height="54"/>
+  <rect class="dg-box" x="338" y="316" width="46" height="40"/>
+  <rect class="dg-dark" x="70" y="356" width="330" height="22"/>
+  <path class="dg-road-line" d="M 74 367 H 396"/>
+  <rect class="dg-soil" x="70" y="378" width="330" height="100"/>
+  <text class="dg-text" x="235" y="404" text-anchor="middle">Stone and clay</text>
+  <rect class="dg-tube" x="96" y="434" width="278" height="26" rx="13"/>
+  <path class="dg-dim" d="M 52 378 V 460 M 46 378 H 58 M 46 460 H 58"/>
+  <text class="dg-small" x="44" y="423" text-anchor="end">2.5 m</text>
+  <path class="dg-dim" d="M 70 492 H 400 M 70 486 V 498 M 400 486 V 498"/>
+  <text class="dg-small" x="235" y="512" text-anchor="middle">3.6 km</text>
+  <rect class="dg-frame" x="426" y="298" width="194" height="190" rx="8"/>
+  <text class="dg-text" x="440" y="322">Built: 20022006</text>
+  <text class="dg-text" x="440" y="342">Cost: $1.1 billion</text>
+  <path class="dg-arch" d="M 436 472 V 400 Q 436 362 476 362 Q 516 362 516 400 V 472"/>
+  <path class="dg-arch" d="M 530 472 V 400 Q 530 362 570 362 Q 610 362 610 400 V 472"/>
+  <rect class="dg-car" x="440" y="452" width="22" height="14" rx="4"/>
+  <rect class="dg-car" x="465" y="452" width="22" height="14" rx="4"/>
+  <rect class="dg-car" x="490" y="452" width="22" height="14" rx="4"/>
+  <rect class="dg-car" x="534" y="452" width="22" height="14" rx="4"/>
+  <rect class="dg-car" x="559" y="452" width="22" height="14" rx="4"/>
+  <rect class="dg-car" x="584" y="452" width="22" height="14" rx="4"/>
+  <text class="dg-small" x="523" y="484" text-anchor="middle">2 tubes × 3 lanes</text>
+</svg>

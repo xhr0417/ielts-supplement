@@ -1,0 +1,52 @@
+<svg class="chart-svg dg" viewBox="0 0 640 560" role="img" aria-label="Village of Chorleywood showing development between 1868 and 1994">
+  <defs>
+    <pattern id="cw-stripes" width="8" height="7" patternUnits="userSpaceOnUse">
+      <rect class="dg-hatch-bg" width="8" height="7"/>
+      <line class="dg-hatch-line" x1="0" y1="3.5" x2="8" y2="3.5"/>
+    </pattern>
+    <pattern id="cw-diag" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect class="dg-hatch-bg" width="8" height="8"/>
+      <line class="dg-hatch-line" x1="0" y1="0" x2="0" y2="8"/>
+    </pattern>
+  </defs>
+  <text class="dg-title" x="20" y="24">Village of Chorleywood showing development between 1868 and 1994</text>
+  <rect class="dg-frame" x="20" y="36" width="600" height="400" rx="8"/>
+
+  <path class="dg-grey dg-outline" d="M 26 196 C 70 206, 112 228, 132 262 C 146 300, 140 360, 112 386 C 84 400, 52 374, 40 330 C 30 290, 24 240, 26 196 Z"/>
+  <path class="dg-grey dg-outline" d="M 166 330 C 210 304, 300 300, 352 312 C 360 326, 340 342, 300 348 C 250 354, 196 358, 166 352 Z"/>
+  <path fill="url(#cw-stripes)" class="dg-outline" d="M 130 232 C 160 226, 196 230, 206 250 C 212 286, 200 330, 176 360 C 150 366, 128 356, 120 332 C 112 300, 116 256, 130 232 Z"/>
+  <ellipse class="dg-white" cx="222" cy="200" rx="22" ry="40"/>
+  <ellipse fill="url(#cw-diag)" class="dg-outline" cx="368" cy="102" rx="58" ry="30"/>
+  <ellipse fill="url(#cw-diag)" class="dg-outline" cx="526" cy="114" rx="58" ry="40"/>
+  <ellipse fill="url(#cw-diag)" class="dg-outline" cx="380" cy="254" rx="42" ry="22"/>
+  <path fill="url(#cw-diag)" class="dg-outline" d="M 462 222 C 490 214, 516 246, 524 284 C 506 292, 474 290, 452 282 C 450 262, 452 236, 462 222 Z"/>
+  <path fill="url(#cw-diag)" class="dg-outline" d="M 428 300 C 470 296, 512 300, 522 324 C 520 350, 490 362, 446 360 C 428 340, 424 318, 428 300 Z"/>
+
+  <path class="dg-road-main" d="M 24 52 C 130 76, 230 112, 330 132 C 380 142, 420 146, 444 148 C 500 154, 546 178, 616 214"/>
+  <path class="dg-road-main" d="M 214 38 C 206 120, 184 222, 162 292 C 146 342, 132 392, 122 434"/>
+  <path class="dg-motorway" d="M 430 38 L 444 136 M 442 162 L 404 434"/>
+  <path class="dg-motorway-in" d="M 430 38 L 444 136 M 442 162 L 404 434"/>
+  <circle class="dg-white" cx="444" cy="148" r="13"/>
+  <path class="dg-rail" d="M 24 192 C 150 240, 300 290, 616 330"/>
+  <path class="dg-rail-in" d="M 24 192 C 150 240, 300 290, 616 330"/>
+  <rect class="dg-dark" x="176" y="246" width="26" height="9" transform="rotate(20 189 250)"/>
+  <text class="dg-small" x="196" y="236">Chorleywood Station</text>
+  <text class="dg-text" x="330" y="196" text-anchor="middle">Chorleywood Park</text>
+  <text class="dg-text" x="330" y="214" text-anchor="middle">and Golf Course</text>
+
+  <line class="dg-road-main" x1="30" x2="74" y1="462" y2="462"/>
+  <text class="dg-small" x="82" y="466">Main roads</text>
+  <path class="dg-motorway" d="M 30 492 H 74"/><path class="dg-motorway-in" d="M 30 492 H 74"/>
+  <text class="dg-small" x="82" y="496">Motorway (built 1970)</text>
+  <path class="dg-rail" d="M 30 522 H 74"/><path class="dg-rail-in" d="M 30 522 H 74"/>
+  <text class="dg-small" x="82" y="526">Railway (built 1909)</text>
+  <rect class="dg-white" x="300" y="452" width="26" height="18"/>
+  <text class="dg-small" x="334" y="466">18681883</text>
+  <rect fill="url(#cw-stripes)" class="dg-outline" x="300" y="482" width="26" height="18"/>
+  <text class="dg-small" x="334" y="496">18831922</text>
+  <rect class="dg-grey dg-outline" x="460" y="452" width="26" height="18"/>
+  <text class="dg-small" x="494" y="466">19221970</text>
+  <rect fill="url(#cw-diag)" class="dg-outline" x="460" y="482" width="26" height="18"/>
+  <text class="dg-small" x="494" y="496">19701994</text>
+  <text class="dg-small" x="620" y="548" text-anchor="end">€:	ŸþÍØ</text>
+</svg>

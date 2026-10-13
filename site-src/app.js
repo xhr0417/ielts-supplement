@@ -239,6 +239,7 @@
         ${navFold('小作文', t1.length, navLink('#/page/s-t1-overview', '总览：结构和时态') + t1.map((t) => navLink(`#/w/${t.id}`, t.name)).join(''), true)}
         ${navFold('大作文', t2.length, navLink('#/page/s-t2-overview', '总览：题型识别') + t2.map((t) => navLink(`#/w/${t.id}`, t.en)).join(''), true)}
         ${navLink('#/recent', '近期真题', R.task1.length + R.task2.length)}
+        ${navLink('#/recent?task=1', '小作文看图写作', R.task1.filter((q) => q.chartHtml).length)}
         ${navLink('#/page/a-w-t1-vocab', '小作文通识积累')}
         ${navLink('#/page/a-w-t2-vocab', '大作文通识积累')}
         ${navLink('#/page/a-w-ai', 'AI 批改提示词')}
@@ -336,7 +337,7 @@
         ${tile('#/chuanti', '串题', `${S.chuanti.length} 组故事`, '一个故事讲多道题')}
         ${tile('#/practice', '计时练习', '1 分钟 + 2 分钟', 'Part 2 准备、陈述、Part 3 连着练，可以录音')}
         ${tile('#/writing', '写作模板', '13 种题型', '小作文 7 种、大作文 6 种')}
-        ${tile('#/recent', '近期真题', `${R.task2.length + R.task1.length} 道`, '2026 年 9 月到 10 月初的考生回忆')}
+        ${tile('#/recent?task=1', '近期真题', `${R.task2.length + R.task1.length} 道`, `9–10 月考生回忆，小作文 ${R.task1.filter((q) => q.chartHtml).length} 道配了图，可以直接看图写作`)}
         ${tile('#/notes', '原作者笔记', `${authorPages.length} 篇`, '做题技巧和口语素材，不含他的做题记录')}
       </div>
       <p class="notice">题目都是考生回忆整理的，不是官方发布，各家对“新题”的标法也不一样。来源和取舍见<a href="#/about">来源与说明</a>。</p>`;
@@ -988,17 +989,169 @@
 
   // ---------- 写作 ----------
 
+  function chartBlock(q) {
+    if (!q.chartHtml) return '<p class="note">来源暂时没有这道题的图，先练其他有图的题。</p>';
+    const cap = q.imgUrl
+      ? `<span>按原图数据重绘</span><a href="${esc(q.imgUrl)}" target="_blank" rel="noopener">看原图</a>`
+      : '<span>按流通考试版本数据重绘</span>';
+    return `<figure class="chart">${q.chartHtml}
+      <figcaption class="chart-cap">${cap}</figcaption>
+      ${q.chartTable ? `<details class="chart-data"><summary>看具体数字</summary>${q.chartTable}</details>` : ''}
+    </figure>`;
+  }
+
   function recentItem(q, task, onTypePage) {
     const names = task === 2 ? R.task2Types : R.task1Types;
     const t = onTypePage ? null : typeByRecent.get(q.type);
     const flags = (q.flags || []).map((f) => (f === 'repeat' ? '<span class="tag tag-repeat">近期重复</span>' : '<span class="tag">往年旧题</span>')).join('');
-    return `<div class="recent-item">
+    return `<div class="recent-item" data-id="${q.id}">
       <div class="meta"><span>${esc(q.week)}</span>${t ? `<a class="tag tag-author" href="#/w/${t.id}">${esc(names[q.type])}</a>` : `<span class="tag">${esc(names[q.type])}</span>`}${q.parts ? `<span class="tag">${esc(q.parts)}</span>` : ''}${flags}<span class="muted">${esc((R.sources[q.src] && R.sources[q.src].short) || '')}</span></div>
       <p class="q">${esc(q.q)}</p>
       ${q.zh ? `<p class="zh">${esc(q.zh)}</p>` : ''}
       ${q.note ? `<p class="note">${esc(q.note)}</p>` : ''}
+      ${task === 1 ? chartBlock(q) : ''}
+      ${task === 2 || q.chartHtml ? writeBox(q, task) : ''}
     </div>`;
   }
+
+  // ---------- 写作练习 ----------
+
+  // 批改要求改自原作者的 AI 批改提示词（原作者笔记 · 作文 · ai.md）
+  const AI_ASK = {
+    1: '你是一名雅思作文改卷人。下面是一道雅思学术类小作文（Task 1）的题目、图表数据和我的作文。\n1. 评分（按 Task Achievement、Coherence and Cohesion、Lexical Resource、Grammatical Range and Accuracy 四项）\n2. 指出致命错误\n3. 逐句修改，至 6.0–6.5 水平，保持原有意思，只修改致命问题，修改过的部分加粗',
+    2: '你是一名雅思作文改卷人。下面是一道雅思大作文（Task 2）的题目和我的作文，给我“逐句”修改至 6.5 水平，修改过的部分加粗。\n1. 先按四项评分标准估一个分\n2. 修改致命错误\n3. 尽量不要动我的框架和模板，能不改则不改\n4. 可以润色，有好的想法最后再补充'
+  };
+  const recentById = new Map([...R.task1.map((q) => [q.id, { q, task: 1 }]), ...R.task2.map((q) => [q.id, { q, task: 2 }])]);
+  const wordCount = (s) => (s.match(/[A-Za-z0-9][A-Za-z0-9’'-]*/g) || []).length;
+  const wbTimers = new Map();
+  const wbSaveTimers = new Map();
+
+  function writeBox(q, task) {
+    const min = task === 1 ? 150 : 250;
+    const mins = task === 1 ? 20 : 40;
+    return `<details class="write-box" data-wb="${q.id}">
+      <summary>写作练习 · 至少 ${min} 词，建议 ${mins} 分钟</summary>
+      <textarea class="wb-text" rows="10" lang="en" spellcheck="true" placeholder="在这里写${task === 1 ? '：开头改写题目 → 概述两个主要特征 → 两段细节' : '：开头表态 → 两三段论证 → 结论'}" aria-label="作文"></textarea>
+      <div class="wb-bar">
+        <span class="wb-count" data-min="${min}">0 词</span>
+        <button class="btn btn-sm" type="button" data-wb-act="timer" data-mins="${mins}">计时 ${mins}:00</button>
+        <button class="btn btn-sm btn-primary" type="button" data-wb-act="copy">复制给 AI 批改</button>
+        <button class="btn btn-sm" type="button" data-wb-act="clear">清空</button>
+      </div>
+      <p class="muted small wb-help">草稿自动存在这台设备的浏览器里。“复制给 AI 批改”会把批改要求、题目${task === 1 ? '、图表数据' : ''}和你的作文一起复制，粘贴到任意 AI 对话里就行。</p>
+    </details>`;
+  }
+
+  function paintCount(box) {
+    const el = box.querySelector('.wb-count');
+    const n = wordCount(box.querySelector('.wb-text').value);
+    const min = Number(el.dataset.min);
+    el.textContent = `${n} 词${n >= min ? '' : `（还差 ${min - n}）`}`;
+    el.classList.toggle('ok', n >= min);
+  }
+
+  document.addEventListener(
+    'toggle',
+    (e) => {
+      const box = e.target;
+      if (!(box instanceof HTMLDetailsElement) || !box.matches('.write-box') || !box.open) return;
+      const ta = box.querySelector('.wb-text');
+      if (!ta.dataset.loaded) {
+        const draft = load('draft:' + box.dataset.wb, null);
+        if (draft && draft.t) ta.value = draft.t;
+        ta.dataset.loaded = '1';
+      }
+      paintCount(box);
+    },
+    true
+  );
+
+  document.addEventListener('input', (e) => {
+    if (!e.target.matches || !e.target.matches('.wb-text')) return;
+    const box = e.target.closest('.write-box');
+    paintCount(box);
+    clearTimeout(wbSaveTimers.get(box.dataset.wb));
+    wbSaveTimers.set(
+      box.dataset.wb,
+      setTimeout(() => {
+        const t = e.target.value;
+        if (t.trim()) {
+          if (!save('draft:' + box.dataset.wb, { t, at: localDate() })) toast('浏览器不允许保存，草稿刷新后会丢失');
+        } else save('draft:' + box.dataset.wb, null);
+      }, 500)
+    );
+  });
+
+  async function copyText(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch (e) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+      document.body.appendChild(ta);
+      ta.select();
+      let ok = false;
+      try {
+        ok = document.execCommand('copy');
+      } catch (err) {}
+      ta.remove();
+      return ok;
+    }
+  }
+
+  function stopWbTimers() {
+    wbTimers.forEach((t) => clearInterval(t));
+    wbTimers.clear();
+  }
+
+  document.addEventListener('click', async (e) => {
+    const b = e.target.closest('[data-wb-act]');
+    if (!b) return;
+    const box = b.closest('.write-box');
+    const id = box.dataset.wb;
+    const ta = box.querySelector('.wb-text');
+    const act = b.dataset.wbAct;
+    if (act === 'copy') {
+      const text = ta.value.trim();
+      if (!text) return toast('先写一点再复制');
+      const { q, task } = recentById.get(id);
+      const parts = [AI_ASK[task], `题目：\n${q.q}`];
+      if (task === 1 && q.chartData) parts.push(`图表数据（原题是图，这里是图里的数据）：\n${q.chartData}`);
+      parts.push(`我的作文（${wordCount(text)} 词）：\n${text}`);
+      toast((await copyText(parts.join('\n\n'))) ? '已复制，粘贴到 AI 对话里就能批改' : '复制失败，可以手动全选作文复制');
+    } else if (act === 'clear') {
+      if (ta.value.trim() && !confirm('清空这篇草稿？')) return;
+      ta.value = '';
+      save('draft:' + id, null);
+      paintCount(box);
+    } else if (act === 'timer') {
+      ensureAudio();
+      if (wbTimers.has(id)) {
+        clearInterval(wbTimers.get(id));
+        wbTimers.delete(id);
+        b.textContent = `计时 ${b.dataset.mins}:00`;
+        return;
+      }
+      const end = Date.now() + Number(b.dataset.mins) * 60000;
+      const tick = () => {
+        const left = end - Date.now();
+        if (left <= 0) {
+          clearInterval(wbTimers.get(id));
+          wbTimers.delete(id);
+          b.textContent = '时间到';
+          beep(3);
+          toast('时间到，数一下字数，然后复制给 AI 批改');
+          return;
+        }
+        b.textContent = `剩 ${fmtClock(left)} · 停止`;
+      };
+      tick();
+      wbTimers.set(id, setInterval(tick, 500));
+      ta.focus();
+    }
+  });
   const recentOf = (t) => (t.task === 1 ? R.task1 : R.task2).filter((q) => q.type === t.recent);
 
   function typeTile(t) {
@@ -1014,6 +1167,7 @@
         <h1>写作模板</h1>
         <p class="lede">先看题目判断题型，再套对应模板。每种题型的页面后面都附了 2026 年 9–10 月考生回忆的真题，可以直接拿来练。</p>
       </div>
+      <a class="notice cta" href="#/recent?task=1"><span><b>小作文看图写作</b>　${R.task1.filter((q) => q.chartHtml).length} 道 9–10 月真题配了图，看图直接写，计时、数字数，写完复制给 AI 批改 →</span></a>
       <div class="section-head"><h2>小作文 Task 1</h2><a class="btn btn-sm" href="#/page/s-t1-overview">总览：四段结构、时态、常见丢分</a></div>
       <div class="type-grid">${TYPES.filter((t) => t.task === 1).map(typeTile).join('')}</div>
       <div class="section-head"><h2>大作文 Task 2</h2><a class="btn btn-sm" href="#/page/s-t2-overview">总览：怎么认题型、混合题怎么拆</a></div>
@@ -1062,12 +1216,17 @@
     return { title: t.name, html, toc };
   }
 
-  function viewRecent() {
+  function viewRecent(_, query) {
+    if (query.get('task')) {
+      state.recentTask = query.get('task') === '1' ? 1 : 2;
+      state.recentType = 'all';
+    }
+    const charts = R.task1.filter((q) => q.chartHtml).length;
     const html = `
       <div class="page-head">
         <div class="eyebrow">写作 · 考生回忆</div>
         <h1>近期真题</h1>
-        <p class="lede">${esc(R.range)} 考生考后回忆的题目，按题型分好了，点题型标签可以跳到对应模板。“近期重复”表示最近三个月有两次以上报告。</p>
+        <p class="lede">${esc(R.range)} 考生考后回忆的题目，按题型分好了，点题型标签可以跳到对应模板。小作文里有 ${charts} 道配了图，每道题下面都能直接写，写完一键复制给 AI 批改。“近期重复”表示最近三个月有两次以上报告。</p>
       </div>
       <div class="filters" role="group" aria-label="大作文或小作文">${segs('task', [['2', `大作文（${R.task2.length}）`], ['1', `小作文（${R.task1.length}）`]], String(state.recentTask))}</div>
       <div class="filters" role="group" aria-label="题型" id="typeFilters"></div>
@@ -1342,6 +1501,7 @@
       }
     }
     stopPractice();
+    stopWbTimers();
     if (path !== '/search' && document.activeElement !== searchInput) searchInput.value = '';
     const out = view(params, query) || {};
     main.innerHTML = `<div class="page">${out.html || ''}</div>`;
