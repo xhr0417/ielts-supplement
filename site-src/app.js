@@ -1271,7 +1271,7 @@
       <p>“练过”标记和考试日期存在浏览器本地（localStorage），不会上传；录音只在页面里，刷新就没了。${storageOk ? '' : '<b>当前浏览器不允许保存，刷新后标记会丢失。</b>'}</p>
       <p class="row"><button class="btn" type="button" id="clearBtn">清除练过标记</button><span class="muted small">已标记 ${Object.keys(done).length} 项</span></p>
       <h2 class="sec">更新内容</h2>
-      <p>改 <code>data/speaking-2026-09.json</code>、<code>data/writing-recent-2026.json</code> 或 <code>笔记/</code>、<code>原作者笔记/</code> 下的 Markdown，然后运行 <code>npm run build</code>，会重新生成这个网页和 <code>笔记/</code> 里的口语新题、近期真题文件。</p>`;
+      <p>改 <code>data/speaking-2026-09.json</code>、<code>data/writing-recent-2026.json</code> 或 <code>笔记/</code>、<code>原作者笔记/</code> 下的 Markdown，然后运行 <code>npm run build</code>，会重新生成这个网页和 <code>笔记/</code> 里的口语新题、近期真题文件；运行 <code>npm run publish</code> 会同时更新 ielts.xhr0417.cn 和 GitHub。</p>`;
     return {
       title: '来源与说明',
       html,

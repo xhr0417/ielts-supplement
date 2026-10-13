@@ -1,6 +1,8 @@
 # 雅思补充：2026 年 9–12 月口语新题 + 写作模板
 
-网页版在 `site/index.html`，单个文件，双击用浏览器打开就能用，不需要联网。也可以把这个文件放到任何静态网站上。
+- 网址：https://ielts.xhr0417.cn （自有服务器）
+- 镜像：https://xhr0417.github.io/ielts-supplement/ （GitHub Pages，push 后自动更新）
+- 离线：`site/index.html` 是单个文件，双击用浏览器打开就能用，不需要联网
 
 资料更新到 2026-10-13。
 
@@ -39,7 +41,8 @@ data/
   作文/近期真题_2026年9-10月.md       由 JSON 生成
 原作者笔记/              原作者的通用笔记
 site-src/                网页模板、样式和脚本
-scripts/                 构建脚本和原作者笔记导入脚本
+scripts/                 构建、发布和原作者笔记导入脚本
+.github/workflows/       GitHub Pages 部署
 ```
 
 ## 更新内容
@@ -47,9 +50,12 @@ scripts/                 构建脚本和原作者笔记导入脚本
 改 `data/` 里的 JSON，或者 `笔记/`、`原作者笔记/` 下的 Markdown，然后：
 
 ```bash
-npm install      # 第一次需要，装 Markdown 解析库
-npm run build    # 重新生成 site/index.html 和 笔记/ 里的口语、真题文件
+npm install          # 第一次需要，装 Markdown 解析库
+npm run build        # 重新生成 site/index.html 和 笔记/ 里的口语、真题文件
+npm run publish      # 生成 → rsync 到服务器 /var/www/ielts → git push（Pages 镜像随之更新）
 ```
+
+服务器上的 nginx 配置在 `/etc/nginx/sites-available/ielts`，HTTPS 证书由 certbot 自动续期。
 
 `笔记/口语/` 下三份新题文件和 `笔记/作文/近期真题_2026年9-10月.md` 是生成的，直接改会被覆盖，要改 JSON。
 
