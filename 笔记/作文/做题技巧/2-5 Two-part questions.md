@@ -7,8 +7,9 @@
 | 组合 | 例子（自拟） |
 |---|---|
 | 原因 + 影响 | Why do people move to big cities, and what effects does this have? |
-| 原因 + 解决 | 见 2-3 Reasons & Solutions |
-| 利弊 + 观点 | 见 2-4 Positive & Negative |
+| 原因 + 解决 | 见 [2-3 Reasons & Solutions](<2-3 Reasons & Solutions.md>) |
+| 原因 + 利弊 | 第二问见 [2-6 Advantages & Disadvantages](<2-6 Advantages & Disadvantages.md>) |
+| 原因 + 积极还是消极 | 第二问见 [2-4 Positive & Negative](<../../../原作者笔记/作文/做题技巧/2-4 Positive & Negative.md>) |
 | 现状 + 未来 | How has … changed in recent years, and how will it develop in the future? |
 | 同意与否 + 理由或建议 | Do you agree with …? What should be done about it? |
 

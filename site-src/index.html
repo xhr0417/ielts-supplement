@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>雅思补充 · 2026 年 9–12 月</title>
+<meta name="description" content="2026 年 9–12 月雅思口语新题（Part 1/2/3）、串题、计时练习，以及大小作文各题型模板和近期真题。">
+<script>
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem('ielts26:theme'); } catch (e) {}
+    if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.dataset.theme = t;
+  })();
+</script>
+<style>/*__STYLE__*/</style>
+</head>
+<body>
+<a class="skip-link" href="#main" data-skip>跳到正文</a>
+<header class="topbar">
+  <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="打开导航" aria-expanded="false" aria-controls="sidebar">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <a class="brand" href="#/">
+    <span class="logo" aria-hidden="true">雅</span>
+    <span class="brand-text"><b>雅思补充</b><small>2026 年 9–12 月</small></span>
+  </a>
+  <label class="search">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+    <input id="searchInput" type="search" placeholder="搜题目、模板、笔记" aria-label="搜索全站" autocomplete="off" enterkeyhint="search">
+    <kbd>/</kbd>
+  </label>
+  <button class="exam-chip" id="examBtn" type="button" aria-haspopup="dialog">设考试日期</button>
+  <button class="icon-btn" id="themeBtn" type="button" aria-label="切换深浅色">
+    <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+    <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+  </button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="主导航"></nav>
+  <div class="scrim" id="scrim" hidden></div>
+  <main id="main" tabindex="-1"></main>
+  <aside class="toc" id="toc" aria-label="本页目录"></aside>
+</div>
+<dialog id="examDialog" aria-labelledby="examTitle">
+  <form method="dialog" class="exam-form">
+    <h2 id="examTitle">考试日期</h2>
+    <p>只保存在这台设备的浏览器里，用来显示倒计时。</p>
+    <input type="date" id="examDate" aria-label="考试日期">
+    <div class="row">
+      <button class="btn" value="clear" type="submit">不显示倒计时</button>
+      <span class="grow"></span>
+      <button class="btn" value="cancel" type="submit">取消</button>
+      <button class="btn btn-primary" value="save" type="submit">保存</button>
+    </div>
+  </form>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script id="site-data" type="application/json">"__DATA__"</script>
+<script>/*__APP__*/</script>
+</body>
+</html>

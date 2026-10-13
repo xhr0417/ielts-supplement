@@ -1,0 +1,13 @@
+{
+  "name": "ielts-supplement",
+  "private": true,
+  "type": "module",
+  "description": "2026 年 9–12 月雅思口语新题与写作模板，生成单文件网页",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "import-author": "node scripts/import-author-notes.mjs"
+  },
+  "devDependencies": {
+    "marked": "^18.1.1"
+  }
+}
