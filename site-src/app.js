@@ -393,7 +393,11 @@
 
   // ---------- Part 2 个人提纲 ----------
 
+  const outlineMem = new Map();
+  const outlineFailed = new Set();
+
   function getOutline(cardId) {
+    if (outlineMem.has(cardId)) return outlineMem.get(cardId);
     const v = load('outline:' + cardId, null);
     return v && typeof v.t === 'string' ? v.t : '';
   }
@@ -401,11 +405,14 @@
   function outlineBox(cardId) {
     const text = getOutline(cardId);
     const has = Boolean(text.trim());
+    const failed = outlineFailed.has(cardId);
+    const saved = has && !failed;
+    const statusText = failed ? '保存失败：当前浏览器不允许本地存储' : saved ? '已保存' : '输入后自动保存';
     return `<details class="outline-box" data-outline="${cardId}">
-      <summary>我的提纲／关键词 <span class="ob-badge" data-ob-badge${has ? '' : ' hidden'}>已保存</span></summary>
+      <summary>我的提纲／关键词 <span class="ob-badge" data-ob-badge${saved ? '' : ' hidden'}>已保存</span></summary>
       <textarea class="ob-text" rows="4" placeholder="记关键词、具体细节（时间 / 地点 / 人物 / 一件小事）和结尾感受…">${esc(text)}</textarea>
       <div class="ob-bar">
-        <span class="ob-status" data-ob-status>${has ? '已保存' : '输入后自动保存'}</span>
+        <span class="ob-status${failed ? ' err' : ''}" data-ob-status>${statusText}</span>
         <span class="muted small">只保存在当前浏览器，不会自动同步到手机或其他电脑。</span>
       </div>
     </details>`;
@@ -418,8 +425,9 @@
       if (!(box instanceof HTMLDetailsElement) || !box.matches('.outline-box') || !box.open) return;
       const id = box.dataset.outline;
       const ta = box.querySelector('.ob-text');
+      if (!ta || outlineFailed.has(id)) return;
       const text = getOutline(id);
-      if (ta && ta.value !== text) ta.value = text;
+      if (ta.value !== text) ta.value = text;
     },
     true
   );
@@ -430,15 +438,19 @@
     const id = box.dataset.outline;
     const text = e.target.value;
     const trimmed = text.trim();
+    outlineMem.set(id, text);
     const ok = save('outline:' + id, trimmed ? { t: text, at: localDate() } : null);
     const statusEl = box.querySelector('[data-ob-status]');
     const badgeEl = box.querySelector('[data-ob-badge]');
     if (!ok) {
+      outlineFailed.add(id);
       statusEl.textContent = '保存失败：当前浏览器不允许本地存储';
       statusEl.classList.add('err');
+      if (badgeEl) badgeEl.hidden = true;
       toast('保存失败：当前浏览器不允许本地存储，刷新后提纲会丢失');
       return;
     }
+    outlineFailed.delete(id);
     statusEl.classList.remove('err');
     statusEl.textContent = trimmed ? '已保存' : '已清空';
     if (badgeEl) badgeEl.hidden = !trimmed;
@@ -1078,8 +1090,8 @@
 
   // 批改要求：先看内容与审题，再改语言（与 原作者笔记 · 作文 · ai.md 统一）
   const AI_ASK = {
-    1: '你是一名雅思作文批改老师。下面是一道雅思学术类小作文（Task 1）的题目、图表数据和我的作文，请按以下步骤批改：\n1. 先检查是否回应题干中的全部要求（概述是否抓住主要特征、数据对比与趋势描述是否准确），是否存在对象、比较关系或单位/时态理解错误，以及套用模板造成的逻辑问题。\n2. 如有影响任务完成度（Task Achievement）的问题，先指出原句、说明原因，并给出必要的结构调整。\n3. 再逐句修改语法、搭配和表达（修改过的部分加粗），保留有效的原意与句型，避免不必要的复杂词汇。\n4. 最后给出有依据的估分及不确定性，并列出最值得我自己重写的三处。',
-    2: '你是一名雅思作文批改老师。下面是一道雅思大作文（Task 2）的题目和我的作文，请按以下步骤批改：\n1. 先检查是否回应题干中的全部要求，是否存在对象、比较关系或限定词理解错误，以及套用模板造成的偏题和逻辑问题。\n2. 如有影响任务回应（Task Response）的问题，先指出原句、说明原因，并给出必要的结构调整。\n3. 再逐句修改语法、搭配和表达（修改过的部分加粗），保留有效的原意与句型，避免不必要的复杂词汇。\n4. 最后给出有依据的估分及不确定性，并列出最值得我自己重写的三处。'
+    1: '你是一名雅思作文批改老师。下面是一道雅思学术类小作文（Task 1）的题目、图表数据和我的作文，请按以下步骤批改：\n1. 先检查是否回应题干中的全部要求（概述是否抓住主要特征、数据对比与趋势描述是否准确），是否存在对象、比较关系或单位/时态理解错误，以及套用模板造成的逻辑问题。\n2. 如有影响任务完成度（Task Achievement）的问题，先指出原句、说明原因，并给出必要的结构调整。\n3. 再逐句修改语法、搭配和表达（修改过的部分加粗），保留有效的原意与句型，避免不必要的复杂词汇。\n4. 最后按四项评分标准（Task Achievement、Coherence and Cohesion、Lexical Resource、Grammatical Range and Accuracy）分别估分、说明依据与不确定性，再列出最值得我自己重写的三处。',
+    2: '你是一名雅思作文批改老师。下面是一道雅思大作文（Task 2）的题目和我的作文，请按以下步骤批改：\n1. 先检查是否回应题干中的全部要求，是否存在对象、比较关系或限定词理解错误，以及套用模板造成的偏题和逻辑问题。\n2. 如有影响任务回应（Task Response）的问题，先指出原句、说明原因，并给出必要的结构调整。\n3. 再逐句修改语法、搭配和表达（修改过的部分加粗），保留有效的原意与句型，避免不必要的复杂词汇。\n4. 最后按四项评分标准（Task Response、Coherence and Cohesion、Lexical Resource、Grammatical Range and Accuracy）分别估分、说明依据与不确定性，再列出最值得我自己重写的三处。'
   };
   const recentById = new Map([...R.task1.map((q) => [q.id, { q, task: 1 }]), ...R.task2.map((q) => [q.id, { q, task: 2 }])]);
   const wordCount = (s) => (s.match(/[A-Za-z0-9][A-Za-z0-9’'-]*/g) || []).length;
