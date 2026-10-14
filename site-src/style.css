@@ -328,6 +328,25 @@ details.p3 li { margin: 4px 0; }
 .chip-link.done { background: var(--green-soft); border-color: transparent; color: var(--green); }
 .chip-link .no { font: 600 12px var(--mono); color: var(--text-3); }
 
+.chuanti-list { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.chuanti-item { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; padding: 8px 10px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); }
+.chuanti-top { flex: none; }
+.chuanti-focus { margin: 0; font-size: 14px; color: var(--text-2); flex: 1 1 240px; }
+
+/* ---------- Part 2 个人提纲 ---------- */
+details.outline-box { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 8px; }
+details.outline-box > summary { cursor: pointer; font-size: 14.5px; font-weight: 600; color: var(--accent); padding: 4px 0; display: inline-flex; align-items: center; gap: 8px; }
+.ob-badge { font-size: 12px; font-weight: 600; padding: 1px 7px; border-radius: 999px; background: var(--green-soft); color: var(--green); }
+.ob-text {
+  display: block; width: 100%; min-height: 92px; margin-top: 6px; padding: 8px 10px;
+  border: 1px solid var(--line-2); border-radius: var(--radius-sm);
+  background: var(--panel); color: var(--text); font: 14.5px/1.6 var(--font); resize: vertical;
+}
+.ob-text:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.ob-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-top: 6px; font-size: 13px; }
+.ob-status { font-weight: 600; color: var(--green); }
+.ob-status.err { color: var(--red); }
+
 /* ---------- 写作 ---------- */
 .type-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
 .type-tile { padding: 16px 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); color: var(--text); display: flex; flex-direction: column; gap: 6px; }

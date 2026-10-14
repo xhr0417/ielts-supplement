@@ -219,13 +219,20 @@ function p2Markdown() {
     '',
     '## 串题：哪些题可以用同一个故事',
     '',
-    '同一个故事可以对应多道题，但 Part 3 的追问会变，所以还要准备观点。',
+    '可以共用人物、地点和经历；换题后，需要按新题卡重新选择细节和安排重点。Part 3 的追问会变，也要另外准备观点。',
     '',
-    '| 素材 | 可以共用的题 | 故事建议 |',
+    '| 素材 | 可以共用的题（及本题重心） | 共用素材建议 |',
     '|---|---|---|'
   ];
   speaking.chuanti.forEach((g) => {
-    lines.push(`| ${g.title} | ${g.cards.map((id) => `#${no.get(id)} ${speaking.p2.find((c) => c.id === id).zh}`).join(' · ')} | ${g.story} |`);
+    const items = g.cards
+      .map((id) => {
+        const title = `#${no.get(id)} ${speaking.p2.find((c) => c.id === id).zh}`;
+        const f = g.focus && g.focus[id];
+        return f ? `**${title}**：${f}` : title;
+      })
+      .join('<br>');
+    lines.push(`| ${g.title} | ${items} | ${g.story} |`);
   });
   lines.push('');
   for (const [cat, label] of Object.entries(speaking.categories)) {

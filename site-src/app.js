@@ -391,6 +391,59 @@
     };
   }
 
+  // ---------- Part 2 个人提纲 ----------
+
+  function getOutline(cardId) {
+    const v = load('outline:' + cardId, null);
+    return v && typeof v.t === 'string' ? v.t : '';
+  }
+
+  function outlineBox(cardId) {
+    const text = getOutline(cardId);
+    const has = Boolean(text.trim());
+    return `<details class="outline-box" data-outline="${cardId}">
+      <summary>我的提纲／关键词 <span class="ob-badge" data-ob-badge${has ? '' : ' hidden'}>已保存</span></summary>
+      <textarea class="ob-text" rows="4" placeholder="记关键词、具体细节（时间 / 地点 / 人物 / 一件小事）和结尾感受…">${esc(text)}</textarea>
+      <div class="ob-bar">
+        <span class="ob-status" data-ob-status>${has ? '已保存' : '输入后自动保存'}</span>
+        <span class="muted small">只保存在当前浏览器，不会自动同步到手机或其他电脑。</span>
+      </div>
+    </details>`;
+  }
+
+  document.addEventListener(
+    'toggle',
+    (e) => {
+      const box = e.target;
+      if (!(box instanceof HTMLDetailsElement) || !box.matches('.outline-box') || !box.open) return;
+      const id = box.dataset.outline;
+      const ta = box.querySelector('.ob-text');
+      const text = getOutline(id);
+      if (ta && ta.value !== text) ta.value = text;
+    },
+    true
+  );
+
+  document.addEventListener('input', (e) => {
+    if (!e.target.matches || !e.target.matches('.ob-text')) return;
+    const box = e.target.closest('.outline-box');
+    const id = box.dataset.outline;
+    const text = e.target.value;
+    const trimmed = text.trim();
+    const ok = save('outline:' + id, trimmed ? { t: text, at: localDate() } : null);
+    const statusEl = box.querySelector('[data-ob-status]');
+    const badgeEl = box.querySelector('[data-ob-badge]');
+    if (!ok) {
+      statusEl.textContent = '保存失败：当前浏览器不允许本地存储';
+      statusEl.classList.add('err');
+      toast('保存失败：当前浏览器不允许本地存储，刷新后提纲会丢失');
+      return;
+    }
+    statusEl.classList.remove('err');
+    statusEl.textContent = trimmed ? '已保存' : '已清空';
+    if (badgeEl) badgeEl.hidden = !trimmed;
+  });
+
   // ---------- Part 2 ----------
 
   function p2Card(c) {
@@ -404,6 +457,7 @@
       ${c.note ? `<p class="note">${esc(c.note)}</p>` : ''}
       ${c.see ? `<div class="links"><span class="lbl">原作者答案</span>${pageLinks(c.see)}</div>` : ''}
       ${c.link ? `<div class="links"><span class="lbl">相关题</span>${itemLinks(c.link)}</div>` : ''}
+      ${outlineBox(c.id)}
       <details class="p3"><summary>Part 3 追问（${c.p3.length}）</summary><ol>${c.p3.map((q) => `<li>${esc(q)}</li>`).join('')}</ol></details>
       <div class="card-actions"><a class="btn btn-sm" href="#/practice?card=${c.id}">计时练这张</a></div>
       <div class="src">来源：${esc(srcLine(c.src, S.sources))}</div>
@@ -487,6 +541,11 @@
     const c = p2ById.get(id);
     return `<a class="chip-link${isDone('p2:' + id) ? ' done' : ''}" href="#/p2?focus=${id}"><span class="no">#${p2No.get(id)}</span>${esc(c.zh)}</a>`;
   };
+  const focusItemFor = (id, focusMap) => {
+    const c = p2ById.get(id);
+    const focus = focusMap && focusMap[id];
+    return `<li class="chuanti-item"><div class="chuanti-top">${chipFor(id)}</div>${focus ? `<p class="chuanti-focus">${esc(focus)}</p>` : ''}</li>`;
+  };
   function coveredBy(pageId) {
     return S.p2.filter((c) => (c.see || []).includes(pageId)).map((c) => c.id);
   }
@@ -497,13 +556,13 @@
       <div class="page-head">
         <div class="eyebrow">口语 · 串题</div>
         <h1>一个故事讲多道题</h1>
-        <p class="lede">先准备好下面 ${S.chuanti.length} 组故事，Part 2 大部分卡都能覆盖。换题时只改开头一句和最贴题的那个细节，Part 3 的观点要另外准备。</p>
+        <p class="lede">可以共用人物、地点和经历；换题后，需要按新题卡重新选择细节和安排重点。</p>
       </div>
       ${S.chuanti
         .map(
           (g) => `<section class="card"><b style="font-size:17px">${esc(g.title)}</b>
-          <p class="tip" style="margin-top:8px"><b>故事建议</b>　${esc(g.story)}</p>
-          <div class="chips">${g.cards.map(chipFor).join('')}</div></section>`
+          <p class="tip" style="margin-top:8px"><b>共用素材</b>　${esc(g.story)}</p>
+          <ul class="chuanti-list">${g.cards.map((id) => focusItemFor(id, g.focus)).join('')}</ul></section>`
         )
         .join('')}
       <h2 class="sec">原作者的答案能套哪些新卡</h2>
@@ -790,6 +849,7 @@
     <p class="cue-en">${esc(c.en)}</p>
     <div class="say-label">You should say:</div>
     <ul class="say">${c.say.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
+    ${outlineBox(c.id)}
     <details class="p3"><summary>思路 / 串题</summary><p class="tip">${esc(c.tip)}</p>${c.see ? `<div class="links"><span class="lbl">原作者答案</span>${pageLinks(c.see)}</div>` : ''}</details>`;
 
   function viewPractice(_, query) {
@@ -1016,10 +1076,10 @@
 
   // ---------- 写作练习 ----------
 
-  // 批改要求改自原作者的 AI 批改提示词（原作者笔记 · 作文 · ai.md）
+  // 批改要求：先看内容与审题，再改语言（与 原作者笔记 · 作文 · ai.md 统一）
   const AI_ASK = {
-    1: '你是一名雅思作文改卷人。下面是一道雅思学术类小作文（Task 1）的题目、图表数据和我的作文。\n1. 评分（按 Task Achievement、Coherence and Cohesion、Lexical Resource、Grammatical Range and Accuracy 四项）\n2. 指出致命错误\n3. 逐句修改，至 6.0–6.5 水平，保持原有意思，只修改致命问题，修改过的部分加粗',
-    2: '你是一名雅思作文改卷人。下面是一道雅思大作文（Task 2）的题目和我的作文，给我“逐句”修改至 6.5 水平，修改过的部分加粗。\n1. 先按四项评分标准估一个分\n2. 修改致命错误\n3. 尽量不要动我的框架和模板，能不改则不改\n4. 可以润色，有好的想法最后再补充'
+    1: '你是一名雅思作文批改老师。下面是一道雅思学术类小作文（Task 1）的题目、图表数据和我的作文，请按以下步骤批改：\n1. 先检查是否回应题干中的全部要求（概述是否抓住主要特征、数据对比与趋势描述是否准确），是否存在对象、比较关系或单位/时态理解错误，以及套用模板造成的逻辑问题。\n2. 如有影响任务完成度（Task Achievement）的问题，先指出原句、说明原因，并给出必要的结构调整。\n3. 再逐句修改语法、搭配和表达（修改过的部分加粗），保留有效的原意与句型，避免不必要的复杂词汇。\n4. 最后给出有依据的估分及不确定性，并列出最值得我自己重写的三处。',
+    2: '你是一名雅思作文批改老师。下面是一道雅思大作文（Task 2）的题目和我的作文，请按以下步骤批改：\n1. 先检查是否回应题干中的全部要求，是否存在对象、比较关系或限定词理解错误，以及套用模板造成的偏题和逻辑问题。\n2. 如有影响任务回应（Task Response）的问题，先指出原句、说明原因，并给出必要的结构调整。\n3. 再逐句修改语法、搭配和表达（修改过的部分加粗），保留有效的原意与句型，避免不必要的复杂词汇。\n4. 最后给出有依据的估分及不确定性，并列出最值得我自己重写的三处。'
   };
   const recentById = new Map([...R.task1.map((q) => [q.id, { q, task: 1 }]), ...R.task2.map((q) => [q.id, { q, task: 2 }])]);
   const wordCount = (s) => (s.match(/[A-Za-z0-9][A-Za-z0-9’'-]*/g) || []).length;
@@ -1176,7 +1236,7 @@
       <div class="grid">
         ${tile('#/page/a-w-t1-vocab', '原作者笔记', '小作文通识积累', '花销、比例、趋势、约数等表达')}
         ${tile('#/page/a-w-t2-vocab', '原作者笔记', '大作文通识积累', '高频话题词和替换表达')}
-        ${tile('#/page/a-w-ai', '原作者笔记', 'AI 批改提示词', '写完丢给 AI 逐句改到 6.5')}
+        ${tile('#/page/a-w-ai', '原作者笔记', 'AI 批改提示词', '先看是否切题和逻辑，再逐句改语言')}
         ${tile('#/recent', '考生回忆', '近期真题', `${R.task2.length} 道大作文、${R.task1.length} 道小作文`)}
       </div>`;
     return { title: '写作模板', html };

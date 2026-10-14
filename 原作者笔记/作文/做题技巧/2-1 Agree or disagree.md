@@ -1,41 +1,61 @@
-Some people think we should let children do housework. Do you agree or disagree?
-有些人认为我们应当让孩子做家务。你是否同意这一观点？
+## 一、先看题干特点，再决定怎么写
 
-C18-T1
-The most important aim of science should be to improve people's lives. 
-To what extent do you agree or disagree with this statement?
-科学最重要的目标应当是改善人类的生活。你在多大程度上同意或不同意这一观点？
+同意与否（Agree or disagree）题干主要有三类，动笔前先判断题目属于哪一种：
 
-C15-T2
-In the future, nobody will buy printed newspapers or books because they will be able to read everything they want online without paying.
-To what extent do you agree or disagree with this statement?
-未来，人们将不再购买纸质报纸与书籍，因为所有人都可以在网上免费阅读任何想看的内容。你在多大程度上同意或不同意这一观点？
+| 题干特点 | 先判断什么 | 展开时注意什么 |
+|---|---|---|
+| 建议、政策类：should… | 你是否支持这个具体建议 | 用相关的效果、可行性、公平性等理由支持立场 |
+| 比较类：A 比 B 更重要 | 比较的对象和标准是什么 | 说明为什么 A 比 B 更重要，或为什么不能这样概括 |
+| 绝对或最高级表述：all、nobody、the most important | 这个说法在什么范围内成立 | 可以同意、反对或限定条件，理由必须回应这个强度 |
 
-| 英文模板                                                                                          | 中文翻译                            |
-| --------------------------------------------------------------------------------------------- | ------------------------------- |
-| It is sometimes argued that                                                                   | 有些人认为……                         |
+- **比较题不必每一段都同时写 A、B**，但整篇必须真正完成比较。
+- **看到绝对词不必自动反驳**，关键是你能否支持自己的判断。
+
+### 审题偏题反例（避免硬套“利大于弊”）
+
+> **题目**：Some people think that teachers have a greater influence on children's development than parents do. To what extent do you agree or disagree?（老师对孩子成长的影响比父母更大，多大程度上同意？）
+> - **套错写法**：第一段写老师能教科学文化知识（好处 1），第二段写老师能培养纪律性（好处 2）。——**问题**：只论证了“老师有用”，没有完成“比父母影响更大”的比较。
+> - **正确方向**：要说明**相较于父母**，老师在哪方面（如系统化学习、同龄社交引导）为什么影响更大；或者反过来说明父母在早期性格塑造、陪伴时长上为什么比老师影响更深远。
+
+---
+
+## 二、常见三类真题示例
+
+1. **建议、政策类**：Some people think we should let children do housework. Do you agree or disagree?（有些人认为我们应当让孩子做家务。你是否同意？）
+2. **最高级类（C18-T1）**：The most important aim of science should be to improve people's lives. To what extent do you agree or disagree with this statement?（科学最重要的目标应当是改善人类的生活。你在多大程度上同意或不同意？）
+3. **绝对表述类（C15-T2）**：In the future, nobody will buy printed newspapers or books because they will be able to read everything they want online without paying. To what extent do you agree or disagree with this statement?（未来人们将不再购买纸质报刊书籍，因为可以在网上免费阅读一切内容。你在多大程度上同意或不同意？）
+
+---
+
+## 三、建议/政策类模板（适用于“是否应该做某事”）
+
+> **适用范围**：题干讨论某项政策或做法好不好（如“让孩子做家务”“免费供水”）。若遇到比较类或绝对词题，请调整开头表态句，围绕题干的比较关系或限定范围展开。其中**第三段让步段为可选**，若两段核心理由已充分，也可不写让步段。
+
+| 英文模板 | 中文翻译 |
+| --- | --- |
+| It is sometimes argued that | 有些人认为…… |
 | Personally, I largely agree with this view, as sth brings more benefits than downsides for sb | 就我个人而言，我大体赞同这一观点，因为对某人来说，其利大于弊。 |
-|                                                                                               |                                 |
-| First and foremost, one strong argument in favor of this view is that                         | 首先，支持该观点的一个有力论据是……              |
-| Since sth, it can contribute to sth                                                           | 由于某事 / 某物存在，这有助于某事。             |
-| This is particularly true for people who...as…                                                | 这一点对于…… 人群尤为适用，因为……             |
-| For example                                                                                   | 例如                              |
-|                                                                                               |                                 |
-| In addition, another strong justification for this idea is that                               | 此外，支持该观点的另一个充分理由是               |
-| Because sth, it enables people to do sth                                                      | 由于某事 / 某物，这使得人们能够做某事            |
-| Instead of sth, sth can do sth                                                                | 相比于某事，某物能够做到某事                  |
-| For instance                                                                                  | 举例来说                            |
-|                                                                                               |                                 |
-| However, it is important to note the negative side of this idea                               | 然而，我们需要留意这个观点存在的弊端              |
-| Although this approach may be beneficial to sth in many ways                                  | 尽管这种做法在很多方面对某事 / 人群有利           |
-| it can also be harmful to                                                                     | 它同样会对…… 造成不利影响                  |
-| Specifically,                                                                                 | 具体而言，                           |
-| One case in point is that                                                                     | 一个恰当的例子是                        |
-|                                                                                               |                                 |
-| In conclusion, although sth may occasionally bring minor downsides such as sth                | 总而言之，尽管某事偶尔会带来一些小弊端，例如……        |
-| I still believe that sth is crucial for them to do sth, as it can do sth                      | 我依旧认为某事对他们做某事至关重要，因为它能够……       |
+|  |  |
+| First and foremost, one strong argument in favor of this view is that | 首先，支持该观点的一个有力论据是…… |
+| Since sth, it can contribute to sth | 由于某事 / 某物存在，这有助于某事。 |
+| This is particularly true for people who...as… | 这一点对于…… 人群尤为适用，因为…… |
+| For example | 例如 |
+|  |  |
+| In addition, another strong justification for this idea is that | 此外，支持该观点的另一个充分理由是 |
+| Because sth, it enables people to do sth | 由于某事 / 某物，这使得人们能够做某事 |
+| Instead of sth, sth can do sth | 相比于某事，某物能够做到某事 |
+| For instance | 举例来说 |
+|  |  |
+| **（可选让步段，非所有题必写）**<br>However, it is important to note the negative side of this idea | 然而，我们需要留意这个做法存在的弊端 |
+| Although this approach may be beneficial to sth in many ways | 尽管这种做法在很多方面对某事 / 人群有利 |
+| it can also be harmful to | 它同样会对…… 造成不利影响 |
+| Specifically, | 具体而言， |
+| One case in point is that | 一个恰当的例子是 |
+|  |  |
+| In conclusion, although sth may occasionally bring minor downsides such as sth | 总而言之，尽管某事偶尔会带来一些小弊端，例如…… |
+| I still believe that sth is crucial for them to do sth, as it can do sth | 我依旧认为某事对他们做某事至关重要，因为它能够…… |
 
-### 例题
+## 四、例题（政策建议类）
 
 Access to clean water is a basic human right. Therefore every home should have a water supply that is provided free of charge. Do you agree or disagree?
 获得洁净水源是一项基本人权。因此，每户家庭都应当享有免费供水。你是否同意这一观点？
