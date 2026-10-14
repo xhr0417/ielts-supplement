@@ -288,6 +288,11 @@ function recentMarkdown() {
     items.forEach((q) => {
       lines.push(`- **${q.week}**${q.parts ? `（${q.parts}）` : ''} ${q.q} ${flagText(q.flags)}`.trimEnd());
       lines.push(`  - ${q.zh}${q.note ? `（${q.note}）` : ''}`);
+      if (q.ideas) {
+        lines.push(`  - **审题重点**：${q.ideas.focus}`);
+        (q.ideas.points || []).forEach((pt) => lines.push(`  - **论点**：${pt}`));
+        if (q.ideas.vocab) lines.push(`  - **可用词组**：${q.ideas.vocab}`);
+      }
     });
     lines.push('');
   }

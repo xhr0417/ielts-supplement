@@ -2,260 +2,918 @@
   "season": "2026 年 9–12 月",
   "updated": "2026-10-13",
   "sources": {
-    "xdf": { "short": "新东方", "name": "新东方网《2026 年 9–12 月雅思口语完整题库 + 串题指南》", "date": "2026-09-11", "url": "https://mtoutiao.xdf.cn/ielts/202609/15384038.html", "note": "大陆考区新题：P1 9 个，P2/P3 14 道，只有中文题名" },
-    "jsl": { "short": "国际教育联盟", "name": "国际教育联盟《2026年9-12月雅思口语更新 新题再增加30道》", "date": "2026-09-20", "url": "https://www.jingsailian.com/liuxue/1651459.html", "note": "P1 新话题 12 个，P2/P3 新题 23 组" },
-    "week": { "short": "考情周报", "name": "国际教育联盟《雅思考情周报 9月26日–10月2日》", "date": "2026-10-08", "url": "https://www.jingsailian.com/liuxue/1654387.html", "note": "这一周考到次数最多的 P1、P2/P3 各 10 个话题" },
-    "chelsea": { "short": "Chelsea", "name": "Chelsea 口语《2026年9-12月雅思口语最新题库》", "date": "2026-09-26", "url": "https://speakingwithchelsea.com/ielts-speaking-2026-latest-topics/", "note": "P1/P2/P3 英文题目，持续更新" },
-    "joe": { "short": "Joe Speaking", "name": "Joe Speaking《2026 年 9-12 月雅思口语题库》（中国大陆）", "date": "2026-09-21", "url": "https://joespeaking.com/zh-CN/ielts-speaking-questions/2026-sep-dec", "note": "大陆考区 92 个话题，含完整题卡和 P3" },
-    "ez": { "short": "EzIELTS", "name": "EzIELTS《IELTS Speaking Questions September–December 2026》", "date": "2026-10", "url": "https://ezielts.app/ielts-speaking-topics", "note": "题卡和 P3，标注了只有一个来源的新报告" },
-    "ieltsa": { "short": "Ieltsa", "name": "Ieltsa《IELTS Speaking September to December 2026》", "date": "2026-10", "url": "https://ieltsactualtests.com/speaking/2026-q3", "note": "29 个 P1 话题、50 张 P2 卡，逐条标注本季新题" },
-    "sf": { "short": "Scorefactory", "name": "Scorefactory《雅思口语预测题与考题回忆（2026年 9–12月）》", "date": "2026-10-11", "url": "https://cn.scorefactory.io/ielts_speaking_forecast", "note": "考生反馈次数；9 月 12 日补充了两张新卡" },
-    "roop": { "short": "English with Roop", "name": "English with Roop《Describe a Person Who Has Healthy Habits and a Healthy Daily Routine》", "date": "2026-10-08", "url": "https://englishwithroop.net/describe-a-person-who-has-healthy-habits-and-a-healthy-daily-routine", "note": "健康作息这张卡的题面和 P3" },
-    "ri": { "short": "Reading IELTS", "name": "Reading IELTS《IELTS Speaking Part 2 & 3 From September to December 2026》", "date": "2026-10", "url": "https://www.readingielts.com/ielts-speaking-part-2-from-september-to-december-2026/", "note": "节省时间这张卡的题面和 P3" }
+    "xdf": {
+      "short": "新东方",
+      "name": "新东方网《2026 年 9–12 月雅思口语完整题库 + 串题指南》",
+      "date": "2026-09-11",
+      "url": "https://mtoutiao.xdf.cn/ielts/202609/15384038.html",
+      "note": "大陆考区新题：P1 9 个，P2/P3 14 道，只有中文题名"
+    },
+    "jsl": {
+      "short": "国际教育联盟",
+      "name": "国际教育联盟《2026年9-12月雅思口语更新 新题再增加30道》",
+      "date": "2026-09-20",
+      "url": "https://www.jingsailian.com/liuxue/1651459.html",
+      "note": "P1 新话题 12 个，P2/P3 新题 23 组"
+    },
+    "week": {
+      "short": "考情周报",
+      "name": "国际教育联盟《雅思考情周报 9月26日–10月2日》",
+      "date": "2026-10-08",
+      "url": "https://www.jingsailian.com/liuxue/1654387.html",
+      "note": "这一周考到次数最多的 P1、P2/P3 各 10 个话题"
+    },
+    "chelsea": {
+      "short": "Chelsea",
+      "name": "Chelsea 口语《2026年9-12月雅思口语最新题库》",
+      "date": "2026-09-26",
+      "url": "https://speakingwithchelsea.com/ielts-speaking-2026-latest-topics/",
+      "note": "P1/P2/P3 英文题目，持续更新"
+    },
+    "joe": {
+      "short": "Joe Speaking",
+      "name": "Joe Speaking《2026 年 9-12 月雅思口语题库》（中国大陆）",
+      "date": "2026-09-21",
+      "url": "https://joespeaking.com/zh-CN/ielts-speaking-questions/2026-sep-dec",
+      "note": "大陆考区 92 个话题，含完整题卡和 P3"
+    },
+    "ez": {
+      "short": "EzIELTS",
+      "name": "EzIELTS《IELTS Speaking Questions September–December 2026》",
+      "date": "2026-10",
+      "url": "https://ezielts.app/ielts-speaking-topics",
+      "note": "题卡和 P3，标注了只有一个来源的新报告"
+    },
+    "ieltsa": {
+      "short": "Ieltsa",
+      "name": "Ieltsa《IELTS Speaking September to December 2026》",
+      "date": "2026-10",
+      "url": "https://ieltsactualtests.com/speaking/2026-q3",
+      "note": "29 个 P1 话题、50 张 P2 卡，逐条标注本季新题"
+    },
+    "sf": {
+      "short": "Scorefactory",
+      "name": "Scorefactory《雅思口语预测题与考题回忆（2026年 9–12月）》",
+      "date": "2026-10-11",
+      "url": "https://cn.scorefactory.io/ielts_speaking_forecast",
+      "note": "考生反馈次数；9 月 12 日补充了两张新卡"
+    },
+    "roop": {
+      "short": "English with Roop",
+      "name": "English with Roop《Describe a Person Who Has Healthy Habits and a Healthy Daily Routine》",
+      "date": "2026-10-08",
+      "url": "https://englishwithroop.net/describe-a-person-who-has-healthy-habits-and-a-healthy-daily-routine",
+      "note": "健康作息这张卡的题面和 P3"
+    },
+    "ri": {
+      "short": "Reading IELTS",
+      "name": "Reading IELTS《IELTS Speaking Part 2 & 3 From September to December 2026》",
+      "date": "2026-10",
+      "url": "https://www.readingielts.com/ielts-speaking-part-2-from-september-to-december-2026/",
+      "note": "节省时间这张卡的题面和 P3"
+    }
   },
   "hot": {
     "range": "9 月 26 日 – 10 月 2 日",
     "source": "week",
-    "p1": ["feeling-bored", "computers", "work-study", "collecting", "lost-found", "politeness", "paper", "opportunities", "street-market", "friends"],
-    "p2": ["save-time", "gift", "know-more", "lost-public", "healthy-habits", "least-movie", "exciting-book", "interview", "older-admire", "course"]
+    "p1": [
+      "feeling-bored",
+      "computers",
+      "work-study",
+      "collecting",
+      "lost-found",
+      "politeness",
+      "paper",
+      "opportunities",
+      "street-market",
+      "friends"
+    ],
+    "p2": [
+      "save-time",
+      "gift",
+      "know-more",
+      "lost-public",
+      "healthy-habits",
+      "least-movie",
+      "exciting-book",
+      "interview",
+      "older-admire",
+      "course"
+    ]
   },
   "core": [
-    { "id": "work-study", "en": "Work or studies", "zh": "工作或学习", "see": ["a-p1-study"] },
-    { "id": "hometown", "en": "Hometown", "zh": "家乡", "see": ["a-p1-hometown"] },
-    { "id": "home", "en": "Home & Accommodation", "zh": "住所", "see": ["a-p1-home"] }
+    {
+      "id": "work-study",
+      "en": "Work or studies",
+      "zh": "工作或学习",
+      "see": [
+        "a-p1-study"
+      ]
+    },
+    {
+      "id": "hometown",
+      "en": "Hometown",
+      "zh": "家乡",
+      "see": [
+        "a-p1-hometown"
+      ]
+    },
+    {
+      "id": "home",
+      "en": "Home & Accommodation",
+      "zh": "住所",
+      "see": [
+        "a-p1-home"
+      ]
+    }
   ],
   "p1": [
     {
-      "id": "computers", "en": "Computers and tablets", "zh": "电脑和平板", "tags": ["mainland"], "src": ["xdf", "chelsea", "joe", "ez"],
-      "qs": [
-        ["Would you like to use a computer or tablet?", "你想用电脑或平板吗？"],
-        ["In what conditions would you use a computer or tablet?", "在什么情况下你会用电脑或平板？"],
-        ["When was the first time you used a computer or tablet?", "你第一次用电脑或平板是什么时候？"],
-        ["What would your life be like without computers or tablets?", "没有电脑或平板，你的生活会怎样？"],
-        ["In what conditions would it be difficult for you to use a computer or tablet?", "在什么情况下，你会觉得用电脑或平板很困难？"]
+      "id": "computers",
+      "en": "Computers and tablets",
+      "zh": "电脑和平板",
+      "tags": [
+        "mainland"
       ],
-      "tip": "从用途（学习、工作、娱乐）切入，再讲第一次用的经历。", "see": ["a-p1-websites"]
+      "src": [
+        "xdf",
+        "chelsea",
+        "joe",
+        "ez"
+      ],
+      "qs": [
+        [
+          "Would you like to use a computer or tablet?",
+          "你想用电脑或平板吗？"
+        ],
+        [
+          "In what conditions would you use a computer or tablet?",
+          "在什么情况下你会用电脑或平板？"
+        ],
+        [
+          "When was the first time you used a computer or tablet?",
+          "你第一次用电脑或平板是什么时候？"
+        ],
+        [
+          "What would your life be like without computers or tablets?",
+          "没有电脑或平板，你的生活会怎样？"
+        ],
+        [
+          "In what conditions would it be difficult for you to use a computer or tablet?",
+          "在什么情况下，你会觉得用电脑或平板很困难？"
+        ]
+      ],
+      "tip": "从用途（学习、工作、娱乐）切入，再讲第一次用的经历。",
+      "see": [
+        "a-p1-websites"
+      ]
     },
     {
-      "id": "street-market", "en": "Street markets", "zh": "街头市场", "tags": ["mainland"], "src": ["xdf", "chelsea", "ez"],
-      "qs": [
-        ["Are there many street markets in China?", "中国有很多街头市场吗？"],
-        ["When was the last time you went to a street market?", "你上一次去街头市场是什么时候？"],
-        ["Do you prefer to go shopping in the shopping mall or on the street market?", "你更喜欢在商场还是街头市场买东西？"],
-        ["What do people usually buy on the street market?", "人们通常在街头市场买什么？"]
+      "id": "street-market",
+      "en": "Street markets",
+      "zh": "街头市场",
+      "tags": [
+        "mainland"
       ],
-      "tip": "选一个你熟悉的市场，说卖什么、价格怎么样、你为什么喜欢或不喜欢。", "see": ["a-p1-shopping"]
+      "src": [
+        "xdf",
+        "chelsea",
+        "ez"
+      ],
+      "qs": [
+        [
+          "Are there many street markets in China?",
+          "中国有很多街头市场吗？"
+        ],
+        [
+          "When was the last time you went to a street market?",
+          "你上一次去街头市场是什么时候？"
+        ],
+        [
+          "Do you prefer to go shopping in the shopping mall or on the street market?",
+          "你更喜欢在商场还是街头市场买东西？"
+        ],
+        [
+          "What do people usually buy on the street market?",
+          "人们通常在街头市场买什么？"
+        ]
+      ],
+      "tip": "选一个你熟悉的市场，说卖什么、价格怎么样、你为什么喜欢或不喜欢。",
+      "see": [
+        "a-p1-shopping"
+      ]
     },
     {
-      "id": "shoes", "en": "Shoes", "zh": "鞋子", "tags": ["mainland"], "src": ["xdf", "chelsea", "joe", "ez"],
-      "qs": [
-        ["Which do you prefer, fashionable shoes or comfortable shoes?", "你更喜欢时尚的鞋还是舒适的鞋？"],
-        ["How much money do you usually spend on shoes?", "你一般在鞋子上花多少钱？"],
-        ["Have you ever bought shoes online?", "你在网上买过鞋吗？"],
-        ["Do you like buying shoes? How often?", "你喜欢买鞋吗？多久买一次？"],
-        ["What is your favourite type of shoes?", "你最喜欢哪种鞋？"]
+      "id": "shoes",
+      "en": "Shoes",
+      "zh": "鞋子",
+      "tags": [
+        "mainland"
       ],
-      "tip": "先表明立场（舒适或时尚），再给一个原因和一个例子。和原作者的 Clothing 素材相近。", "see": ["a-p1-clothing"]
+      "src": [
+        "xdf",
+        "chelsea",
+        "joe",
+        "ez"
+      ],
+      "qs": [
+        [
+          "Which do you prefer, fashionable shoes or comfortable shoes?",
+          "你更喜欢时尚的鞋还是舒适的鞋？"
+        ],
+        [
+          "How much money do you usually spend on shoes?",
+          "你一般在鞋子上花多少钱？"
+        ],
+        [
+          "Have you ever bought shoes online?",
+          "你在网上买过鞋吗？"
+        ],
+        [
+          "Do you like buying shoes? How often?",
+          "你喜欢买鞋吗？多久买一次？"
+        ],
+        [
+          "What is your favourite type of shoes?",
+          "你最喜欢哪种鞋？"
+        ]
+      ],
+      "tip": "先表明立场（舒适或时尚），再给一个原因和一个例子。和原作者的 Clothing 素材相近。",
+      "see": [
+        "a-p1-clothing"
+      ]
     },
     {
-      "id": "paper", "en": "Paper", "zh": "纸张", "tags": ["mainland"], "src": ["xdf", "chelsea", "joe", "ieltsa"],
+      "id": "paper",
+      "en": "Paper",
+      "zh": "纸张",
+      "tags": [
+        "mainland"
+      ],
+      "src": [
+        "xdf",
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
       "qs": [
-        ["Do you carry paper and pens with you when you go out?", "你出门会带纸和笔吗？"],
-        ["Do people still keep handwritten letters today?", "现在人们还会保存手写信吗？"],
-        ["Do you still write physical letters?", "你还会写纸质信吗？"],
-        ["What did you like to do with paper as a child?", "小时候你喜欢用纸做什么？"],
-        ["Have you made any crafts with paper?", "你用纸做过手工吗？"]
+        [
+          "Do you carry paper and pens with you when you go out?",
+          "你出门会带纸和笔吗？"
+        ],
+        [
+          "Do people still keep handwritten letters today?",
+          "现在人们还会保存手写信吗？"
+        ],
+        [
+          "Do you still write physical letters?",
+          "你还会写纸质信吗？"
+        ],
+        [
+          "What did you like to do with paper as a child?",
+          "小时候你喜欢用纸做什么？"
+        ],
+        [
+          "Have you made any crafts with paper?",
+          "你用纸做过手工吗？"
+        ]
       ],
       "tip": "从怀旧角度切入，比如小时候折纸、给长辈写信的具体细节。和 Emails 话题的手写信素材能共用。"
     },
     {
-      "id": "tiredness", "en": "Tiredness", "zh": "疲劳", "tags": ["mainland"], "src": ["xdf", "chelsea", "joe", "ieltsa"],
+      "id": "tiredness",
+      "en": "Tiredness",
+      "zh": "疲劳",
+      "tags": [
+        "mainland"
+      ],
+      "src": [
+        "xdf",
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
       "qs": [
-        ["What do you do when you feel tired?", "你觉得累的时候会做什么？"],
-        ["When would you feel tired?", "什么时候你会觉得累？"],
-        ["Do you often feel tired?", "你经常觉得累吗？"],
-        ["When you feel tired, do you still go out with your friends?", "累的时候你还会和朋友出去吗？"]
+        [
+          "What do you do when you feel tired?",
+          "你觉得累的时候会做什么？"
+        ],
+        [
+          "When would you feel tired?",
+          "什么时候你会觉得累？"
+        ],
+        [
+          "Do you often feel tired?",
+          "你经常觉得累吗？"
+        ],
+        [
+          "When you feel tired, do you still go out with your friends?",
+          "累的时候你还会和朋友出去吗？"
+        ]
       ],
       "tip": "先说原因（学习、工作、睡眠不足），再说缓解方式（睡觉、运动、听音乐）。"
     },
     {
-      "id": "rubbish", "en": "Rubbish and recycling", "zh": "垃圾与回收", "tags": ["mainland"], "src": ["xdf", "chelsea", "joe", "ieltsa"],
-      "qs": [
-        ["Did you recycle when you were a kid?", "小时候你做过回收吗？"],
-        ["Is waste sorting common in your country?", "你的国家垃圾分类普遍吗？"],
-        ["How do you recycle things like paper and plastic?", "你怎么回收纸和塑料这类东西？"],
-        ["What do you do when you see rubbish on the street?", "你看到街上有垃圾会怎么做？"]
+      "id": "rubbish",
+      "en": "Rubbish and recycling",
+      "zh": "垃圾与回收",
+      "tags": [
+        "mainland"
       ],
-      "tip": "讲自己家或学校的分类做法，再加一个观点（政府和个人都要参与）。原作者 P2-9 的“山上垃圾”细节可以拿来用。", "see": ["a-p2-09"]
+      "src": [
+        "xdf",
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
+      "qs": [
+        [
+          "Did you recycle when you were a kid?",
+          "小时候你做过回收吗？"
+        ],
+        [
+          "Is waste sorting common in your country?",
+          "你的国家垃圾分类普遍吗？"
+        ],
+        [
+          "How do you recycle things like paper and plastic?",
+          "你怎么回收纸和塑料这类东西？"
+        ],
+        [
+          "What do you do when you see rubbish on the street?",
+          "你看到街上有垃圾会怎么做？"
+        ]
+      ],
+      "tip": "讲自己家或学校的分类做法，再加一个观点（政府和个人都要参与）。原作者 P2-9 的“山上垃圾”细节可以拿来用。",
+      "see": [
+        "a-p2-09"
+      ]
     },
     {
-      "id": "collecting", "en": "Collecting things", "zh": "收集东西", "tags": ["mainland"], "src": ["xdf", "chelsea", "joe", "week"],
+      "id": "collecting",
+      "en": "Collecting things",
+      "zh": "收集东西",
+      "tags": [
+        "mainland"
+      ],
+      "src": [
+        "xdf",
+        "chelsea",
+        "joe",
+        "week"
+      ],
       "qs": [
-        ["Do you collect things?", "你收集东西吗？"],
-        ["Where do you usually keep things you need?", "你通常把需要的东西放在哪里？"],
-        ["Would you keep old things for a long time? Why?", "你会长期保留旧东西吗？为什么？"],
-        ["Are there any things you have kept from your childhood?", "有没有你从小保留下来的东西？"]
+        [
+          "Do you collect things?",
+          "你收集东西吗？"
+        ],
+        [
+          "Where do you usually keep things you need?",
+          "你通常把需要的东西放在哪里？"
+        ],
+        [
+          "Would you keep old things for a long time? Why?",
+          "你会长期保留旧东西吗？为什么？"
+        ],
+        [
+          "Are there any things you have kept from your childhood?",
+          "有没有你从小保留下来的东西？"
+        ]
       ],
       "tip": "说收集什么、为什么开始、对它有什么感情。小众但真实的爱好更好讲。"
     },
     {
-      "id": "lost-found", "en": "Lost and found", "zh": "失物招领", "tags": ["mainland"], "src": ["xdf", "chelsea", "joe", "week"],
-      "qs": [
-        ["Have you ever lost your keys?", "你丢过钥匙吗？"],
-        ["Will you post on social media if you lose your item?", "如果丢了东西，你会在社交媒体上发帖吗？"],
-        ["Have you ever lost things?", "你丢过东西吗？"],
-        ["Do you report to the police when finding something lost by others? Why?", "捡到别人丢的东西，你会报警吗？为什么？"],
-        ["What will you do if you find something lost by others?", "如果你捡到别人丢的东西，你会怎么做？"]
+      "id": "lost-found",
+      "en": "Lost and found",
+      "zh": "失物招领",
+      "tags": [
+        "mainland"
       ],
-      "tip": "讲一次丢东西或捡东西的经历，按“时间 - 地点 - 结果”组织。和 Part 2“公共场所丢东西”共用一个故事。", "link": ["lost-public"]
+      "src": [
+        "xdf",
+        "chelsea",
+        "joe",
+        "week"
+      ],
+      "qs": [
+        [
+          "Have you ever lost your keys?",
+          "你丢过钥匙吗？"
+        ],
+        [
+          "Will you post on social media if you lose your item?",
+          "如果丢了东西，你会在社交媒体上发帖吗？"
+        ],
+        [
+          "Have you ever lost things?",
+          "你丢过东西吗？"
+        ],
+        [
+          "Do you report to the police when finding something lost by others? Why?",
+          "捡到别人丢的东西，你会报警吗？为什么？"
+        ],
+        [
+          "What will you do if you find something lost by others?",
+          "如果你捡到别人丢的东西，你会怎么做？"
+        ]
+      ],
+      "tip": "讲一次丢东西或捡东西的经历，按“时间 - 地点 - 结果”组织。和 Part 2“公共场所丢东西”共用一个故事。",
+      "link": [
+        "lost-public"
+      ]
     },
     {
-      "id": "plants", "en": "Flowers / Plants", "zh": "花和植物", "tags": ["mainland"], "src": ["xdf", "ez"],
+      "id": "plants",
+      "en": "Flowers / Plants",
+      "zh": "花和植物",
+      "tags": [
+        "mainland"
+      ],
+      "src": [
+        "xdf",
+        "ez"
+      ],
       "qs": [
-        ["Do you keep plants at home?", "你家里养植物吗？"],
-        ["What plant did you grow when you were young?", "你小时候种过什么植物？"],
-        ["Do you know anything about growing plants?", "你懂种植物吗？"],
-        ["Do people in your country send plants as gifts?", "在你的国家，人们会送植物当礼物吗？"]
+        [
+          "Do you keep plants at home?",
+          "你家里养植物吗？"
+        ],
+        [
+          "What plant did you grow when you were young?",
+          "你小时候种过什么植物？"
+        ],
+        [
+          "Do you know anything about growing plants?",
+          "你懂种植物吗？"
+        ],
+        [
+          "Do people in your country send plants as gifts?",
+          "在你的国家，人们会送植物当礼物吗？"
+        ]
       ],
       "tip": "具体说一种植物（绿萝、多肉），讲你怎么照顾它。",
       "note": "新东方列为大陆新题，只给了中文“你喜欢花吗？你家养植物吗？”。英文题目取自 EzIELTS 往季的 Plants 话题，本季具体问法待核对。"
     },
     {
-      "id": "travelling", "en": "Travelling", "zh": "旅行", "tags": [], "src": ["jsl", "chelsea", "joe", "ez"],
-      "qs": [
-        ["Do you prefer to sit by the window when travelling?", "旅行时你更喜欢坐在窗边吗？"],
-        ["Did you have a long journey with your family as a child?", "小时候你和家人有过长途旅行吗？"],
-        ["What do you usually do during a long journey?", "长途旅行时你通常做什么？"],
-        ["Do you prefer travelling alone or with other people?", "你更喜欢一个人旅行还是和别人一起？"],
-        ["What is the longest journey you have ever taken?", "你去过最远的一次旅行是哪次？"]
+      "id": "travelling",
+      "en": "Travelling",
+      "zh": "旅行",
+      "tags": [],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "ez"
       ],
-      "tip": "说交通方式（火车、飞机、自驾），再讲一次具体的旅行。阳朔攀岩的故事可以直接用。", "see": ["a-p2-01"]
+      "qs": [
+        [
+          "Do you prefer to sit by the window when travelling?",
+          "旅行时你更喜欢坐在窗边吗？"
+        ],
+        [
+          "Did you have a long journey with your family as a child?",
+          "小时候你和家人有过长途旅行吗？"
+        ],
+        [
+          "What do you usually do during a long journey?",
+          "长途旅行时你通常做什么？"
+        ],
+        [
+          "Do you prefer travelling alone or with other people?",
+          "你更喜欢一个人旅行还是和别人一起？"
+        ],
+        [
+          "What is the longest journey you have ever taken?",
+          "你去过最远的一次旅行是哪次？"
+        ]
+      ],
+      "tip": "说交通方式（火车、飞机、自驾），再讲一次具体的旅行。阳朔攀岩的故事可以直接用。",
+      "see": [
+        "a-p2-01"
+      ]
     },
     {
-      "id": "politeness", "en": "Politeness", "zh": "礼貌", "tags": [], "src": ["jsl", "chelsea", "joe", "ieltsa", "week"],
+      "id": "politeness",
+      "en": "Politeness",
+      "zh": "礼貌",
+      "tags": [],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "ieltsa",
+        "week"
+      ],
       "qs": [
-        ["What did you do to show your politeness as a child?", "小时候你是怎么表现礼貌的？"],
-        ["On what occasions should we be polite?", "我们在什么场合应该有礼貌？"],
-        ["Do you think being polite is very important?", "你认为礼貌很重要吗？"],
-        ["How did you learn to be polite as a child?", "你小时候是怎么学会礼貌的？"]
+        [
+          "What did you do to show your politeness as a child?",
+          "小时候你是怎么表现礼貌的？"
+        ],
+        [
+          "On what occasions should we be polite?",
+          "我们在什么场合应该有礼貌？"
+        ],
+        [
+          "Do you think being polite is very important?",
+          "你认为礼貌很重要吗？"
+        ],
+        [
+          "How did you learn to be polite as a child?",
+          "你小时候是怎么学会礼貌的？"
+        ]
       ],
       "tip": "从“小时候”和“现在”两个角度讲，各举一个具体例子（比如见到长辈主动问好）。"
     },
     {
-      "id": "fruit-veg", "en": "Fruit and vegetables", "zh": "水果和蔬菜", "tags": [], "src": ["jsl", "chelsea", "joe", "ieltsa"],
+      "id": "fruit-veg",
+      "en": "Fruit and vegetables",
+      "zh": "水果和蔬菜",
+      "tags": [],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
       "qs": [
-        ["Do people in your country like planting vegetables?", "你的国家的人喜欢种菜吗？"],
-        ["Were there any kind of fruits and vegetables you disliked as a child?", "小时候有没有你不喜欢吃的水果或蔬菜？"],
-        ["What kind of fruits and vegetables do you dislike?", "你不喜欢哪些水果和蔬菜？"],
-        ["Where do you usually buy fruit and vegetables?", "你通常在哪里买水果和蔬菜？"],
-        ["How often do you eat fruit and vegetables?", "你多久吃一次水果和蔬菜？"],
-        ["Do you like eating vegetables?", "你喜欢吃蔬菜吗？"],
-        ["Did you like eating vegetables when you were a child?", "你小时候喜欢吃蔬菜吗？"],
-        ["Do people often grow vegetables by themselves?", "人们经常自己种菜吗？"]
+        [
+          "Do people in your country like planting vegetables?",
+          "你的国家的人喜欢种菜吗？"
+        ],
+        [
+          "Were there any kind of fruits and vegetables you disliked as a child?",
+          "小时候有没有你不喜欢吃的水果或蔬菜？"
+        ],
+        [
+          "What kind of fruits and vegetables do you dislike?",
+          "你不喜欢哪些水果和蔬菜？"
+        ],
+        [
+          "Where do you usually buy fruit and vegetables?",
+          "你通常在哪里买水果和蔬菜？"
+        ],
+        [
+          "How often do you eat fruit and vegetables?",
+          "你多久吃一次水果和蔬菜？"
+        ],
+        [
+          "Do you like eating vegetables?",
+          "你喜欢吃蔬菜吗？"
+        ],
+        [
+          "Did you like eating vegetables when you were a child?",
+          "你小时候喜欢吃蔬菜吗？"
+        ],
+        [
+          "Do people often grow vegetables by themselves?",
+          "人们经常自己种菜吗？"
+        ]
       ],
       "tip": "说具体的品种、购买地点和吃的频率，细节越具体越自然。"
     },
     {
-      "id": "advertisement", "en": "Advertisement", "zh": "广告", "tags": [], "src": ["chelsea", "joe", "ez"],
-      "qs": [
-        ["Do you often see advertisements when you are on your phone or computer?", "你用手机或电脑时经常看到广告吗？"],
-        ["What kind of advertising do you like?", "你喜欢哪种广告？"],
-        ["Do you like advertisements?", "你喜欢广告吗？"],
-        ["Do you see a lot of advertising on trains or other transport?", "你在火车或其他交通工具上会看到很多广告吗？"],
-        ["Is there an advertisement that made an impression on you when you were a child?", "小时候有没有一则给你留下深刻印象的广告？"]
+      "id": "advertisement",
+      "en": "Advertisement",
+      "zh": "广告",
+      "tags": [],
+      "src": [
+        "chelsea",
+        "joe",
+        "ez"
       ],
-      "tip": "选一种广告（短视频广告、地铁广告），说你的态度和原因。P3 必备里的“消费与广告”语料可以直接用。", "see": ["a-p3-base"]
+      "qs": [
+        [
+          "Do you often see advertisements when you are on your phone or computer?",
+          "你用手机或电脑时经常看到广告吗？"
+        ],
+        [
+          "What kind of advertising do you like?",
+          "你喜欢哪种广告？"
+        ],
+        [
+          "Do you like advertisements?",
+          "你喜欢广告吗？"
+        ],
+        [
+          "Do you see a lot of advertising on trains or other transport?",
+          "你在火车或其他交通工具上会看到很多广告吗？"
+        ],
+        [
+          "Is there an advertisement that made an impression on you when you were a child?",
+          "小时候有没有一则给你留下深刻印象的广告？"
+        ]
+      ],
+      "tip": "选一种广告（短视频广告、地铁广告），说你的态度和原因。P3 必备里的“消费与广告”语料可以直接用。",
+      "see": [
+        "a-p3-base"
+      ]
     },
     {
-      "id": "name", "en": "Name", "zh": "名字", "tags": [], "src": ["jsl", "chelsea", "joe", "ieltsa"],
+      "id": "name",
+      "en": "Name",
+      "zh": "名字",
+      "tags": [],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
       "qs": [
-        ["Do you often forget people's names?", "你经常忘记别人的名字吗？"],
-        ["How do you feel when people can't remember your name?", "别人记不住你的名字时，你有什么感受？"],
-        ["How do you remember people's names?", "你是怎么记住别人名字的？"],
-        ["Is it easy for you to remember people's names?", "你容易记住别人的名字吗？"]
+        [
+          "Do you often forget people's names?",
+          "你经常忘记别人的名字吗？"
+        ],
+        [
+          "How do you feel when people can't remember your name?",
+          "别人记不住你的名字时，你有什么感受？"
+        ],
+        [
+          "How do you remember people's names?",
+          "你是怎么记住别人名字的？"
+        ],
+        [
+          "Is it easy for you to remember people's names?",
+          "你容易记住别人的名字吗？"
+        ]
       ],
       "tip": "说你记名字的方法（联想、重复、写下来），再讲一次记不住名字的尴尬经历。"
     },
     {
-      "id": "secondary-school", "en": "Secondary school", "zh": "中学", "tags": [], "src": ["jsl", "chelsea", "joe", "ieltsa"],
-      "qs": [
-        ["Is there anything you miss about your secondary school?", "你有没有怀念中学的什么？"],
-        ["What was your favourite subject at secondary school?", "你中学时最喜欢的科目是什么？"],
-        ["Were there any subjects that you found difficult at secondary school?", "中学时有没有你觉得很难的科目？"],
-        ["Do you remember your first day at secondary school?", "你还记得中学的第一天吗？"]
+      "id": "secondary-school",
+      "en": "Secondary school",
+      "zh": "中学",
+      "tags": [],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "ieltsa"
       ],
-      "tip": "选一个科目或一位老师，讲具体回忆，多用过去时。原作者 teacher 话题的素材能接上。", "see": ["a-p1-teacher"]
+      "qs": [
+        [
+          "Is there anything you miss about your secondary school?",
+          "你有没有怀念中学的什么？"
+        ],
+        [
+          "What was your favourite subject at secondary school?",
+          "你中学时最喜欢的科目是什么？"
+        ],
+        [
+          "Were there any subjects that you found difficult at secondary school?",
+          "中学时有没有你觉得很难的科目？"
+        ],
+        [
+          "Do you remember your first day at secondary school?",
+          "你还记得中学的第一天吗？"
+        ]
+      ],
+      "tip": "选一个科目或一位老师，讲具体回忆，多用过去时。原作者 teacher 话题的素材能接上。",
+      "see": [
+        "a-p1-teacher"
+      ]
     },
     {
-      "id": "feeling-bored", "en": "Feeling bored", "zh": "无聊", "tags": ["later"], "src": ["week", "joe", "ez", "sf"],
-      "qs": [
-        ["Do you often feel bored?", "你经常觉得无聊吗？"],
-        ["When would you feel bored?", "你什么时候会觉得无聊？"],
-        ["What do you do when you feel bored?", "无聊的时候你会做什么？"],
-        ["What sort of things do you find most boring now?", "现在你觉得什么事最无聊？"],
-        ["What do you do to stop yourself feeling bored?", "你怎么让自己不无聊？"],
-        ["Did you ever find school boring when you were a child?", "小时候你觉得上学无聊吗？"],
-        ["Do you think childhood is boring or adulthood is boring?", "你觉得童年更无聊还是成年更无聊？"]
+      "id": "feeling-bored",
+      "en": "Feeling bored",
+      "zh": "无聊",
+      "tags": [
+        "later"
       ],
-      "tip": "举一个具体的无聊场景（排队、堵车、等人），再说你怎么打发时间。原作者 P2-7 堵车时听播客、给爷爷奶奶打电话的细节正好能用。", "see": ["a-p2-07"]
+      "src": [
+        "week",
+        "joe",
+        "ez",
+        "sf"
+      ],
+      "qs": [
+        [
+          "Do you often feel bored?",
+          "你经常觉得无聊吗？"
+        ],
+        [
+          "When would you feel bored?",
+          "你什么时候会觉得无聊？"
+        ],
+        [
+          "What do you do when you feel bored?",
+          "无聊的时候你会做什么？"
+        ],
+        [
+          "What sort of things do you find most boring now?",
+          "现在你觉得什么事最无聊？"
+        ],
+        [
+          "What do you do to stop yourself feeling bored?",
+          "你怎么让自己不无聊？"
+        ],
+        [
+          "Did you ever find school boring when you were a child?",
+          "小时候你觉得上学无聊吗？"
+        ],
+        [
+          "Do you think childhood is boring or adulthood is boring?",
+          "你觉得童年更无聊还是成年更无聊？"
+        ]
+      ],
+      "tip": "举一个具体的无聊场景（排队、堵车、等人），再说你怎么打发时间。原作者 P2-7 堵车时听播客、给爷爷奶奶打电话的细节正好能用。",
+      "see": [
+        "a-p2-07"
+      ]
     },
     {
-      "id": "opportunities", "en": "Opportunities", "zh": "机会", "tags": ["later"], "src": ["week", "joe", "ez", "ieltsa"],
-      "qs": [
-        ["Is it important to seize opportunities when they come?", "机会来了就要抓住，这重要吗？"],
-        ["Would you like to have more opportunities in the future? Why?", "你希望将来有更多机会吗？为什么？"],
-        ["What would you do if you had more opportunities?", "如果有更多机会，你会做什么？"],
-        ["How can you get more opportunities?", "怎样才能获得更多机会？"],
-        ["Do you have many opportunities in life?", "你生活中机会多吗？"],
-        ["Did you get many opportunities to try new activities when you were younger?", "你小时候有很多尝试新活动的机会吗？"]
+      "id": "opportunities",
+      "en": "Opportunities",
+      "zh": "机会",
+      "tags": [
+        "later"
       ],
-      "tip": "用一次抓住机会的经历回答，比如实习、做志愿者（原作者 P2-8 的自动驾驶实习）。Ieltsa 的问法偏“小时候尝试新事物的机会”，兴趣班也能讲。", "see": ["a-p2-08"]
+      "src": [
+        "week",
+        "joe",
+        "ez",
+        "ieltsa"
+      ],
+      "qs": [
+        [
+          "Is it important to seize opportunities when they come?",
+          "机会来了就要抓住，这重要吗？"
+        ],
+        [
+          "Would you like to have more opportunities in the future? Why?",
+          "你希望将来有更多机会吗？为什么？"
+        ],
+        [
+          "What would you do if you had more opportunities?",
+          "如果有更多机会，你会做什么？"
+        ],
+        [
+          "How can you get more opportunities?",
+          "怎样才能获得更多机会？"
+        ],
+        [
+          "Do you have many opportunities in life?",
+          "你生活中机会多吗？"
+        ],
+        [
+          "Did you get many opportunities to try new activities when you were younger?",
+          "你小时候有很多尝试新活动的机会吗？"
+        ]
+      ],
+      "tip": "用一次抓住机会的经历回答，比如实习、做志愿者（原作者 P2-8 的自动驾驶实习）。Ieltsa 的问法偏“小时候尝试新事物的机会”，兴趣班也能讲。",
+      "see": [
+        "a-p2-08"
+      ]
     },
     {
-      "id": "friends", "en": "Friends", "zh": "朋友", "tags": ["later"], "src": ["week", "ez", "sf"],
+      "id": "friends",
+      "en": "Friends",
+      "zh": "朋友",
+      "tags": [
+        "later"
+      ],
+      "src": [
+        "week",
+        "ez",
+        "sf"
+      ],
       "qs": [
-        ["Do you have a friend you have known for a long time?", "你有认识很久的朋友吗？"],
-        ["What do you usually do with your friends?", "你通常和朋友做什么？"],
-        ["Do you prefer to spend time with one friend or a group?", "你更喜欢和一个朋友还是一群朋友待在一起？"],
-        ["How important are friends to you?", "朋友对你有多重要？"],
-        ["Would you invite friends to your home?", "你会邀请朋友来家里吗？"]
+        [
+          "Do you have a friend you have known for a long time?",
+          "你有认识很久的朋友吗？"
+        ],
+        [
+          "What do you usually do with your friends?",
+          "你通常和朋友做什么？"
+        ],
+        [
+          "Do you prefer to spend time with one friend or a group?",
+          "你更喜欢和一个朋友还是一群朋友待在一起？"
+        ],
+        [
+          "How important are friends to you?",
+          "朋友对你有多重要？"
+        ],
+        [
+          "Would you invite friends to your home?",
+          "你会邀请朋友来家里吗？"
+        ]
       ],
       "tip": "固定一个老朋友（认识多久、怎么认识），后面几题都围绕他答，不用每题重新想人。"
     },
     {
-      "id": "punctuality", "en": "Punctuality", "zh": "守时", "tags": ["later"], "src": ["ez", "sf"],
+      "id": "punctuality",
+      "en": "Punctuality",
+      "zh": "守时",
+      "tags": [
+        "later"
+      ],
+      "src": [
+        "ez",
+        "sf"
+      ],
       "qs": [
-        ["Are you a punctual person?", "你是守时的人吗？"],
-        ["Do you think it is important to be on time?", "你觉得准时重要吗？"],
-        ["How do you feel when others are late?", "别人迟到时你有什么感受？"],
-        ["How do you remind yourself to be on time?", "你怎么提醒自己准时？"],
-        ["Why are some people consistently late?", "为什么有些人总是迟到？"]
+        [
+          "Are you a punctual person?",
+          "你是守时的人吗？"
+        ],
+        [
+          "Do you think it is important to be on time?",
+          "你觉得准时重要吗？"
+        ],
+        [
+          "How do you feel when others are late?",
+          "别人迟到时你有什么感受？"
+        ],
+        [
+          "How do you remind yourself to be on time?",
+          "你怎么提醒自己准时？"
+        ],
+        [
+          "Why are some people consistently late?",
+          "为什么有些人总是迟到？"
+        ]
       ],
       "tip": "说一个守时的习惯（提前 10 分钟出门、手机设闹钟），再讲一次别人迟到的小事。"
     },
     {
-      "id": "emails", "en": "Emails", "zh": "邮件", "tags": ["later"], "src": ["ez", "sf"],
-      "qs": [
-        ["Do you often send emails?", "你经常发邮件吗？"],
-        ["Do you think sending emails will be more or less popular in the future?", "你觉得以后发邮件会更普遍还是更少？"],
-        ["Did you receive any handwritten letters when you were a child?", "小时候你收到过手写信吗？"],
-        ["Which do you prefer, writing a letter or sending a message?", "你更喜欢写信还是发消息？"]
+      "id": "emails",
+      "en": "Emails",
+      "zh": "邮件",
+      "tags": [
+        "later"
       ],
-      "tip": "学生发邮件多用于联系老师、投简历。手写信的部分和 Paper 话题共用素材。", "link": ["paper"]
+      "src": [
+        "ez",
+        "sf"
+      ],
+      "qs": [
+        [
+          "Do you often send emails?",
+          "你经常发邮件吗？"
+        ],
+        [
+          "Do you think sending emails will be more or less popular in the future?",
+          "你觉得以后发邮件会更普遍还是更少？"
+        ],
+        [
+          "Did you receive any handwritten letters when you were a child?",
+          "小时候你收到过手写信吗？"
+        ],
+        [
+          "Which do you prefer, writing a letter or sending a message?",
+          "你更喜欢写信还是发消息？"
+        ]
+      ],
+      "tip": "学生发邮件多用于联系老师、投简历。手写信的部分和 Paper 话题共用素材。",
+      "link": [
+        "paper"
+      ]
     }
   ],
   "p1Overseas": [
-    { "en": "Day off", "zh": "休息日" },
-    { "en": "Dreams", "zh": "梦境" },
-    { "en": "Keys", "zh": "钥匙" }
+    {
+      "en": "Day off",
+      "zh": "休息日"
+    },
+    {
+      "en": "Dreams",
+      "zh": "梦境"
+    },
+    {
+      "en": "Keys",
+      "zh": "钥匙"
+    }
   ],
-  "categories": { "person": "人物", "place": "地点", "thing": "物品", "event": "事件" },
+  "categories": {
+    "person": "人物",
+    "place": "地点",
+    "thing": "物品",
+    "event": "事件"
+  },
   "p2": [
     {
-      "id": "know-more", "cat": "person", "zh": "一见且想继续了解的人", "alias": "想要了解更多的人", "tags": ["mainland"],
+      "id": "know-more",
+      "cat": "person",
+      "zh": "一见且想继续了解的人",
+      "alias": "想要了解更多的人",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a person you only met once recently and want to know more about",
-      "say": ["Who he/she is", "When you met him/her", "Why you want to know more about him/her", "And explain how you feel about him/her"],
-      "src": ["xdf", "chelsea", "ez", "sf", "week"],
+      "say": [
+        "Who he/she is",
+        "When you met him/her",
+        "Why you want to know more about him/her",
+        "And explain how you feel about him/her"
+      ],
+      "src": [
+        "xdf",
+        "chelsea",
+        "ez",
+        "sf",
+        "week"
+      ],
       "note": "补充包原来把新东方的“想要了解更多的人”和 Chelsea 的“一见且想继续了解的人”分成两题，其实是同一张卡，这里合并。",
       "tip": "旅行或活动里只见过一次的人，比如在阳朔民宿遇到的攀岩者。重点讲“为什么想多了解”：他做的事你也想做。",
       "p3": [
@@ -265,14 +923,35 @@
         "Is it important to have the same hobbies and interests when making friends?",
         "On what occasions do people like to make friends?",
         "How do people make friends in your country?"
+      ],
+      "see": [
+        "s-p2-know-more"
       ]
     },
     {
-      "id": "taught-skill", "cat": "person", "zh": "教会你新技能的人", "tags": ["mainland"],
+      "id": "taught-skill",
+      "cat": "person",
+      "zh": "教会你新技能的人",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a person who taught you a new skill",
-      "say": ["Who this person was", "What the skill was", "How you learned it", "And explain how you felt about this person"],
-      "src": ["xdf", "chelsea", "joe"],
-      "tip": "攀岩教练或攀岩搭档教你户外攀岩（原作者 P2-1、P2-2 的阳朔故事）。按“一开始很难 → 他怎么教 → 学会后的感受”讲。", "see": ["a-p2-01", "a-p2-02"],
+      "say": [
+        "Who this person was",
+        "What the skill was",
+        "How you learned it",
+        "And explain how you felt about this person"
+      ],
+      "src": [
+        "xdf",
+        "chelsea",
+        "joe"
+      ],
+      "tip": "攀岩教练或攀岩搭档教你户外攀岩（原作者 P2-1、P2-2 的阳朔故事）。按“一开始很难 → 他怎么教 → 学会后的感受”讲。",
+      "see": [
+        "a-p2-01",
+        "a-p2-02"
+      ],
       "p3": [
         "Why is self-discipline important when learning a new skill?",
         "What are the differences between learning from a teacher and learning by oneself?",
@@ -283,10 +962,26 @@
       ]
     },
     {
-      "id": "success-business", "cat": "person", "zh": "有成功事业的人", "alias": "在成功公司工作的人", "tags": ["mainland"],
+      "id": "success-business",
+      "cat": "person",
+      "zh": "有成功事业的人",
+      "alias": "在成功公司工作的人",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a person you know who has a successful business",
-      "say": ["Who this person is", "How you got to know him/her", "Why and how he/she started the business", "What business he/she does", "And explain why you think the business is successful"],
-      "src": ["xdf", "joe", "ieltsa"],
+      "say": [
+        "Who this person is",
+        "How you got to know him/her",
+        "Why and how he/she started the business",
+        "What business he/she does",
+        "And explain why you think the business is successful"
+      ],
+      "src": [
+        "xdf",
+        "joe",
+        "ieltsa"
+      ],
       "note": "新东方只给了中文题名“在成功公司工作的人”，没有英文题卡。Joe Speaking、Ieltsa 本季收录的相近题是这张，先按它准备。",
       "tip": "家里做生意的亲戚、实习公司的老板都可以。讲清做什么生意、怎么起步、为什么成功（服务好、坚持、抓住机会）。",
       "p3": [
@@ -296,14 +991,35 @@
         "What makes a business successful?",
         "What makes a business fail?",
         "Is it easy to set up a new business in your country?"
+      ],
+      "see": [
+        "s-p2-business"
       ]
     },
     {
-      "id": "photos", "cat": "person", "zh": "爱拍照的人", "tags": ["mainland"],
+      "id": "photos",
+      "cat": "person",
+      "zh": "爱拍照的人",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a person you know who really likes taking photos",
-      "say": ["Who the person is", "When and how you got to know him/her", "Where he/she takes photos", "And explain how you feel about him/her"],
-      "src": ["xdf", "chelsea", "joe", "ieltsa"],
-      "tip": "可以把原作者 P2-2 里一起爬山看日出的攀岩搭档改成爱拍照的人：每天拍日出、拍攀岩。", "see": ["a-p2-02"],
+      "say": [
+        "Who the person is",
+        "When and how you got to know him/her",
+        "Where he/she takes photos",
+        "And explain how you feel about him/her"
+      ],
+      "src": [
+        "xdf",
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
+      "tip": "可以把原作者 P2-2 里一起爬山看日出的攀岩搭档改成爱拍照的人：每天拍日出、拍攀岩。",
+      "see": [
+        "a-p2-02"
+      ],
       "p3": [
         "Why are some people keen on taking photos?",
         "What kind of photos do people often take?",
@@ -314,11 +1030,27 @@
       ]
     },
     {
-      "id": "difficult-success", "cat": "person", "zh": "做了一件困难的事并成功的人", "tags": [],
+      "id": "difficult-success",
+      "cat": "person",
+      "zh": "做了一件困难的事并成功的人",
+      "tags": [],
       "en": "Describe a person you know who did something difficult and was successful",
-      "say": ["Who this person is", "What difficult thing this person did", "Why this person was successful", "And explain how you feel about this person"],
-      "src": ["jsl", "chelsea", "joe"],
-      "tip": "基普乔格两小时内跑完马拉松（原作者 P2-5），或表哥坚持学中医（P2-4）。讲清难在哪、怎么做到。注意 P3 全在问公司和创业。", "see": ["a-p2-05", "a-p2-04"],
+      "say": [
+        "Who this person is",
+        "What difficult thing this person did",
+        "Why this person was successful",
+        "And explain how you feel about this person"
+      ],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe"
+      ],
+      "tip": "基普乔格两小时内跑完马拉松（原作者 P2-5），或表哥坚持学中医（P2-4）。讲清难在哪、怎么做到。注意 P3 全在问公司和创业。",
+      "see": [
+        "a-p2-05",
+        "a-p2-04"
+      ],
       "p3": [
         "In which sectors are companies more likely to succeed in your country?",
         "Is it easy to start up a company?",
@@ -329,11 +1061,28 @@
       ]
     },
     {
-      "id": "older-admire", "cat": "person", "zh": "尊敬的比你年长的人", "tags": [],
+      "id": "older-admire",
+      "cat": "person",
+      "zh": "尊敬的比你年长的人",
+      "tags": [],
       "en": "Describe someone who is older than you that you admire",
-      "say": ["Who this person is", "How you knew this person", "What kinds of things you like to do together", "And explain how you feel about this person"],
-      "src": ["jsl", "chelsea", "joe", "ieltsa", "week"],
-      "tip": "爸爸：爱跑步，带你看破 2 马拉松直播（原作者 P2-5）。也可以是爷爷奶奶、老师。", "see": ["a-p2-05"],
+      "say": [
+        "Who this person is",
+        "How you knew this person",
+        "What kinds of things you like to do together",
+        "And explain how you feel about this person"
+      ],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "ieltsa",
+        "week"
+      ],
+      "tip": "爸爸：爱跑步，带你看破 2 马拉松直播（原作者 P2-5）。也可以是爷爷奶奶、老师。",
+      "see": [
+        "a-p2-05"
+      ],
       "p3": [
         "What do old people usually do in their daily life?",
         "Why is there a generation gap between the young and the old?",
@@ -344,10 +1093,23 @@
       ]
     },
     {
-      "id": "happy", "cat": "person", "zh": "快乐的人", "tags": [],
+      "id": "happy",
+      "cat": "person",
+      "zh": "快乐的人",
+      "tags": [],
       "en": "Describe a happy person you know",
-      "say": ["Who this person is", "What he/she is like", "How he/she shows happiness", "And explain why you think he/she is a happy person"],
-      "src": ["jsl", "chelsea", "joe", "ieltsa"],
+      "say": [
+        "Who this person is",
+        "What he/she is like",
+        "How he/she shows happiness",
+        "And explain why you think he/she is a happy person"
+      ],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
       "tip": "一个总是笑的朋友或长辈。用两件小事说明他怎么表现快乐，结尾说他为什么快乐（知足、爱好多）。",
       "p3": [
         "When do you think people are happiest?",
@@ -356,14 +1118,33 @@
         "Should teachers know what children are doing all the time?",
         "What would make a student happy at school?",
         "Do you think doing a job that you like is more important than other things?"
+      ],
+      "see": [
+        "s-p2-know-more"
       ]
     },
     {
-      "id": "organized", "cat": "person", "zh": "很有条理的人", "tags": [],
+      "id": "organized",
+      "cat": "person",
+      "zh": "很有条理的人",
+      "tags": [],
       "en": "Describe a person you know who is very organized",
-      "say": ["Who this person is", "What this person usually does to stay organized", "In what situations you have noticed this quality", "And explain why you think being organized is important to him/her"],
-      "src": ["jsl", "chelsea", "joe", "ieltsa"],
-      "tip": "学霸同学或表哥：每天列计划、东西放得整齐、考试前按计划复习。可以和“有健康作息的人”共用一个人。", "link": ["healthy-habits"],
+      "say": [
+        "Who this person is",
+        "What this person usually does to stay organized",
+        "In what situations you have noticed this quality",
+        "And explain why you think being organized is important to him/her"
+      ],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
+      "tip": "学霸同学或表哥：每天列计划、东西放得整齐、考试前按计划复习。可以和“有健康作息的人”共用一个人。",
+      "link": [
+        "healthy-habits"
+      ],
       "p3": [
         "Why is it important for people to be organized?",
         "Do you think it is important for managers to be well organized?",
@@ -371,13 +1152,28 @@
         "Do you think children should learn to be organized from a young age?",
         "What can people do to become more organized?",
         "Are organized people more likely to be successful at work or in their studies?"
+      ],
+      "see": [
+        "s-p2-business"
       ]
     },
     {
-      "id": "popular", "cat": "person", "zh": "受欢迎的人", "tags": [],
+      "id": "popular",
+      "cat": "person",
+      "zh": "受欢迎的人",
+      "tags": [],
       "en": "Describe a popular person",
-      "say": ["Who this person is", "What kind of person he or she is", "When you see him/her normally", "And explain why you think this person is popular"],
-      "src": ["chelsea", "joe", "ieltsa"],
+      "say": [
+        "Who this person is",
+        "What kind of person he or she is",
+        "When you see him/her normally",
+        "And explain why you think this person is popular"
+      ],
+      "src": [
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
       "note": "Ieltsa 的问法：a person you know who is popular with many people。",
       "tip": "班上人缘好的同学或一位老师。P3 会问好老师的品质，准备一两个观点。",
       "p3": [
@@ -387,15 +1183,35 @@
         "Do you think good teachers are always popular among students?",
         "Is it important for a teacher to be popular?",
         "Why are some students popular in school?"
+      ],
+      "see": [
+        "s-p2-know-more"
       ]
     },
     {
-      "id": "sportsperson", "cat": "person", "zh": "钦佩的运动员", "tags": [],
+      "id": "sportsperson",
+      "cat": "person",
+      "zh": "钦佩的运动员",
+      "tags": [],
       "en": "Describe a successful sportsperson you admire",
-      "say": ["Who he/she is", "What you know about him/her", "What he/she is like in real life", "What achievement he/she has made", "And explain why you admire him/her"],
-      "src": ["chelsea", "joe", "ez", "ieltsa"],
+      "say": [
+        "Who he/she is",
+        "What you know about him/her",
+        "What he/she is like in real life",
+        "What achievement he/she has made",
+        "And explain why you admire him/her"
+      ],
+      "src": [
+        "chelsea",
+        "joe",
+        "ez",
+        "ieltsa"
+      ],
       "note": "Ieltsa 还收录了相近的“在比赛中表现很好的运动员”（a sportsperson you know about who did very well at an event）。",
-      "tip": "基普乔格（原作者 P2-5 有现成素材），讲成就和他自律的一面。", "see": ["a-p2-05"],
+      "tip": "基普乔格（原作者 P2-5 有现成素材），讲成就和他自律的一面。",
+      "see": [
+        "a-p2-05"
+      ],
       "p3": [
         "What qualities should an athlete have?",
         "Is talent important in sports?",
@@ -406,10 +1222,23 @@
       ]
     },
     {
-      "id": "history", "cat": "person", "zh": "学习并喜欢历史的人", "tags": [],
+      "id": "history",
+      "cat": "person",
+      "zh": "学习并喜欢历史的人",
+      "tags": [],
       "en": "Describe a person who learns history and loves history",
-      "say": ["Who this person is", "How he/she learns history", "Why he/she loves history", "And explain how you feel about him/her"],
-      "src": ["chelsea", "joe", "ieltsa", "sf"],
+      "say": [
+        "Who this person is",
+        "How he/she learns history",
+        "Why he/she loves history",
+        "And explain how you feel about him/her"
+      ],
+      "src": [
+        "chelsea",
+        "joe",
+        "ieltsa",
+        "sf"
+      ],
       "tip": "爱看纪录片、逛博物馆的朋友或家人。讲他怎么学（看书、去博物馆、看纪录片）。",
       "p3": [
         "Besides big historical events, what else is important when learning history?",
@@ -419,26 +1248,60 @@
         "At what age do you think people should begin to learn history?",
         "Do you think children should begin learning history from an early age?",
         "Do you like learning history?"
+      ],
+      "see": [
+        "s-p2-know-more"
       ]
     },
     {
-      "id": "fitness-helped", "cat": "person", "zh": "你帮他改善健康的人", "tags": [],
+      "id": "fitness-helped",
+      "cat": "person",
+      "zh": "你帮他改善健康的人",
+      "tags": [],
       "en": "Describe a person whose health and fitness you have helped to improve",
-      "say": ["Who this person was", "Why you helped him/her", "How you helped him/her", "And explain whether it was easy or difficult"],
-      "src": ["chelsea", "joe", "ieltsa"],
+      "say": [
+        "Who this person was",
+        "Why you helped him/her",
+        "How you helped him/her",
+        "And explain whether it was easy or difficult"
+      ],
+      "src": [
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
       "note": "Ieltsa 的问法是“一个为改善健康做了些事的人”（a person you know who did something to improve his/her health and fitness），方向和这里相反，两种都准备一下。",
-      "tip": "带朋友或爸爸一起跑步、控制饮食，难点是坚持。可以借原作者跑西安马拉松的经历（P1 其他）。", "see": ["a-p1-other"],
+      "tip": "带朋友或爸爸一起跑步、控制饮食，难点是坚持。可以借原作者跑西安马拉松的经历（P1 其他）。",
+      "see": [
+        "a-p1-other"
+      ],
       "p3": [
         "What effect does stress have on health?",
         "Which group pays more attention to health, young people or old people?"
       ]
     },
     {
-      "id": "handmade", "cat": "person", "zh": "擅长做手工的人", "tags": [],
+      "id": "handmade",
+      "cat": "person",
+      "zh": "擅长做手工的人",
+      "tags": [],
       "en": "Describe a person who is good at making things by hand",
-      "say": ["Who this person is", "What he/she makes", "What materials or technologies he/she uses", "And explain why you think this person is good at making things by hand"],
-      "src": ["chelsea", "joe", "ieltsa", "sf"],
-      "tip": "会做木工、折纸、做饭的长辈或同学。讲他做什么、用什么材料。P1 Paper 的折纸素材可以接上。", "link": ["paper"],
+      "say": [
+        "Who this person is",
+        "What he/she makes",
+        "What materials or technologies he/she uses",
+        "And explain why you think this person is good at making things by hand"
+      ],
+      "src": [
+        "chelsea",
+        "joe",
+        "ieltsa",
+        "sf"
+      ],
+      "tip": "会做木工、折纸、做饭的长辈或同学。讲他做什么、用什么材料。P1 Paper 的折纸素材可以接上。",
+      "link": [
+        "paper"
+      ],
       "p3": [
         "Why do some children enjoy making things by hand?",
         "Do children these days still like doing arts and crafts?",
@@ -446,26 +1309,64 @@
         "Is it good to have creative people in a team?",
         "Does art, like music or theater, have an impact on society?",
         "What impact can artistic buildings have on society?"
+      ],
+      "see": [
+        "s-p2-business"
       ]
     },
     {
-      "id": "local-famous", "cat": "person", "zh": "本地名人", "tags": [],
+      "id": "local-famous",
+      "cat": "person",
+      "zh": "本地名人",
+      "tags": [],
       "en": "Describe a famous person in your local area",
-      "say": ["Who this person is", "What he/she has done", "Why he/she is popular", "And explain how you feel about this person"],
-      "src": ["jsl", "chelsea", "ez", "sf"],
-      "tip": "当地有名的店主、运动员或作家都行。P3 只报了两道，都在问“受欢迎的学生”，可以和“受欢迎的人”一起准备。", "link": ["popular"],
+      "say": [
+        "Who this person is",
+        "What he/she has done",
+        "Why he/she is popular",
+        "And explain how you feel about this person"
+      ],
+      "src": [
+        "jsl",
+        "chelsea",
+        "ez",
+        "sf"
+      ],
+      "tip": "当地有名的店主、运动员或作家都行。P3 只报了两道，都在问“受欢迎的学生”，可以和“受欢迎的人”一起准备。",
+      "link": [
+        "popular"
+      ],
       "p3": [
         "Why are some students popular?",
         "Is it always good to be a popular student at school?"
+      ],
+      "see": [
+        "s-p2-business"
       ]
     },
     {
-      "id": "healthy-habits", "cat": "person", "zh": "有健康习惯和作息的人", "tags": ["later"],
+      "id": "healthy-habits",
+      "cat": "person",
+      "zh": "有健康习惯和作息的人",
+      "tags": [
+        "later"
+      ],
       "en": "Describe a person you know who has healthy habits and a healthy daily routine",
-      "say": ["Who this person is", "How you got to know each other", "What he/she does to keep this lifestyle", "And explain how you feel about him/her"],
-      "src": ["week", "roop"],
+      "say": [
+        "Who this person is",
+        "How you got to know each other",
+        "What he/she does to keep this lifestyle",
+        "And explain how you feel about him/her"
+      ],
+      "src": [
+        "week",
+        "roop"
+      ],
       "note": "9/26–10/2 考情周报的高频话题，题卡来自 English with Roop（10 月 8 日）。",
-      "tip": "早睡早起、每天运动的朋友，可以用原作者 P2-2 里每天 5:30 起床爬山的攀岩搭档。讲他每天怎么做，再说对你的影响。", "see": ["a-p2-02"],
+      "tip": "早睡早起、每天运动的朋友，可以用原作者 P2-2 里每天 5:30 起床爬山的攀岩搭档。讲他每天怎么做，再说对你的影响。",
+      "see": [
+        "a-p2-02"
+      ],
       "p3": [
         "Does the government play an important role in promoting a healthy lifestyle in a community?",
         "Do you think it is important to live in a community where people have healthy lifestyles?",
@@ -476,23 +1377,58 @@
       ]
     },
     {
-      "id": "free-time-place", "cat": "place", "zh": "有空时想去的地方", "alias": "想去旅行的地方", "tags": ["mainland"],
+      "id": "free-time-place",
+      "cat": "place",
+      "zh": "有空时想去的地方",
+      "alias": "想去旅行的地方",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a place you would like to visit in your free time",
-      "say": ["Where it is", "What you will do there", "How long you will stay there", "And explain why you would like to visit it"],
-      "src": ["xdf", "ez"],
+      "say": [
+        "Where it is",
+        "What you will do there",
+        "How long you will stay there",
+        "And explain why you would like to visit it"
+      ],
+      "src": [
+        "xdf",
+        "ez"
+      ],
       "note": "新东方只给了中文题名“想去旅行的地方”，最接近的英文题卡是 EzIELTS 收录的这张。原作者 P2-3 就是这道题。",
-      "tip": "原作者 P2-3 有现成答案（阳朔）。", "see": ["a-p2-03"],
+      "tip": "原作者 P2-3 有现成答案（阳朔）。",
+      "see": [
+        "a-p2-03"
+      ],
       "p3": [
         "Why do you think some people choose not to travel abroad?",
         "Do you think a gap period in life is important?"
       ]
     },
     {
-      "id": "boring-place", "cat": "place", "zh": "无聊的地方", "tags": ["mainland"],
+      "id": "boring-place",
+      "cat": "place",
+      "zh": "无聊的地方",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a boring place",
-      "say": ["Where it is", "Who you went there with", "What you did there", "And explain why you think it is a boring place"],
-      "src": ["xdf", "joe", "ieltsa", "sf"],
-      "tip": "原作者 P2-7：去秦岭路上堵车两小时，到了山脚到处是垃圾。", "see": ["a-p2-07"],
+      "say": [
+        "Where it is",
+        "Who you went there with",
+        "What you did there",
+        "And explain why you think it is a boring place"
+      ],
+      "src": [
+        "xdf",
+        "joe",
+        "ieltsa",
+        "sf"
+      ],
+      "tip": "原作者 P2-7：去秦岭路上堵车两小时，到了山脚到处是垃圾。",
+      "see": [
+        "a-p2-07"
+      ],
       "p3": [
         "Why do most children think education is boring?",
         "Why aren't young people willing to listen to the experiences of older people?",
@@ -503,12 +1439,31 @@
       ]
     },
     {
-      "id": "short-trip", "cat": "place", "zh": "经常去但不喜欢的短途旅行", "alias": "不喜欢但经常去的地方", "tags": ["mainland"],
+      "id": "short-trip",
+      "cat": "place",
+      "zh": "经常去但不喜欢的短途旅行",
+      "alias": "不喜欢但经常去的地方",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a short trip you often take but do not like",
-      "say": ["Where you go", "When you go there", "Why you go there", "And explain why you do not like the trip"],
-      "src": ["xdf", "chelsea", "joe", "ieltsa"],
+      "say": [
+        "Where you go",
+        "When you go there",
+        "Why you go there",
+        "And explain why you do not like the trip"
+      ],
+      "src": [
+        "xdf",
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
       "note": "新东方的“不喜欢但经常去的地方”应是这张卡的中文说法，合并为一题。",
-      "tip": "每天或每周的通勤：挤地铁、堵车（可以借原作者 P2-7 的堵车细节）。说清楚为什么不得不去。", "see": ["a-p2-07"],
+      "tip": "每天或每周的通勤：挤地铁、堵车（可以借原作者 P2-7 的堵车细节）。说清楚为什么不得不去。",
+      "see": [
+        "a-p2-07"
+      ],
       "p3": [
         "Which is better for knowing more about a country, travelling or reading books about it?",
         "How much time do you think people should spend on a trip abroad?",
@@ -519,11 +1474,31 @@
       ]
     },
     {
-      "id": "noisy", "cat": "place", "zh": "嘈杂的地方", "tags": [],
+      "id": "noisy",
+      "cat": "place",
+      "zh": "嘈杂的地方",
+      "tags": [],
       "en": "Describe a noisy place you have been to",
-      "say": ["Where it is", "When you went there", "What you did there", "And explain why you feel it's a noisy place"],
-      "src": ["jsl", "chelsea", "joe", "ieltsa", "sf"],
-      "tip": "节假日的景区、施工的街道，或原作者 P2-12 里广州写字楼外的繁忙街道。可以和“拥挤的地方”共用。", "see": ["a-p2-12"], "link": ["crowded"],
+      "say": [
+        "Where it is",
+        "When you went there",
+        "What you did there",
+        "And explain why you feel it's a noisy place"
+      ],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "ieltsa",
+        "sf"
+      ],
+      "tip": "节假日的景区、施工的街道，或原作者 P2-12 里广州写字楼外的繁忙街道。可以和“拥挤的地方”共用。",
+      "see": [
+        "a-p2-12"
+      ],
+      "link": [
+        "crowded"
+      ],
       "p3": [
         "What kinds of noises are there in our life?",
         "Which area is exposed to noise more, the city or the countryside?",
@@ -534,12 +1509,28 @@
       ]
     },
     {
-      "id": "crowded", "cat": "place", "zh": "拥挤的地方", "tags": [],
+      "id": "crowded",
+      "cat": "place",
+      "zh": "拥挤的地方",
+      "tags": [],
       "en": "Describe a crowded place you went to",
-      "say": ["Where it was", "When you went there", "Who you went there with", "What you did there", "And explain how you felt about the experience"],
-      "src": ["chelsea", "joe", "ieltsa"],
+      "say": [
+        "Where it was",
+        "When you went there",
+        "Who you went there with",
+        "What you did there",
+        "And explain how you felt about the experience"
+      ],
+      "src": [
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
       "note": "Ieltsa 的问法：a time when you went to a crowded place。",
-      "tip": "国庆去景区、春运火车站。可以和“嘈杂的地方”共用一个故事。", "link": ["noisy"],
+      "tip": "国庆去景区、春运火车站。可以和“嘈杂的地方”共用一个故事。",
+      "link": [
+        "noisy"
+      ],
       "p3": [
         "Why do people go to crowded places?",
         "Do you think there are some people who enjoy crowded places?",
@@ -547,15 +1538,35 @@
         "Do you think it is a good trend to have more big cities?",
         "Will there be more or less green space in cities in the future?",
         "Will people use bikes more or less in cities in the future?"
+      ],
+      "see": [
+        "s-p2-food-party"
       ]
     },
     {
-      "id": "natural-city", "cat": "place", "zh": "城市里喜欢去的自然之地", "tags": [],
+      "id": "natural-city",
+      "cat": "place",
+      "zh": "城市里喜欢去的自然之地",
+      "tags": [],
       "en": "Describe a natural place in your city that you enjoy visiting",
-      "say": ["Where it is", "What it is like", "How often you go there", "Who you often go there with", "And explain why you enjoy visiting there"],
-      "src": ["jsl", "chelsea", "joe", "sf"],
+      "say": [
+        "Where it is",
+        "What it is like",
+        "How often you go there",
+        "Who you often go there with",
+        "And explain why you enjoy visiting there"
+      ],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "sf"
+      ],
       "note": "相近问法：Ieltsa 的 a place where you enjoy spending time in nature。",
-      "tip": "城市公园、江边步道。原作者 P1 park 话题的素材可以用。", "see": ["a-p1-park"],
+      "tip": "城市公园、江边步道。原作者 P1 park 话题的素材可以用。",
+      "see": [
+        "a-p1-park"
+      ],
       "p3": [
         "Do you think there should be many natural places in cities?",
         "Do you think staying in a natural place would help change people's mood?",
@@ -566,11 +1577,26 @@
       ]
     },
     {
-      "id": "near-nature", "cat": "place", "zh": "去过的靠近自然的地方", "tags": [],
+      "id": "near-nature",
+      "cat": "place",
+      "zh": "去过的靠近自然的地方",
+      "tags": [],
       "en": "Describe somewhere near a natural place that you have been to",
-      "say": ["Where this place is", "Who you went there with", "Why you went there", "And explain how you feel about the place"],
-      "src": ["chelsea", "ez"],
-      "tip": "秦岭或阳朔（原作者 P2-7、P2-1）。", "see": ["a-p2-01", "a-p2-07"],
+      "say": [
+        "Where this place is",
+        "Who you went there with",
+        "Why you went there",
+        "And explain how you feel about the place"
+      ],
+      "src": [
+        "chelsea",
+        "ez"
+      ],
+      "tip": "秦岭或阳朔（原作者 P2-7、P2-1）。",
+      "see": [
+        "a-p2-01",
+        "a-p2-07"
+      ],
       "p3": [
         "Are there any natural attractions that are great to visit?",
         "Do you think it is necessary to include natural spaces in a city?",
@@ -578,11 +1604,26 @@
       ]
     },
     {
-      "id": "city-again", "cat": "place", "zh": "想再去一次的城市", "tags": [],
+      "id": "city-again",
+      "cat": "place",
+      "zh": "想再去一次的城市",
+      "tags": [],
       "en": "Describe a city that you have been to and would like to visit again",
-      "say": ["When you visited it", "What you did there", "What it was like", "And explain why you would like to visit it again"],
-      "src": ["chelsea", "ez", "sf"],
-      "tip": "桂林、阳朔（原作者 P2-1）。", "see": ["a-p2-01"],
+      "say": [
+        "When you visited it",
+        "What you did there",
+        "What it was like",
+        "And explain why you would like to visit it again"
+      ],
+      "src": [
+        "chelsea",
+        "ez",
+        "sf"
+      ],
+      "tip": "桂林、阳朔（原作者 P2-1）。",
+      "see": [
+        "a-p2-01"
+      ],
       "p3": [
         "What's the difference between the city and the countryside?",
         "Do you think people in the countryside are friendlier than people in the city?",
@@ -593,12 +1634,27 @@
       ]
     },
     {
-      "id": "building", "cat": "place", "zh": "喜欢去的建筑", "tags": [],
+      "id": "building",
+      "cat": "place",
+      "zh": "喜欢去的建筑",
+      "tags": [],
       "en": "Describe a building you enjoy visiting (e.g. a library, a shopping mall, etc.)",
-      "say": ["Where it is", "How you knew it", "What it looks like", "And explain why you enjoy visiting it"],
-      "src": ["chelsea", "joe", "ieltsa"],
+      "say": [
+        "Where it is",
+        "How you knew it",
+        "What it looks like",
+        "And explain why you enjoy visiting it"
+      ],
+      "src": [
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
       "note": "Ieltsa 的问法：a public building you enjoy spending time in (e.g. a library, a sports centre)。",
-      "tip": "图书馆最好讲：外观、安静、书多、能专心。原作者 P2-12 是“不喜欢的高楼”，可以反着对比。", "see": ["a-p2-12"],
+      "tip": "图书馆最好讲：外观、安静、书多、能专心。原作者 P2-12 是“不喜欢的高楼”，可以反着对比。",
+      "see": [
+        "a-p2-12"
+      ],
       "p3": [
         "Do you think old buildings are valuable?",
         "Do you think all old buildings should be demolished?",
@@ -611,10 +1667,23 @@
       ]
     },
     {
-      "id": "tech-own", "cat": "thing", "zh": "想拥有的科技产品（不能是手机）", "tags": ["mainland"],
+      "id": "tech-own",
+      "cat": "thing",
+      "zh": "想拥有的科技产品（不能是手机）",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a piece of technology (not a phone) that you would like to own",
-      "say": ["What it is", "How much it costs approximately", "What you would use it for", "And explain why you would like to own it"],
-      "src": ["xdf", "ez"],
+      "say": [
+        "What it is",
+        "How much it costs approximately",
+        "What you would use it for",
+        "And explain why you would like to own it"
+      ],
+      "src": [
+        "xdf",
+        "ez"
+      ],
       "note": "新东方列为大陆新题，EzIELTS 把它归为往季保留题，本季报告还少。题卡取自 EzIELTS。",
       "tip": "运动手表、平板、扫地机器人。说价格、用途、为什么想要。",
       "p3": [
@@ -623,15 +1692,37 @@
         "Has technology changed the way people communicate?",
         "What negative effects can technology have on relationships?",
         "What are the differences between making friends online and in person?"
+      ],
+      "see": [
+        "s-p2-saved-tech"
       ]
     },
     {
-      "id": "app", "cat": "thing", "zh": "常用的 App 或程序", "tags": ["mainland"],
+      "id": "app",
+      "cat": "thing",
+      "zh": "常用的 App 或程序",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a program or app on your computer or phone",
-      "say": ["What it is", "When and how you use it", "Where you found it", "And explain how you feel about it"],
-      "src": ["xdf", "ez"],
+      "say": [
+        "What it is",
+        "When and how you use it",
+        "Where you found it",
+        "And explain how you feel about it"
+      ],
+      "src": [
+        "xdf",
+        "ez"
+      ],
       "note": "新东方列为大陆新题，EzIELTS 把它归为往季保留题。题卡取自 EzIELTS。",
-      "tip": "地图、记账、运动类 App。和 P1 Computers、原作者 websites 素材互通。", "see": ["a-p1-websites"], "link": ["computers"],
+      "tip": "地图、记账、运动类 App。和 P1 Computers、原作者 websites 素材互通。",
+      "see": [
+        "a-p1-websites"
+      ],
+      "link": [
+        "computers"
+      ],
       "p3": [
         "What apps are most popular in your country?",
         "How do older and younger people differ in the way they use apps?",
@@ -641,10 +1732,25 @@
       ]
     },
     {
-      "id": "special-food", "cat": "thing", "zh": "特别场合吃的食物", "tags": ["mainland"],
+      "id": "special-food",
+      "cat": "thing",
+      "zh": "特别场合吃的食物",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a food that people eat on special occasions/events",
-      "say": ["What it is", "What the special event/occasion is", "How it is cooked/made", "And explain why people eat it on that special occasion/event"],
-      "src": ["xdf", "joe", "ieltsa", "sf"],
+      "say": [
+        "What it is",
+        "What the special event/occasion is",
+        "How it is cooked/made",
+        "And explain why people eat it on that special occasion/event"
+      ],
+      "src": [
+        "xdf",
+        "joe",
+        "ieltsa",
+        "sf"
+      ],
       "tip": "春节饺子、中秋月饼、生日蛋糕。讲怎么做，再说为什么那天吃。",
       "p3": [
         "Why are there special foods on special occasions or events?",
@@ -655,15 +1761,34 @@
         "Do people today prefer eating at home or in a restaurant?",
         "Are there any differences between the food people eat today and the food people ate in the past?",
         "How have people's eating habits changed compared to the past?"
+      ],
+      "see": [
+        "s-p2-food-party"
       ]
     },
     {
-      "id": "least-movie", "cat": "thing", "zh": "最不喜欢的电影", "tags": [],
+      "id": "least-movie",
+      "cat": "thing",
+      "zh": "最不喜欢的电影",
+      "tags": [],
       "en": "Describe your least favourite movie",
-      "say": ["When you watched it", "Where you watched it", "What it was about", "And explain why it's your least favourite movie"],
-      "src": ["chelsea", "joe", "ieltsa", "week"],
+      "say": [
+        "When you watched it",
+        "Where you watched it",
+        "What it was about",
+        "And explain why it's your least favourite movie"
+      ],
+      "src": [
+        "chelsea",
+        "joe",
+        "ieltsa",
+        "week"
+      ],
       "note": "考情周报里叫“不喜欢的电影”。Ieltsa 的问法：a time when you watched a film/movie that you didn't like。",
-      "tip": "一部口碑差或看不懂的电影。剧情一两句带过，重点讲不喜欢的原因（节奏拖、演技差）。原作者 P2-10 是喜欢的电影，可以拿来对比。", "see": ["a-p2-10"],
+      "tip": "一部口碑差或看不懂的电影。剧情一两句带过，重点讲不喜欢的原因（节奏拖、演技差）。原作者 P2-10 是喜欢的电影，可以拿来对比。",
+      "see": [
+        "a-p2-10"
+      ],
       "p3": [
         "What kinds of movies are the most popular in your country?",
         "What are the differences between watching movies at home and in a cinema?",
@@ -672,10 +1797,23 @@
       ]
     },
     {
-      "id": "gift", "cat": "thing", "zh": "想送朋友的礼物", "tags": [],
+      "id": "gift",
+      "cat": "thing",
+      "zh": "想送朋友的礼物",
+      "tags": [],
       "en": "Describe a gift you would like to buy for your friend",
-      "say": ["How you knew your friend", "How long you have known him/her", "How you would choose a gift for him/her", "And explain why you would choose that gift for him/her"],
-      "src": ["chelsea", "ez", "sf", "week"],
+      "say": [
+        "How you knew your friend",
+        "How long you have known him/her",
+        "How you would choose a gift for him/her",
+        "And explain why you would choose that gift for him/her"
+      ],
+      "src": [
+        "chelsea",
+        "ez",
+        "sf",
+        "week"
+      ],
       "tip": "给攀岩搭档买一双攀岩鞋这类具体的东西。重点讲怎么挑、为什么是它。",
       "p3": [
         "When do people normally send gifts to others?",
@@ -684,15 +1822,35 @@
         "Will people feel happy when receiving an expensive gift?",
         "Which do people give on traditional festivals, red envelopes or other kinds of gifts?",
         "Are there any unlucky things that people should not buy as gifts in your country?"
+      ],
+      "see": [
+        "s-p2-gift-book"
       ]
     },
     {
-      "id": "exciting-book", "cat": "thing", "zh": "读起来开心的书", "tags": ["later"],
+      "id": "exciting-book",
+      "cat": "thing",
+      "zh": "读起来开心的书",
+      "tags": [
+        "later"
+      ],
       "en": "Describe an exciting book that you enjoyed reading",
-      "say": ["What kind of book it was", "Why you decided to read it", "What the book was about", "And explain why you found it exciting"],
-      "src": ["week", "joe", "ieltsa"],
+      "say": [
+        "What kind of book it was",
+        "Why you decided to read it",
+        "What the book was about",
+        "And explain why you found it exciting"
+      ],
+      "src": [
+        "week",
+        "joe",
+        "ieltsa"
+      ],
       "note": "考情周报里叫“读起来开心的书”，对应 Joe Speaking、Ieltsa 收录的这张卡（Ieltsa 标为本季新题）。",
-      "tip": "一本小说或运动员传记。讲类型、为什么读、讲了什么、精彩在哪。P3 会问书和改编电影，可以和“最不喜欢的电影”一起准备。", "link": ["least-movie"],
+      "tip": "一本小说或运动员传记。讲类型、为什么读、讲了什么、精彩在哪。P3 会问书和改编电影，可以和“最不喜欢的电影”一起准备。",
+      "link": [
+        "least-movie"
+      ],
       "p3": [
         "What kinds of books do people in your country enjoy reading?",
         "What kinds of books do young and older people enjoy?",
@@ -700,14 +1858,36 @@
         "Do you think it is important to read a book before watching its film adaptation?",
         "Why are films based on books sometimes disappointing?",
         "Can films based on novels encourage people to read more?"
+      ],
+      "see": [
+        "s-p2-gift-book"
       ]
     },
     {
-      "id": "decision-happy", "cat": "event", "zh": "对结果满意的重要决定", "tags": ["mainland"],
+      "id": "decision-happy",
+      "cat": "event",
+      "zh": "对结果满意的重要决定",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a time you made an important decision and were happy with the result",
-      "say": ["What the decision was", "Why you made the decision", "How easy it was for you to make the decision", "And explain why you were happy with the result"],
-      "src": ["xdf", "chelsea", "joe", "ieltsa"],
-      "tip": "决定去阳朔做志愿者攀岩（原作者 P2-1），或决定读研（P2-8）。满意的原因要具体。", "see": ["a-p2-01", "a-p2-08"],
+      "say": [
+        "What the decision was",
+        "Why you made the decision",
+        "How easy it was for you to make the decision",
+        "And explain why you were happy with the result"
+      ],
+      "src": [
+        "xdf",
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
+      "tip": "决定去阳朔做志愿者攀岩（原作者 P2-1），或决定读研（P2-8）。满意的原因要具体。",
+      "see": [
+        "a-p2-01",
+        "a-p2-08"
+      ],
       "p3": [
         "What little decisions do people make every day?",
         "Do you think it is a good idea to make a small decision every day?",
@@ -718,11 +1898,29 @@
       ]
     },
     {
-      "id": "changed-decision", "cat": "event", "zh": "改变重要决定的经历", "tags": ["mainland"],
+      "id": "changed-decision",
+      "cat": "event",
+      "zh": "改变重要决定的经历",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a time when you changed an important decision of yours",
-      "say": ["When you changed the decision", "What the original decision was", "Why you changed it", "And explain how you felt about the experience"],
-      "src": ["xdf", "chelsea", "ez", "sf"],
-      "tip": "原作者 P2-8：实习之后从自动驾驶改为机器人方向。", "see": ["a-p2-08"],
+      "say": [
+        "When you changed the decision",
+        "What the original decision was",
+        "Why you changed it",
+        "And explain how you felt about the experience"
+      ],
+      "src": [
+        "xdf",
+        "chelsea",
+        "ez",
+        "sf"
+      ],
+      "tip": "原作者 P2-8：实习之后从自动驾驶改为机器人方向。",
+      "see": [
+        "a-p2-08"
+      ],
       "p3": [
         "When do most children begin to make their own decisions?",
         "Do children like to change their opinions?",
@@ -732,10 +1930,26 @@
       ]
     },
     {
-      "id": "saved-money", "cat": "event", "zh": "省钱买想要的东西", "tags": ["mainland"],
+      "id": "saved-money",
+      "cat": "event",
+      "zh": "省钱买想要的东西",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a time when you saved money to buy something special",
-      "say": ["What the special thing was", "Why you wanted to buy it", "How you saved money for it", "And explain how you felt after buying it"],
-      "src": ["xdf", "chelsea", "joe", "ieltsa", "sf"],
+      "say": [
+        "What the special thing was",
+        "Why you wanted to buy it",
+        "How you saved money for it",
+        "And explain how you felt after buying it"
+      ],
+      "src": [
+        "xdf",
+        "chelsea",
+        "joe",
+        "ieltsa",
+        "sf"
+      ],
       "tip": "攒钱买攀岩装备、耳机或一次旅行。讲怎么省（少点外卖、做兼职）。",
       "p3": [
         "What kind of things do people usually save money for?",
@@ -744,14 +1958,34 @@
         "Should schools teach children how to manage money from a young age?",
         "Do you think it is easier to teach teenagers how to manage money when they are around 16 or 17 years old?",
         "Should people spend time on charity, or just money?"
+      ],
+      "see": [
+        "s-p2-saved-tech"
       ]
     },
     {
-      "id": "got-up-early", "cat": "event", "zh": "早起的经历", "tags": ["mainland"],
+      "id": "got-up-early",
+      "cat": "event",
+      "zh": "早起的经历",
+      "tags": [
+        "mainland"
+      ],
       "en": "Describe a time when you got up early",
-      "say": ["When it was", "What you did", "Why you got up early", "And how you felt about it"],
-      "src": ["xdf", "joe", "ieltsa"],
-      "tip": "原作者 P2-2 有现成答案：5:30 起床爬电视塔山看日出。", "see": ["a-p2-02"],
+      "say": [
+        "When it was",
+        "What you did",
+        "Why you got up early",
+        "And how you felt about it"
+      ],
+      "src": [
+        "xdf",
+        "joe",
+        "ieltsa"
+      ],
+      "tip": "原作者 P2-2 有现成答案：5:30 起床爬电视塔山看日出。",
+      "see": [
+        "a-p2-02"
+      ],
       "p3": [
         "Why do people get up early?",
         "Do you know anyone who likes to get up early?",
@@ -762,12 +1996,29 @@
       ]
     },
     {
-      "id": "interview", "cat": "event", "zh": "看过的名人采访", "tags": [],
+      "id": "interview",
+      "cat": "event",
+      "zh": "看过的名人采访",
+      "tags": [],
       "en": "Describe a time you watched a famous person being interviewed",
-      "say": ["Who the famous person was", "What the interview was about", "When and where you watched the interview", "And explain how you felt about the interview"],
-      "src": ["chelsea", "joe", "ieltsa", "sf", "week"],
+      "say": [
+        "Who the famous person was",
+        "What the interview was about",
+        "When and where you watched the interview",
+        "And explain how you felt about the interview"
+      ],
+      "src": [
+        "chelsea",
+        "joe",
+        "ieltsa",
+        "sf",
+        "week"
+      ],
       "note": "Scorefactory 记的问法是 a time when you interviewed a famous person（你采访名人），准备时留意。",
-      "tip": "运动员赛后采访，比如基普乔格破 2 之后的采访（原作者 P2-5）。P3 大多在问求职面试。", "see": ["a-p2-05"],
+      "tip": "运动员赛后采访，比如基普乔格破 2 之后的采访（原作者 P2-5）。P3 大多在问求职面试。",
+      "see": [
+        "a-p2-05"
+      ],
       "p3": [
         "What kinds of people are usually interviewed?",
         "What kinds of things do famous people often say in an interview?",
@@ -780,11 +2031,27 @@
       ]
     },
     {
-      "id": "not-interested", "cat": "event", "zh": "听不感兴趣的话但继续听", "tags": [],
+      "id": "not-interested",
+      "cat": "event",
+      "zh": "听不感兴趣的话但继续听",
+      "tags": [],
       "en": "Describe a time when someone talked about something you were not interested in but you kept listening",
-      "say": ["Who the person was", "What he/she talked about", "Why you kept listening", "And explain how you felt about the experience"],
-      "src": ["chelsea", "joe", "ieltsa", "sf"],
-      "tip": "爸爸讲跑步，你当时完全不感兴趣但还是听了，后来也爱上跑步。原作者 P2-5 里正好有这句：my father loved running, but I was not interested in it at all。", "see": ["a-p2-05"],
+      "say": [
+        "Who the person was",
+        "What he/she talked about",
+        "Why you kept listening",
+        "And explain how you felt about the experience"
+      ],
+      "src": [
+        "chelsea",
+        "joe",
+        "ieltsa",
+        "sf"
+      ],
+      "tip": "爸爸讲跑步，你当时完全不感兴趣但还是听了，后来也爱上跑步。原作者 P2-5 里正好有这句：my father loved running, but I was not interested in it at all。",
+      "see": [
+        "a-p2-05"
+      ],
       "p3": [
         "How can we tell if a listener is listening carefully?",
         "What would happen if the listener didn't listen carefully?",
@@ -792,11 +2059,28 @@
       ]
     },
     {
-      "id": "good-service", "cat": "event", "zh": "在商店得到好的服务", "tags": [],
+      "id": "good-service",
+      "cat": "event",
+      "zh": "在商店得到好的服务",
+      "tags": [],
       "en": "Describe a time when you received good service in a shop/store",
-      "say": ["Where the shop is", "When you went to the shop", "What service you received from the staff", "And explain how you felt about the service"],
-      "src": ["chelsea", "joe", "ez", "ieltsa", "sf"],
-      "tip": "在运动用品店买鞋，店员耐心帮你试、给建议。P1 Shoes 的素材能接上。", "link": ["shoes"],
+      "say": [
+        "Where the shop is",
+        "When you went to the shop",
+        "What service you received from the staff",
+        "And explain how you felt about the service"
+      ],
+      "src": [
+        "chelsea",
+        "joe",
+        "ez",
+        "ieltsa",
+        "sf"
+      ],
+      "tip": "在运动用品店买鞋，店员耐心帮你试、给建议。P1 Shoes 的素材能接上。",
+      "link": [
+        "shoes"
+      ],
       "p3": [
         "Why are shopping malls so popular in your country?",
         "What are the advantages and disadvantages of shopping in small shops?",
@@ -804,14 +2088,33 @@
         "What are the differences between online shopping and in-store shopping?",
         "What are the advantages and disadvantages of shopping online?",
         "Can consumption drive economic growth?"
+      ],
+      "see": [
+        "s-p2-saved-tech"
       ]
     },
     {
-      "id": "evening-friends", "cat": "event", "zh": "和朋友度过的愉快夜晚", "tags": [],
+      "id": "evening-friends",
+      "cat": "event",
+      "zh": "和朋友度过的愉快夜晚",
+      "tags": [],
       "en": "Describe an enjoyable evening you had with your friends",
-      "say": ["When and where it was", "What you did", "Who you spent the evening with", "And explain why it was enjoyable"],
-      "src": ["jsl", "chelsea", "joe", "ieltsa"],
-      "tip": "在阳朔和其他志愿者一起吃米粉、聊天（原作者 P2-1）。", "see": ["a-p2-01"],
+      "say": [
+        "When and where it was",
+        "What you did",
+        "Who you spent the evening with",
+        "And explain why it was enjoyable"
+      ],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
+      "tip": "在阳朔和其他志愿者一起吃米粉、聊天（原作者 P2-1）。",
+      "see": [
+        "a-p2-01"
+      ],
       "p3": [
         "Why do people need friends?",
         "What are the differences between young people's leisure time activities and those of old people?",
@@ -822,11 +2125,28 @@
       ]
     },
     {
-      "id": "waste-time", "cat": "event", "zh": "觉得浪费时间的日常活动", "tags": [],
+      "id": "waste-time",
+      "cat": "event",
+      "zh": "觉得浪费时间的日常活动",
+      "tags": [],
       "en": "Describe an activity you do regularly that you think is a waste of time",
-      "say": ["What it is", "When you usually do it", "Why you do it", "And explain why you think it is a waste of time"],
-      "src": ["jsl", "chelsea", "joe", "ieltsa", "sf"],
-      "tip": "睡前刷短视频。P3 必备里“长时间刷社交媒体”的语料可以直接用。", "see": ["a-p3-base"],
+      "say": [
+        "What it is",
+        "When you usually do it",
+        "Why you do it",
+        "And explain why you think it is a waste of time"
+      ],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "ieltsa",
+        "sf"
+      ],
+      "tip": "睡前刷短视频。P3 必备里“长时间刷社交媒体”的语料可以直接用。",
+      "see": [
+        "a-p3-base"
+      ],
       "p3": [
         "Will you continue doing something when you are aware that it's a waste of time?",
         "Is it good to have a daily routine?",
@@ -837,10 +2157,23 @@
       ]
     },
     {
-      "id": "party", "cat": "event", "zh": "印象深刻的聚会", "tags": [],
+      "id": "party",
+      "cat": "event",
+      "zh": "印象深刻的聚会",
+      "tags": [],
       "en": "Describe a party for a special event that impressed you a lot",
-      "say": ["When and where it was held", "What the party was held for", "How many people attended it", "And explain why it impressed you a lot"],
-      "src": ["jsl", "chelsea", "joe", "ieltsa"],
+      "say": [
+        "When and where it was held",
+        "What the party was held for",
+        "How many people attended it",
+        "And explain why it impressed you a lot"
+      ],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "ieltsa"
+      ],
       "tip": "毕业聚会或生日聚会。在哪办、多少人、为什么印象深。",
       "p3": [
         "What special events are celebrated in your country?",
@@ -851,14 +2184,37 @@
         "Do you think people nowadays prefer attending big parties or small gatherings with close friends? Why?",
         "Are there any differences between how young people and older people celebrate events with parties?",
         "Do you think it's a waste of money for governments to celebrate national events?"
+      ],
+      "see": [
+        "s-p2-food-party"
       ]
     },
     {
-      "id": "child-skill", "cat": "event", "zh": "小时候学到的新技能", "tags": [],
+      "id": "child-skill",
+      "cat": "event",
+      "zh": "小时候学到的新技能",
+      "tags": [],
       "en": "Describe a new skill you learned when you were a child",
-      "say": ["What the skill was", "Who taught you this skill", "How you learned it", "And explain how you felt about learning the skill"],
-      "src": ["jsl", "chelsea", "joe", "ieltsa", "sf"],
-      "tip": "小学踢足球进了校队（原作者 P1 其他），或学骑自行车、游泳。", "see": ["a-p1-other"], "link": ["taught-skill"],
+      "say": [
+        "What the skill was",
+        "Who taught you this skill",
+        "How you learned it",
+        "And explain how you felt about learning the skill"
+      ],
+      "src": [
+        "jsl",
+        "chelsea",
+        "joe",
+        "ieltsa",
+        "sf"
+      ],
+      "tip": "小学踢足球进了校队（原作者 P1 其他），或学骑自行车、游泳。",
+      "see": [
+        "a-p1-other"
+      ],
+      "link": [
+        "taught-skill"
+      ],
       "p3": [
         "What skills should children learn before they go to school?",
         "Can a child learn skills from another child?",
@@ -869,11 +2225,27 @@
       ]
     },
     {
-      "id": "course", "cat": "event", "zh": "印象深刻的课程", "tags": [],
+      "id": "course",
+      "cat": "event",
+      "zh": "印象深刻的课程",
+      "tags": [],
       "en": "Describe a course that impressed you a lot",
-      "say": ["What the course was about", "Where you took the course", "What you did during the course", "And explain why it impressed you a lot"],
-      "src": ["chelsea", "ez", "sf", "week"],
-      "tip": "大学专业课里的实验课（原作者 P1 study：测控专业、动手实验）。注意 P3 偏“记忆”话题。", "see": ["a-p1-study"],
+      "say": [
+        "What the course was about",
+        "Where you took the course",
+        "What you did during the course",
+        "And explain why it impressed you a lot"
+      ],
+      "src": [
+        "chelsea",
+        "ez",
+        "sf",
+        "week"
+      ],
+      "tip": "大学专业课里的实验课（原作者 P1 study：测控专业、动手实验）。注意 P3 偏“记忆”话题。",
+      "see": [
+        "a-p1-study"
+      ],
       "p3": [
         "What can we learn from history?",
         "What do people need to remember in their daily lives?",
@@ -884,12 +2256,29 @@
       ]
     },
     {
-      "id": "lost-public", "cat": "event", "zh": "在公共场所丢东西", "tags": ["later"],
+      "id": "lost-public",
+      "cat": "event",
+      "zh": "在公共场所丢东西",
+      "tags": [
+        "later"
+      ],
       "en": "Describe an occasion when you lost something in public",
-      "say": ["What you lost", "When and where you lost it", "What you did to find it", "And explain how you felt about it"],
-      "src": ["sf", "ez", "week"],
+      "say": [
+        "What you lost",
+        "When and where you lost it",
+        "What you did to find it",
+        "And explain how you felt about it"
+      ],
+      "src": [
+        "sf",
+        "ez",
+        "week"
+      ],
       "note": "Scorefactory 9 月 12 日补充的新卡，9/26–10/2 考情周报 Top10。",
-      "tip": "在地铁或景区丢了耳机、钥匙，怎么找回。和 P1 Lost and found 共用一个故事。", "link": ["lost-found"],
+      "tip": "在地铁或景区丢了耳机、钥匙，怎么找回。和 P1 Lost and found 共用一个故事。",
+      "link": [
+        "lost-found"
+      ],
       "p3": [
         "What kinds of things do people usually lose?",
         "What kinds of people may lose things often?",
@@ -897,15 +2286,35 @@
         "What do people often feel after losing things?",
         "Is it effective to offer rewards to find lost things?",
         "What can we do to reduce the possibility of losing things?"
+      ],
+      "see": [
+        "s-p2-lost-public"
       ]
     },
     {
-      "id": "save-time", "cat": "event", "zh": "帮你节省时间的方法或改变", "tags": ["later"],
+      "id": "save-time",
+      "cat": "event",
+      "zh": "帮你节省时间的方法或改变",
+      "tags": [
+        "later"
+      ],
       "en": "Describe a way or change that helps you save a lot of time",
-      "say": ["What it is", "How you implement it", "How difficult it is", "And explain how you feel about the way/change"],
-      "src": ["sf", "ri", "week"],
+      "say": [
+        "What it is",
+        "How you implement it",
+        "How difficult it is",
+        "And explain how you feel about the way/change"
+      ],
+      "src": [
+        "sf",
+        "ri",
+        "week"
+      ],
       "note": "Scorefactory 9 月 12 日补充的新卡，9/26–10/2 考情周报高频第一。",
-      "tip": "骑电动车代替步行去攀岩点（原作者 P2-1 里提到过），或用日程 App 规划一天。讲清怎么做、难不难。", "see": ["a-p2-01"],
+      "tip": "骑电动车代替步行去攀岩点（原作者 P2-1 里提到过），或用日程 App 规划一天。讲清怎么做、难不难。",
+      "see": [
+        "a-p2-01"
+      ],
       "p3": [
         "What can people do to save time?",
         "Does technology help people save time? How and why?",
@@ -916,12 +2325,29 @@
       ]
     },
     {
-      "id": "helped-solve", "cat": "event", "zh": "帮别人解决问题", "tags": ["later"],
+      "id": "helped-solve",
+      "cat": "event",
+      "zh": "帮别人解决问题",
+      "tags": [
+        "later"
+      ],
       "en": "Describe a time you helped someone solve a problem",
-      "say": ["When it was", "Who you helped", "What problem you solved", "And explain how you felt about this experience"],
-      "src": ["joe", "ez", "ieltsa"],
+      "say": [
+        "When it was",
+        "Who you helped",
+        "What problem you solved",
+        "And explain how you felt about this experience"
+      ],
+      "src": [
+        "joe",
+        "ez",
+        "ieltsa"
+      ],
       "note": "Ieltsa 标为本季新题（a time when you helped someone with a problem）。",
-      "tip": "帮爸妈或同学解决电脑、手机问题。原作者 P3 科技问题的素材可以借。", "see": ["a-p3-tech"],
+      "tip": "帮爸妈或同学解决电脑、手机问题。原作者 P3 科技问题的素材可以借。",
+      "see": [
+        "a-p3-tech"
+      ],
       "p3": [
         "When do people usually ask others for help?",
         "What kinds of skills are needed when people want to help others?",
@@ -932,14 +2358,28 @@
     }
   ],
   "p2Overseas": [
-    { "zh": "让你失望的电影", "en": "Describe a film that disappointed you" },
-    { "zh": "生活离不开的东西（不能是手机或电脑）", "en": "Describe something you cannot live without, other than a phone or computer" },
-    { "zh": "家里放松的地方", "en": "Describe a place at home where you relax" }
+    {
+      "zh": "让你失望的电影",
+      "en": "Describe a film that disappointed you"
+    },
+    {
+      "zh": "生活离不开的东西（不能是手机或电脑）",
+      "en": "Describe something you cannot live without, other than a phone or computer"
+    },
+    {
+      "zh": "家里放松的地方",
+      "en": "Describe a place at home where you relax"
+    }
   ],
   "chuanti": [
     {
       "title": "教你东西的人、学技能",
-      "cards": ["taught-skill", "child-skill", "course", "older-admire"],
+      "cards": [
+        "taught-skill",
+        "child-skill",
+        "course",
+        "older-admire"
+      ],
       "story": "攀岩教练教你户外攀岩，或小学的足球教练。原作者素材：P2-1、P2-2 阳朔攀岩，P1 其他（小学校队）。",
       "focus": {
         "taught-skill": "重点讲你原来的困难、他的教法和你的变化。",
@@ -950,7 +2390,13 @@
     },
     {
       "title": "爱好多、很自律的人",
-      "cards": ["photos", "history", "handmade", "organized", "healthy-habits"],
+      "cards": [
+        "photos",
+        "history",
+        "handmade",
+        "organized",
+        "healthy-habits"
+      ],
       "story": "同一个朋友：平时有自己的爱好，作息和做事也很有条理。按具体题卡挑一个侧面展开。",
       "focus": {
         "photos": "重点讲他拍什么、怎么拍，以及一次给你或风景拍照的具体经历。",
@@ -962,7 +2408,11 @@
     },
     {
       "title": "只见过一次的人、朋友",
-      "cards": ["know-more", "evening-friends", "gift"],
+      "cards": [
+        "know-more",
+        "evening-friends",
+        "gift"
+      ],
       "story": "在阳朔民宿认识的志愿者朋友：一起吃米粉聊天的晚上、想送他的礼物、想多了解他。",
       "focus": {
         "know-more": "重点讲你们在哪儿偶遇、聊了什么让你印象深刻，以及为什么想进一步了解他。",
@@ -972,7 +2422,13 @@
     },
     {
       "title": "成功的人、榜样",
-      "cards": ["difficult-success", "sportsperson", "older-admire", "success-business", "fitness-helped"],
+      "cards": [
+        "difficult-success",
+        "sportsperson",
+        "older-admire",
+        "success-business",
+        "fitness-helped"
+      ],
       "story": "基普乔格破 2（原作者 P2-5），或身边坚持跑步、创业的长辈和朋友。",
       "focus": {
         "difficult-success": "重点讲这件事难在哪里、他中间怎么克服阻碍，以及最终做成的过程。",
@@ -984,7 +2440,11 @@
     },
     {
       "title": "名人、受欢迎的人",
-      "cards": ["popular", "local-famous", "interview"],
+      "cards": [
+        "popular",
+        "local-famous",
+        "interview"
+      ],
       "story": "一位本地有名、人缘好的人，或者你看过的一场深度人物访谈。",
       "focus": {
         "popular": "重点讲他的性格特点、平时怎么对待身边的人，以及为什么大家都喜欢他。",
@@ -994,7 +2454,12 @@
     },
     {
       "title": "去过或想去的地方",
-      "cards": ["free-time-place", "city-again", "near-nature", "natural-city"],
+      "cards": [
+        "free-time-place",
+        "city-again",
+        "near-nature",
+        "natural-city"
+      ],
       "story": "桂林、阳朔（原作者 P2-1、P2-3），或城市里的湿地公园、山径。",
       "focus": {
         "free-time-place": "重点讲这个地方有什么特色、你为什么一直想去，以及有空去了打算做什么。",
@@ -1005,7 +2470,12 @@
     },
     {
       "title": "无聊、吵、挤、不喜欢的地方",
-      "cards": ["boring-place", "short-trip", "noisy", "crowded"],
+      "cards": [
+        "boring-place",
+        "short-trip",
+        "noisy",
+        "crowded"
+      ],
       "story": "去秦岭路上堵车、山脚到处是垃圾（原作者 P2-7），或高峰期挤地铁、逛夜市。",
       "focus": {
         "boring-place": "重点讲你为什么去那儿、现场有多单调乏味，以及你当时怎么熬过那段时间。",
@@ -1016,7 +2486,12 @@
     },
     {
       "title": "决定和改变",
-      "cards": ["decision-happy", "changed-decision", "got-up-early", "save-time"],
+      "cards": [
+        "decision-happy",
+        "changed-decision",
+        "got-up-early",
+        "save-time"
+      ],
       "story": "实习后决定读研、换方向（原作者 P2-8）；为了攀岩或备考开始早起、精简日程（P2-2）。",
       "focus": {
         "decision-happy": "重点讲当时面临的选择、做决定的过程有多纠结，以及结果为什么让你满意。",
@@ -1027,7 +2502,12 @@
     },
     {
       "title": "花钱、买东西",
-      "cards": ["saved-money", "gift", "good-service", "tech-own"],
+      "cards": [
+        "saved-money",
+        "gift",
+        "good-service",
+        "tech-own"
+      ],
       "story": "攒钱买一件运动装备或电子产品：怎么省钱、店员怎么帮忙挑选、买来有什么用。",
       "focus": {
         "saved-money": "重点讲你想买什么、为了攒够钱平时怎么节制开销，以及买到手那一刻的成就感。",
@@ -1038,7 +2518,12 @@
     },
     {
       "title": "活动、聚会、吃的",
-      "cards": ["party", "special-food", "evening-friends", "waste-time"],
+      "cards": [
+        "party",
+        "special-food",
+        "evening-friends",
+        "waste-time"
+      ],
       "story": "家庭或朋友聚会：热闹场面、特色菜肴；聚会后熬夜刷短视频算“浪费时间的活动”。",
       "focus": {
         "party": "重点讲聚会是为了庆祝什么、现场有哪些环节和布置，以及为什么让你印象深刻。",
@@ -1049,7 +2534,12 @@
     },
     {
       "title": "书、电影、App",
-      "cards": ["exciting-book", "least-movie", "app", "tech-own"],
+      "cards": [
+        "exciting-book",
+        "least-movie",
+        "app",
+        "tech-own"
+      ],
       "story": "一本人物传记或科普书、一部让人失望的电影；平时常用的学习/运动 App 与硬件。",
       "focus": {
         "exciting-book": "重点讲这本书的主要内容、哪一段情节或观点最吸引你，以及读完的启发。",
@@ -1060,7 +2550,11 @@
     },
     {
       "title": "意外和帮忙",
-      "cards": ["lost-public", "helped-solve", "not-interested"],
+      "cards": [
+        "lost-public",
+        "helped-solve",
+        "not-interested"
+      ],
       "story": "在公共场所丢东西后找回的经历；帮朋友或长辈解决实际问题、耐心听长辈唠叨。",
       "focus": {
         "lost-public": "重点讲在什么地方怎么把东西弄丢的、发现后怎么寻找，以及最后的结局和教训。",

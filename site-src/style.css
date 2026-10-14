@@ -456,6 +456,15 @@ details.chart-data > summary { cursor: pointer; font-size: 13px; color: var(--ac
 .dg-arrowhead { fill: var(--text-2); }
 
 /* ---------- 写作练习 ---------- */
+details.idea-box { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--line); }
+details.idea-box > summary { cursor: pointer; padding: 4px 0; font-size: 14.5px; font-weight: 600; color: var(--accent); }
+.idea-body { margin-top: 6px; padding: 10px 12px; border-radius: var(--radius-sm); background: var(--soft); font-size: 14.5px; color: var(--text-2); }
+.idea-body p { margin: 0 0 6px; }
+.idea-body p:last-child { margin-bottom: 0; }
+.idea-points { margin: 4px 0 8px; padding-left: 20px; }
+.idea-points li { margin: 3px 0; }
+.idea-vocab { font-size: 13.5px; color: var(--text-3); }
+
 details.write-box { margin-top: 12px; padding-top: 8px; border-top: 1px solid var(--line); }
 details.write-box > summary { cursor: pointer; padding: 4px 0; font-size: 14.5px; font-weight: 600; color: var(--accent); }
 .wb-text {

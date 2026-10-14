@@ -165,6 +165,12 @@
       .filter(Boolean)
       .map((p) => `<a href="${pageRoute(p.id)}">${esc(p.title)}</a>`)
       .join('');
+  const seeLabel = (ids) => {
+    const list = (ids || []).map((id) => pages.get(id)).filter(Boolean);
+    if (list.length && list.every((p) => p.origin === 'author')) return '原作者答案';
+    if (list.length && list.every((p) => p.origin !== 'author')) return '本站补充口语稿';
+    return '参考口语稿';
+  };
   const itemLinks = (ids) =>
     (ids || [])
       .map((id) => {
@@ -467,7 +473,7 @@
       <ul class="say">${c.say.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
       <p class="tip"><b>思路 / 串题</b>　${esc(c.tip)}</p>
       ${c.note ? `<p class="note">${esc(c.note)}</p>` : ''}
-      ${c.see ? `<div class="links"><span class="lbl">原作者答案</span>${pageLinks(c.see)}</div>` : ''}
+      ${c.see ? `<div class="links"><span class="lbl">${seeLabel(c.see)}</span>${pageLinks(c.see)}</div>` : ''}
       ${c.link ? `<div class="links"><span class="lbl">相关题</span>${itemLinks(c.link)}</div>` : ''}
       ${outlineBox(c.id)}
       <details class="p3"><summary>Part 3 追问（${c.p3.length}）</summary><ol>${c.p3.map((q) => `<li>${esc(q)}</li>`).join('')}</ol></details>
@@ -564,6 +570,7 @@
 
   function viewChuanti() {
     const stories = authorPages.filter((p) => p.group === 'a-p2' || p.group === 'a-p1' || p.group === 'a-p3').map((p) => ({ p, cards: coveredBy(p.id) })).filter((x) => x.cards.length);
+    const supStories = DATA.pages.filter((p) => p.origin === 'supplement' && p.id.startsWith('s-p2-')).map((p) => ({ p, cards: coveredBy(p.id) })).filter((x) => x.cards.length);
     const html = `
       <div class="page-head">
         <div class="eyebrow">口语 · 串题</div>
@@ -575,6 +582,14 @@
           (g) => `<section class="card"><b style="font-size:17px">${esc(g.title)}</b>
           <p class="tip" style="margin-top:8px"><b>共用素材</b>　${esc(g.story)}</p>
           <ul class="chuanti-list">${g.cards.map((id) => focusItemFor(id, g.focus)).join('')}</ul></section>`
+        )
+        .join('')}
+      <h2 class="sec">本站补充口语稿（覆盖原作者未写的 ${supStories.reduce((n, x) => n + x.cards.length, 0)} 张新卡）</h2>
+      <p class="muted small">包含 10 个核心短语、完整英文主稿以及同组题卡的重心切换段落。</p>
+      ${supStories
+        .map(
+          ({ p, cards }) => `<section class="card"><a href="${pageRoute(p.id)}"><b>${esc(p.title)}</b></a>
+          <div class="chips">${cards.map(chipFor).join('')}</div></section>`
         )
         .join('')}
       <h2 class="sec">原作者的答案能套哪些新卡</h2>
@@ -862,7 +877,7 @@
     <div class="say-label">You should say:</div>
     <ul class="say">${c.say.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
     ${outlineBox(c.id)}
-    <details class="p3"><summary>思路 / 串题</summary><p class="tip">${esc(c.tip)}</p>${c.see ? `<div class="links"><span class="lbl">原作者答案</span>${pageLinks(c.see)}</div>` : ''}</details>`;
+    <details class="p3"><summary>思路 / 串题</summary><p class="tip">${esc(c.tip)}</p>${c.see ? `<div class="links"><span class="lbl">${seeLabel(c.see)}</span>${pageLinks(c.see)}</div>` : ''}</details>`;
 
   function viewPractice(_, query) {
     const mode = query.get('mode') || (query.get('topic') ? 'p1' : 'p2');
@@ -1072,6 +1087,19 @@
     </figure>`;
   }
 
+  function ideaBlock(q) {
+    if (!q.ideas) return '';
+    const { focus, points, vocab } = q.ideas;
+    return `<details class="idea-box">
+      <summary>审题与论点参考</summary>
+      <div class="idea-body">
+        <p class="idea-focus"><b>审题重点</b>：${esc(focus)}</p>
+        <ul class="idea-points">${(points || []).map((pt) => `<li>${esc(pt)}</li>`).join('')}</ul>
+        ${vocab ? `<p class="idea-vocab"><b>可用词组</b>：${esc(vocab)}</p>` : ''}
+      </div>
+    </details>`;
+  }
+
   function recentItem(q, task, onTypePage) {
     const names = task === 2 ? R.task2Types : R.task1Types;
     const t = onTypePage ? null : typeByRecent.get(q.type);
@@ -1081,6 +1109,7 @@
       <p class="q">${esc(q.q)}</p>
       ${q.zh ? `<p class="zh">${esc(q.zh)}</p>` : ''}
       ${q.note ? `<p class="note">${esc(q.note)}</p>` : ''}
+      ${task === 2 ? ideaBlock(q) : ''}
       ${task === 1 ? chartBlock(q) : ''}
       ${task === 2 || q.chartHtml ? writeBox(q, task) : ''}
     </div>`;

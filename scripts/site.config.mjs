@@ -59,7 +59,13 @@ export const supplementPages = [
   { id: 's-t2-overview', file: '笔记/作文/做题技巧/2-0 大作文总览.md' },
   { id: 's-t2-reasons', file: '笔记/作文/做题技巧/2-3 Reasons & Solutions.md' },
   { id: 's-t2-twopart', file: '笔记/作文/做题技巧/2-5 Two-part questions.md' },
-  { id: 's-t2-adv', file: '笔记/作文/做题技巧/2-6 Advantages & Disadvantages.md' }
+  { id: 's-t2-adv', file: '笔记/作文/做题技巧/2-6 Advantages & Disadvantages.md' },
+  { id: 's-p2-know-more', file: '笔记/口语/P2/补充1-一见且想继续了解的人.md', title: 'P2 补充 1 · 偶遇的志愿者（一见想了解 / 快乐 / 受欢迎 / 历史）' },
+  { id: 's-p2-business', file: '笔记/口语/P2/补充2-有成功事业与条理的人.md', title: 'P2 补充 2 · 陶艺咖啡店主（成功事业 / 有条理 / 手工 / 本地名人）' },
+  { id: 's-p2-saved-tech', file: '笔记/口语/P2/补充3-省钱买科技产品与好服务.md', title: 'P2 补充 3 · 攒钱买平板（省钱 / 科技产品 / 商店好服务）' },
+  { id: 's-p2-gift-book', file: '笔记/口语/P2/补充4-想送朋友的礼物与喜欢的书.md', title: 'P2 补充 4 · 运动传记与礼物（读起来开心的书 / 送朋友的礼物）' },
+  { id: 's-p2-food-party', file: '笔记/口语/P2/补充5-特别场合吃的食物与聚会.md', title: 'P2 补充 5 · 除夕包饺子与庙会（特别场合食物 / 聚会 / 拥挤地方）' },
+  { id: 's-p2-lost-public', file: '笔记/口语/P2/补充6-在公共场所丢东西.md', title: 'P2 补充 6 · 地铁丢无线耳机（公共场所丢东西）' }
 ];
 
 // 每种题型一页：先放模板，再放相关的原作者词汇，最后是近期真题。
