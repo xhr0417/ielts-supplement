@@ -269,6 +269,18 @@ h2.sec .count { font-size: 14px; font-weight: 400; color: var(--text-3); }
 .countdown { text-align: center; padding: 6px 8px 6px 24px; border-left: 1px dashed var(--line-2); }
 .countdown .muted { font-size: 13px; }
 .hot-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* ---------- 冲刺计划 ---------- */
+.plan-today, .plan-day.is-today { border-color: var(--accent); }
+.plan-tasks { display: grid; gap: 10px; margin-top: 8px; }
+.plan-task { padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); }
+.plan-task.done { background: var(--green-soft); border-color: transparent; }
+.plan-task.done .plan-cb b { text-decoration: line-through; color: var(--text-2); }
+.plan-cb { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; font-size: 15.5px; }
+.plan-cb input { margin-top: 4px; width: 17px; height: 17px; accent-color: var(--green); flex: none; }
+.plan-cb span { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.plan-desc { margin: 6px 0 0 27px; font-size: 14px; color: var(--text-2); }
+.plan-task .links { margin-left: 27px; }
 .hot-list { list-style: none; margin: 0; padding: 0; counter-reset: hot; }
 .hot-list li { counter-increment: hot; display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
 .hot-list li:last-child { border-bottom: 0; }
