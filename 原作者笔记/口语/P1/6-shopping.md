@@ -30,7 +30,7 @@ Hardly ever. I go shopping about ==once a month==. I only buy ==daily necessitie
 
 ### 3. Have you ever returned anything you bought online?
 
-No, I haven’t. Most of the things I bought are fine. If I am not satisfied with sth, I just ==throw it away.== 
+No, I haven’t. Most of the things I bought are fine. If I'm not satisfied with something, I just ==throw it away.== 
 
 没有。我网购的大部分商品都不错。如果东西不好，我直接丢掉。
 

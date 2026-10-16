@@ -24,7 +24,7 @@
 | the live atmosphere was really fantastic | 现场氛围十分棒   |
 ## 1. Are you good at telling jokes?
 
-No,not really. I’m only humorous ==when I hang out with my best friends.== ==On some important occassions==, telling jokes may ==make me appear not that professional==, so I tend to ==keep serious==.
+No, not really. I’m only humorous ==when I hang out with my best friends.== ==On some important occasions==, telling jokes may ==make me appear not that professional==, so I tend to ==stay serious==.
 
 我只在和最好的朋友相处时比较风趣。在正式场合，讲笑话会显得我不够专业，所以我一般会保持严肃。
 
@@ -36,12 +36,12 @@ Sure, most of my friends love sharing jokes. We often ==tease each other== and =
 
 ## 3. Do you like to watch comedies?
 
-I’ve always **been fascinated by**  ==comedy films==. I can l==earn a lot from them==. Actually, I believe most great comedies have a ==tragic core== ==beneath all the laughter.==
+I’ve always **been fascinated by**  ==comedy films==. I can ==learn a lot from them==. Actually, I believe most great comedies have a ==tragic core== ==beneath all the laughter.==
 
 我喜欢看喜剧电影，能从中收获很多。实际上我认为，大多数优秀喜剧在欢声笑语之下，内核其实是悲剧。
 
 ## 4. Have you ever watched a live show?
 
-Yes, I have watched a ==live stand-up comedy show==. I have to say that ==The live atmosphere was fantastic==.  ==totally different from== watching on TV. It's also a good way to relax after studying.
+Yes, I have watched a ==live stand-up comedy show==. I have to say that ==the live atmosphere was fantastic== — ==totally different from== watching it on TV. It's also a good way to relax after studying.
 
 我看过现场脱口秀。现场氛围特别棒，是忙碌之余放松身心的绝佳方式。

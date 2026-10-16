@@ -30,7 +30,7 @@
 | far too expensive for me right now            | 目前对我来说太贵     |
 | when it becomes cheaper in the future         | 等到未来降价之后     |
 |                                               |              |
-| ==I prefer both role of them==                | 两种我都喜欢       |
+| ==I like both of them==                | 两种我都喜欢       |
 | swap drivers at service stations              | 在服务区轮换司机     |
 | when driving on mountain roads                | 行驶在山路上       |
 | enjoy the fun of driving                      | 享受驾驶的乐趣      |
@@ -48,15 +48,15 @@ Honestly, picking a car colour ==can be a real headache==, especially when you w
 
 ## 2. Did you enjoy traveling by car when you were a kid?
 
-I have always been fascinated by travelling by car since I was a kid. When I was in my primary school, my parents would ==drive me to the Qinling Mountains== on weekends. 
-The mountains ==are not far away,== ==right to the south of the city.== We often ==went hiking there.== Sadly, ==we cannot do that any more==, because ==it’s not allowed now== ==to protect water sources.==
+I have always been fascinated by travelling by car since I was a kid. When I was in primary school, my parents would ==drive me to the Qinling Mountains== on weekends. 
+The mountains ==are not far away,== ==right to the south of the city.== We often ==went hiking there.== Sadly, ==we cannot do that any more==, because ==it’s no longer allowed==, ==in order to protect water sources.==
 
 从小我就很喜欢自驾出行。上小学的时候，父母每到周末都会开车带我去秦岭。
 秦岭离市区不远，就在城市南边。我们经常去那儿爬山。可惜现在不能这么做了，为了保护水源，相关出行已经被禁止。
 
 ## 3. What types of cars do you like?
 
-==I have a strong preference for electric cars==, because they are ==eco-friendly==. You don't need to ==fill it up with petrol==, I just need to ==charge the car.== Besides, ==they are equipped with an autonomous driving system.==
+==I have a strong preference for electric cars==, because they are ==eco-friendly==. They don't need to ==fill up with petrol== — you just need to ==charge them.== Besides, ==they are equipped with an autonomous driving system.==
 I really hope I can ==get my hands on a Tesla,== but ==it is far too expensive for me right now.== Maybe I can buy one ==when it becomes cheaper in the future.==
 
 我格外偏爱电动汽车，因为它们环保。电动汽车不需要加油，我只需要给车充电。此外，车辆配备了自动驾驶系统。
@@ -64,7 +64,7 @@ I really hope I can ==get my hands on a Tesla,== but ==it is far too expensive f
 
 ## 4. Do you prefer to be a driver or a passenger?
 
-==I prefer both role of them==, actually. When I travel with friends. We usually ==swap drivers at service stations== every two hours. Especially ==when driving on mountain roads==, I really ==enjoy the fun of driving.==
+==I like both of them==, actually. When I travel with friends, we usually ==swap drivers at service stations== every two hours. Especially ==when driving on mountain roads==, I really ==enjoy the fun of driving.==
 
 其实两种我都喜欢。我和朋友出行时会轮流开车，一般每隔两小时就在服务区换司机。尤其是行驶在山路上的时候，我十分享受驾驶的乐趣。
 

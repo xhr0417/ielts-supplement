@@ -25,7 +25,7 @@
 | really thankful to              | 十分感激某人       |
 
 **1.  Do you like to keep things tidy?**
-	Definitely yes. I can only concentrate on study after tidying up my entire desk. Messy stuff around will easily distract me.
+	Definitely yes. I can only concentrate on study after tidying up my entire desk. Messy stuff lying around will easily distract me.
 	Besides, I’ve formed a daily habit of tidying my room twice a day, once in the morning and once before bed, both at home and at school. It makes me feel calm and organised.
 	
 当然喜欢。我学习的时候必须先把整张书桌收拾干净，才能集中注意力。杂乱的东西很容易让我分心。
@@ -33,6 +33,6 @@
 
 2. **Did you use to keep your room tidy as a child?**
 	
-	Not at all, it was totally the opposite. When I was a kid, I always made a huge mess around the house, so my mum often told me off. Later, she asked me to tidy my desk and bed by myself. Step by step, I built up a good habit of keeping my space neat, and I’m really thankful to her.
+	Not at all — it was totally the opposite. When I was a kid, I always made a huge mess around the house, so my mum often told me off. Later, she asked me to tidy my desk and bed by myself. Step by step, I built up a good habit of keeping my space neat, and I’m really thankful to her.
 	
 	完全不是，情况恰恰相反。我小时候总把家里弄得乱糟糟，所以妈妈经常批评我。后来，她让我自己收拾书桌和床铺。久而久之，我养成了保持居住环境整洁的好习惯，我十分感激她。

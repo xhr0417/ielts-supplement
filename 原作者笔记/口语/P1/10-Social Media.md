@@ -41,13 +41,13 @@ Honestly, I started using social media pretty early, around primary school, when
 
 ### 2. Do you think you spend too much time on social media?
 
-Well, sort of. I usually spend about one to two hours a day scrolling through short videos and checking messages. Sometimes it distracts me from my study when I can’t help picking up my phone. But I’m trying to set time limits to control it these days.
+Well, sort of. I usually spend about one to two hours a day scrolling through short videos and checking messages. Sometimes it distracts me from my studies when I can’t help picking up my phone. But I’m trying to set time limits to control it these days.
 
 嗯，有点吧。我每天大概花一到两个小时刷短视频、查看消息。有时候忍不住拿起手机，就会耽误学习。不过最近我在试着设置时长限制来管控一下。
 
 ### 3. Do your friends use social media?
 
-Yes, almost all of my friends use social media every day. We mainly use WeChat to keep in touch and share funny things in group chats. They also post their daily life or trip photos on Moments, and we often like and comment on each other’s posts.
+Yes, almost all of my friends use social media every day. We mainly use WeChat to keep in touch and share funny things in group chats. They also post photos of their daily life or trips on Moments, and we often like and comment on each other’s posts.
 
 是的，几乎我所有朋友每天都用社交媒体。我们主要用微信保持联系，在群聊里分享有意思的事。他们也会在朋友圈发日常生活或者旅行的照片，我们经常互相点赞评论。
 

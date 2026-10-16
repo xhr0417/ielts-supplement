@@ -43,7 +43,7 @@ I definitely prefer watching with my friends. It’s ==much more fun to== ==chee
 
 #### 2. Have you ever watched a sports game in a stadium?
 
-Yes, I went to a ==Chinese Super League match== in Shanghai with my dad during my ==high school summer vacation==. The ==live atmosphere== was fantastic , ==totally different from== watching on TV.
+Yes, I went to a ==Chinese Super League match== in Shanghai with my dad during my ==high school summer vacation==. The ==live atmosphere== was fantastic, ==totally different from== watching on TV.
 
 看过。初中暑假我和爸爸去上海看了一场中超比赛。现场氛围特别激动人心，和看电视的感觉完全不一样。
 
@@ -51,7 +51,7 @@ Yes, I went to a ==Chinese Super League match== in Shanghai with my dad during m
 
 #### 3. Do you like watching sports programs on TV?
 
-Yes, I really enjoy them. I often watch ==Formula 1 racing==, the ==Tour de France== and the ==FIFA World Cup== in my free time. ==These events really appeal to me== and it's also a good way to relax after studying.
+Yes, I really enjoy them. I often watch ==Formula 1 racing==, the ==Tour de France== and the ==FIFA World Cup== in my free time. ==These events really appeal to me== and they're also a good way to relax after studying.
 
 是的，我很喜欢。我空闲时经常看 F1、环法自行车赛和世界杯。这些比赛真的很吸引我，也是学习后放松的好方式。
 
@@ -67,7 +67,7 @@ Yes, I love live games, especially the FIFA World Cup. Live matches are ==full o
 
 #### 5. Who do you like to watch sports games with?
 
-I like watching with my dad most, because he’s also ==a big football fan==. He supports AC Milan, a famous italian football club. and I like Real Madrid from spanish. We always ==talk about matches and players== together.
+I like watching with my dad most, because he’s also ==a big football fan==. He supports AC Milan, a famous Italian football club. and I like Real Madrid from Spain. We always ==talk about matches and players== together.
 
 我最喜欢和爸爸一起看，因为他也是铁杆球迷。他支持 AC 米兰，我喜欢皇家马德里。我们总在一起聊比赛和球员。
 

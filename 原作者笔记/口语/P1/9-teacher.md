@@ -47,7 +47,7 @@ Absolutely. My favourite teacher was my high school physics teacher. He was real
 
 ### 2. In what way has your favourite teacher helped you?
 
-Well, he helped me in many ways. Most importantly, he used smart ways to explain difficult knowledge clearly, which made me become interested in physics and improved my grades a lot. Besides, he always encouraged me when I failed exams or felt stressed, I'm really thankful to him.
+Well, he helped me in many ways. Most importantly, he used smart ways to explain difficult knowledge clearly, which made me become interested in physics and improved my grades a lot. Besides, he always encouraged me when I failed exams or felt stressed. I'm really thankful to him.
 
 嗯，他在很多方面都帮到了我。最重要的是，他能用巧妙的方式把难懂的知识讲明白，这让我对物理产生了兴趣，成绩也提升了很多。除此之外，当我考试失利或者感到压力大的时候，他总会鼓励我，我很感谢他
 

@@ -35,7 +35,7 @@
 
 ## 1. What kinds of websites do you often visit?
 
-==Scrolling through social media== is my ==daily routine==. Sometimes I feel like ==I live on Bilibili, YouTube and WeChat==. Apart from that, ==I go to GitHub almost every day==, I can't basically leave without it, It’s useful for me to ==look up codes== and ==share some projects.==
+==Scrolling through social media== is my ==daily routine==. Sometimes I feel like ==I live on Bilibili, YouTube and WeChat==. Apart from that, ==I go to GitHub almost every day==, and I ==basically can't live without it.== It’s useful for me to ==look up codes== and ==share some projects.==
 
 刷社交媒体基本上是我的日常。有时候我感觉自己离不开哔哩哔哩、油管和微信。除此之外，我经常访问 GitHub，我可以在上面查阅代码、分享技术项目。
 
@@ -55,6 +55,6 @@ But now, I ==spend more time on== learning platforms like Bilibili and GitHub. I
 
 ## 4. What kinds of websites are popular in your country?
 
-==A wide range of== websites are popular in China. First of all, ==social media platforms== such as WeChat and QQ are ==becoming almost everyone’s daily life==. Besides, ==e-commerce websites== like Taobao ==attract huge numbers of users==. Many people ==shop online== because ==it is much more convenient.==
+==A wide range of== websites are popular in China. First of all, ==social media platforms== such as WeChat and QQ are ==have become part of almost everyone’s daily life==. Besides, ==e-commerce websites== like Taobao ==attract huge numbers of users==. Many people ==shop online== because ==it is much more convenient.==
 
 在中国，多种多样的网站都很受欢迎。首先，微信、QQ 这类社交平台几乎融入每个人的日常生活。此外，像淘宝这样的电商网站吸引着大量用户。很多人选择网购，因为这样方便得多。

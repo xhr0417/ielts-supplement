@@ -50,7 +50,7 @@ I first ==got to know== basic scientific knowledge in primary school science cla
 
 ## 3. Which science subject is interesting to you?
 
-It's no doubt that Physics ==appeals to me the most==, especially mechanics. It explains the ==fundamental rules== behind motion, which ==connects closely== with engineering.
+There is no doubt that physics ==appeals to me the most==, especially mechanics. It explains the ==fundamental rules== behind motion, which ==connects closely== with engineering.
 
 物理最吸引我，尤其是力学。它阐释运动背后的基础原理，和工程领域紧密相关。
 
@@ -62,7 +62,7 @@ I often watch science videos about ==mechanical structures==. Besides, I enjoy a
 
 ## 5. Do you like watching science TV programs?
 
-Sure, I’m ==keen on== science documentaries. They ==use smart ways to do explain difficult knowledge clearly== and ==constantly satisfy my curiosity about== technology and nature.
+Sure, I’m ==keen on== science documentaries. They ==use smart ways to explain difficult knowledge clearly== and ==constantly satisfy my curiosity about== technology and nature.
 
 当然，我很喜欢科学纪录片。它把复杂理论通俗地展现出来，不断满足我对于科技和自然的好奇心。
 

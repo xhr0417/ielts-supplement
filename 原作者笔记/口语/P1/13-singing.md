@@ -22,7 +22,7 @@
 
 #### 1. Do you like singing? Why?
 
-Not really. To be honest, I don’t like singing very much. I’m really bad at it and I often go out of tune. actually, I know nothing about music, Whenever I sing, I sound really bad.
+Not really. To be honest, I don’t like singing very much. I’m really bad at it and I often go out of tune. Actually, I know nothing about music. Whenever I sing, I sound really bad.
 
 算不上喜欢。说实话，我并不怎么爱唱歌。我唱得特别差，还总跑调。其实我对音乐一窍不通，每次开口唱都难听极了。
 

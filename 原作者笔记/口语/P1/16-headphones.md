@@ -2,13 +2,13 @@
 - What type of headphones do you use?
 - When would you use headphones?
 - In what conditions would you not use headphones?
-- Is wearing headphones comfortable？
+- Is wearing headphones comfortable?
 
 | 英文短语                                   | 中文释义         |
 | -------------------------------------- | ------------ |
-| nearlly all the time                   | 时时刻刻，一直      |
+| nearly all the time                   | 时时刻刻，一直      |
 | I basically can’t live without them    | 几乎离不开它       |
-| Its main function for me               | 对我来说它最主要的用处是 |
+| Their main function for me               | 对我来说它最主要的用处是 |
 | stay focused                           | 保持专注         |
 |                                        |              |
 | wireless headphones                    | 无线耳机         |
@@ -30,7 +30,7 @@
 
 ## 1. Do you use headphones?
 
-==Well, to be honest==, I wear headphones nearly ==all the time==. and ==I basically can’t live without them==. ==Its main function for me== is to help me ==stay focused== when I’m studying or hitting the gym.
+==Well, to be honest==, I wear headphones nearly ==all the time==, and ==I basically can’t live without them==. ==Their main function for me== is to help me ==stay focused== when I’m studying or hitting the gym.
 
 说实话，我几乎时时刻刻都戴着耳机，基本离不开它。对我来说，耳机最主要的作用就是在学习、跑步或者健身的时候帮我集中注意力。
 
@@ -52,8 +52,8 @@ I will not wear headphones ==when staying with family or friends==, ==since it w
 
 和家人朋友相处时我不会戴耳机，那样很不礼貌。除此之外，过马路或者骑车时，出于安全考虑我也不会佩戴。
 
-## 5. Is wearing headphones comfortable？
+## 5. Is wearing headphones comfortable?
 
-Honestly, ==it is not that comfortable for me==. But I almost wear them everyday that ==I’ve already got used to it.==
+Honestly, ==it is not that comfortable for me==. But I wear them almost every day, so ==I’ve got used to wearing them.==
 
 说实话佩戴起来不算舒服。不过我经常使用，早就已经习惯了。

@@ -47,13 +47,13 @@ Honestly, I prefer keeping it simple and staying comfortable. Most days, I just 
 
 ### 2. Do you prefer to wear comfortable and casual clothes or smart clothes?
 
-Well, I definitely prefer comfortable and casual clothes in daily life. I spend most of my time at school or doing outdoor activities, so casual clothes make me feel relaxed and free to move around. I only wear smart clothes for important occasions like interviews .
+Well, I definitely prefer comfortable and casual clothes in daily life. I spend most of my time at school or doing outdoor activities, so casual clothes make me feel relaxed and free to move around. I only wear smart clothes for important occasions like interviews.
 
 嗯，日常生活里我肯定更喜欢舒适休闲的衣服。我大部分时间都在学校或者做户外活动，休闲装让我觉得放松，活动起来也自在。我只有在面试这类重要场合，才会穿正式的衣服。
 
 ### 3. Do you like wearing T-shirts?
 
-Yes, I really like them. ==T-shirts are super practical and easy to match with other clothes==. I have quite a few plain T-shirts in different colours, and I can pair them with jeans and sports shorts . ==They are also perfect for hot summer days, so I wear them almost every day when the weather is warm.==
+Yes, I really like them. ==T-shirts are super practical and easy to match with other clothes==. I have quite a few plain T-shirts in different colours, and I can pair them with jeans and sports shorts. ==They are also perfect for hot summer days, so I wear them almost every day when the weather is warm.==
 
 是的，我特别喜欢穿 T 恤。T 恤特别实用，和其他衣服也很好搭。我有不少不同颜色的基础款 T 恤，配牛仔裤、运动短裤都可以。夏天热的时候穿 T 恤也很舒服，所以天气暖和的时候我几乎天天都穿。
 
