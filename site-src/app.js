@@ -168,7 +168,7 @@
       .join('');
   const seeLabel = (ids) => {
     const list = (ids || []).map((id) => pages.get(id)).filter(Boolean);
-    if (list.length && list.every((p) => p.origin === 'author')) return '原作者答案';
+    if (list.length && list.every((p) => p.origin === 'author')) return '可借用素材';
     if (list.length && list.every((p) => p.origin !== 'author')) return '本站补充口语稿';
     return '参考口语稿';
   };
@@ -341,7 +341,7 @@
         {
           id: 'd1-w',
           time: '75 分钟',
-          title: '写作：大作文 Agree or disagree（审题表 + 限时写 1 篇 + AI 批改）',
+          title: '写作：大作文 Agree or disagree · 全篇（审题 15 + 限时写 40 + 订正 20）',
           desc: '15 分钟看《Agree or disagree》三类题干审题表与偏题反例；40 分钟在近期真题下限时写 1 篇；20 分钟点“复制给 AI 批改”，把 AI 圈出的 3 处重点句子重写一遍。',
           links: [
             ['Agree or disagree 模板与真题', '#/w/t2-opinion'],
@@ -353,7 +353,7 @@
     {
       date: '2026-10-15',
       day: 'Day 2 · 10 月 15 日（周四）',
-      theme: '人物串题（自律与爱好）+ 双边讨论大作文 + 折线图',
+      theme: '人物串题（自律与爱好）+ 小作文折线图全篇 + 问题解决类骨架',
       total: '约 2.5 小时（口语 70 分钟 + 写作 75 分钟）',
       tasks: [
         {
@@ -370,24 +370,25 @@
         {
           id: 'd2-p2',
           time: '50 分钟',
-          title: '口语 P2/P3：串题组 2「爱好多、很自律的人」（覆盖 5 张卡）',
-          desc: '对照《P2 补充 1 & 2》，按不同题卡重心填好“我的提纲”，抽 3 张卡做 1+2 分钟 + P3 录音练习。',
+          title: '口语 P2/P3：串题组 2「爱好多、很自律的人」+ 快乐的人（覆盖 6 张卡）',
+          desc: '对照《P2 补充 1 & 2》，按不同题卡重心填好“我的提纲”，抽 3 张卡做 1+2 分钟 + P3 录音练习。“快乐的人”不在任何串题组里，直接用补充 1 里 Lin 那套素材——它和“爱历史的人”同源。',
           links: [
             ['P2 爱拍照的人', '#/p2?focus=photos'],
             ['P2 爱历史的人', '#/p2?focus=history'],
             ['P2 擅长做手工的人', '#/p2?focus=handmade'],
             ['P2 很有条理的人', '#/p2?focus=organized'],
-            ['P2 有健康作息的人', '#/p2?focus=healthy-habits']
+            ['P2 有健康作息的人', '#/p2?focus=healthy-habits'],
+            ['P2 快乐的人（用补充 1 的 Lin 素材）', '#/p2?focus=happy']
           ]
         },
         {
           id: 'd2-w',
           time: '75 分钟',
-          title: '写作：大作文 Discuss both views（40 分钟）+ 小作文折线图（35 分钟）',
-          desc: '先看《Discuss both views》模板（注意开头表态、结尾避免双谓语），限时 40 分钟写 1 篇；再看《折线图》模板，限时 20 分钟看图写 1 篇折线图真题并让 AI 批改。',
+          title: '写作：小作文折线图 · 全篇（读图 15 + 限时写 20 + 订正 20）+ 问题解决类骨架 20',
+          desc: '15 分钟看《折线图》模板与概述写法；20 分钟限时写 1 篇折线图真题；20 分钟 AI 批改并订正。最后 20 分钟读《Reasons & Solutions》模板，写下：题目要求＋立场＋两个主体段的中心意思＋各一条解释或例子关键词（可用中英混合提纲，不必写完整首段）。',
           links: [
-            ['Discuss both views 模板与真题', '#/w/t2-discussion'],
             ['折线图模板与看图写作', '#/w/t1-line'],
+            ['Reasons & Solutions 模板与真题', '#/w/t2-problem'],
             ['小作文通识积累', '#/page/a-w-t1-vocab']
           ]
         }
@@ -396,7 +397,7 @@
     {
       date: '2026-10-16',
       day: 'Day 3 · 10 月 16 日（周五）',
-      theme: '人物串题（偶遇朋友 / 成功事业与榜样）+ 积极消极/利弊大作文 + 柱状图',
+      theme: '人物串题（偶遇朋友 / 成功事业与榜样）+ 双边讨论大作文全篇',
       total: '约 2.5 小时（口语 70 分钟 + 写作 75 分钟）',
       tasks: [
         {
@@ -426,12 +427,11 @@
         {
           id: 'd3-w',
           time: '75 分钟',
-          title: '写作：Positive or negative / 利弊类（40 分钟）+ 小作文柱状图（35 分钟）',
-          desc: '看清题干问的是对个人还是对社会的影响，限时写 1 篇大作文；再看《柱状图》比较句型，限时 20 分钟写 1 篇柱状图真题。',
+          title: '写作：大作文 Discuss both views · 全篇（审题 15 + 限时写 40 + 订正 20）',
+          desc: '先看《Discuss both views》模板（注意开头表态、结尾避免双谓语），15 分钟审题；40 分钟限时写 1 篇；20 分钟点“复制给 AI 批改”并订正 AI 圈出的 3 处。',
           links: [
-            ['Positive or negative 模板与真题', '#/w/t2-posneg'],
-            ['Advantages & Disadvantages', '#/w/t2-advantages'],
-            ['柱状图模板与看图写作', '#/w/t1-bar']
+            ['Discuss both views 模板与真题', '#/w/t2-discussion'],
+            ['大作文总览', '#/page/s-t2-overview']
           ]
         }
       ]
@@ -439,7 +439,7 @@
     {
       date: '2026-10-17',
       day: 'Day 4 · 10 月 17 日（周六）',
-      theme: '名人串题 + 地点串题（旅行与自然）+ 原因解决大作文 + 饼图',
+      theme: '名人串题 + 地点串题（旅行与自然）+ 小作文柱状图全篇 + 利弊/积极消极骨架',
       total: '约 2.5 小时（口语 75 分钟 + 写作 75 分钟）',
       tasks: [
         {
@@ -464,17 +464,19 @@
             ['P2 看过的名人采访', '#/p2?focus=interview'],
             ['P2 有空想去的地方', '#/p2?focus=free-time-place'],
             ['P2 想再去一次的城市', '#/p2?focus=city-again'],
+            ['P2 去过的靠近自然的地方', '#/p2?focus=near-nature'],
             ['P2 喜欢的城市自然之地', '#/p2?focus=natural-city']
           ]
         },
         {
           id: 'd4-w',
           time: '75 分钟',
-          title: '写作：大作文 Reasons & Solutions（40 分钟）+ 小作文饼图（35 分钟）',
-          desc: '原因解决类注意“解决办法要具体可执行（政府法规 + 学校/个人行动）”；饼图重点练占比句型（account for / make up / the remaining）。',
+          title: '写作：小作文柱状图 · 全篇（读图 15 + 限时写 20 + 订正 20）+ 利弊 / 积极消极骨架 20',
+          desc: '15 分钟看《柱状图》比较句型；20 分钟限时写 1 篇柱状图真题；20 分钟 AI 批改并订正。最后 20 分钟各用 10 分钟读《Advantages & Disadvantages》与《Positive or negative》模板，分别写下：题目要求＋立场＋两个主体段的中心意思＋各一条解释或例子关键词——重点分清“利弊是否大于”与“积极还是消极”这两种问法。',
           links: [
-            ['Reasons & Solutions 模板与真题', '#/w/t2-problem'],
-            ['饼图模板与看图写作', '#/w/t1-pie']
+            ['柱状图模板与看图写作', '#/w/t1-bar'],
+            ['Advantages & Disadvantages', '#/w/t2-advantages'],
+            ['Positive or negative 模板与真题', '#/w/t2-posneg']
           ]
         }
       ]
@@ -482,7 +484,7 @@
     {
       date: '2026-10-18',
       day: 'Day 5 · 10 月 18 日（周日）',
-      theme: '地点串题（吵/挤/不喜欢的地方）+ 双问题与混合题大作文 + 表格',
+      theme: '地点串题（吵/挤/不喜欢的地方）+ 双问题大作文全篇',
       total: '约 2.5 小时（口语 75 分钟 + 写作 75 分钟）',
       tasks: [
         {
@@ -512,11 +514,11 @@
         {
           id: 'd5-w',
           time: '75 分钟',
-          title: '写作：大作文 Two-part questions（40 分钟）+ 小作文表格（35 分钟）',
-          desc: '9–10 月真题里“双问题（如原因 + 利弊/积极消极）”非常多，严格按“一问一段”限时写 1 篇；小作文练 1 篇表格题（挑最高、最低和明显对比，不堆砌数字）。',
+          title: '写作：大作文 Two-part questions · 全篇（审题 15 + 限时写 40 + 订正 20）',
+          desc: '严格按“一问一段”审题 15 分钟，再限时 40 分钟写 1 篇，留 20 分钟 AI 批改并订正。参考：9–10 月真题里双问题约占 14%，同意与否约占一半，所以同意与否安排在 Day 1 和 Day 7 各写一篇。',
           links: [
             ['Two-part questions 模板与真题', '#/w/t2-twopart'],
-            ['表格模板与看图写作', '#/w/t1-table']
+            ['大作文总览', '#/page/s-t2-overview']
           ]
         }
       ]
@@ -524,7 +526,7 @@
     {
       date: '2026-10-19',
       day: 'Day 6 · 10 月 19 日（周一）',
-      theme: '事件串题（决定、改变与早起）+ 小作文混合图 + 大作文高频题精练',
+      theme: '事件串题（决定、改变与早起）+ 小作文表格全篇 + 饼图/混合图骨架',
       total: '约 2.5 小时（口语 70 分钟 + 写作 75 分钟）',
       tasks: [
         {
@@ -553,11 +555,12 @@
         {
           id: 'd6-w',
           time: '75 分钟',
-          title: '写作：小作文混合图（35 分钟）+ 大作文近期重复真题（40 分钟）',
-          desc: '混合图坚持“一张图写一段细节，概述段各写一句最显著特征”；大作文从带“近期重复”标签的真题里挑 1 道限时写。',
+          title: '写作：小作文表格 · 全篇（读图 15 + 限时写 20 + 订正 20）+ 饼图 / 混合图骨架 20',
+          desc: '15 分钟看《表格》模板（挑最高、最低和明显对比，不堆砌数字）；20 分钟限时写 1 篇表格真题；20 分钟 AI 批改并订正。最后 20 分钟各用 10 分钟读《饼图》与《混合图》模板，写下：主要特征＋概述句＋两段细节如何分组，图表题要标出代表数据。',
           links: [
-            ['混合图模板与看图写作', '#/w/t1-mixed'],
-            ['近期真题列表', '#/recent']
+            ['表格模板与看图写作', '#/w/t1-table'],
+            ['饼图模板与看图写作', '#/w/t1-pie'],
+            ['混合图模板与看图写作', '#/w/t1-mixed']
           ]
         }
       ]
@@ -565,7 +568,7 @@
     {
       date: '2026-10-20',
       day: 'Day 7 · 10 月 20 日（周二）',
-      theme: 'P1 全题库收官 + 物品串题（省钱/礼物/科技/好服务）+ 小作文地图题',
+      theme: 'P1 全题库收官 + 物品串题（省钱/礼物/科技/好服务）+ 同意与否第二篇',
       total: '约 2.5 小时（口语 70 分钟 + 写作 75 分钟）',
       tasks: [
         {
@@ -597,11 +600,11 @@
         {
           id: 'd7-w',
           time: '75 分钟',
-          title: '写作：小作文地图题（35 分钟）+ 大作文比较类真题（40 分钟）',
-          desc: '熟记《地图》方位词与改造被动语态（be converted into / be demolished），看图限时写 1 篇地图真题（如煤矿改造或海滨改造）；再写 1 篇大作文。',
+          title: '写作：大作文 Agree or disagree · 第二篇（审题 15 + 换题限时写 40 + 订正 20）',
+          desc: '同意与否在近三个月真题里占约一半，值得再写一篇。15 分钟重看审题表（比较词、绝对词、To what extent 该怎么答）；40 分钟换一道近期真题限时写；20 分钟 AI 批改并订正，重点和 Day 1 那篇对比同类问题。',
           links: [
-            ['地图题模板与真题', '#/w/t1-map'],
-            ['大作文通识积累', '#/page/a-w-t2-vocab']
+            ['Agree or disagree 模板与真题', '#/w/t2-opinion'],
+            ['近期真题列表', '#/recent']
           ]
         }
       ]
@@ -609,7 +612,7 @@
     {
       date: '2026-10-21',
       day: 'Day 8 · 10 月 21 日（周三）',
-      theme: '聚会/食物/书影 App 串题 + 小作文流程图 + 大作文限时练',
+      theme: '聚会/食物/书影 App 串题 + 小作文地图或流程全篇 + 错句重写',
       total: '约 2.5 小时（口语 75 分钟 + 写作 75 分钟）',
       tasks: [
         {
@@ -639,11 +642,12 @@
         {
           id: 'd8-w',
           time: '75 分钟',
-          title: '写作：小作文流程图（35 分钟）+ 大作文限时练（40 分钟）',
-          desc: '流程图掌握“一般现在时被动语态 + 阶段顺序词（At the first stage / Subsequently）”，练 1 篇碳酸饮料或太阳能板真题；これで大小作文 13 种题型全部练完一轮。',
+          title: '写作：小作文地图或流程 · 全篇（读图 15 + 限时写 20 + 订正 20）+ 另一项骨架 10 + 重写错句 10',
+          desc: '15 分钟看《地图》或《流程图》模板（地图记方位词与改造被动语态，流程记一般现在时被动与阶段顺序词）；20 分钟限时写 1 篇真题；20 分钟 AI 批改并订正。再用 10 分钟读另一项的模板，写下主要变化或阶段；最后 10 分钟从本周 AI 批改里挑错句重写。',
           links: [
+            ['地图题模板与真题', '#/w/t1-map'],
             ['流程图模板与真题', '#/w/t1-process'],
-            ['大作文真题练习', '#/recent']
+            ['近期真题列表', '#/recent']
           ]
         }
       ]
@@ -669,8 +673,8 @@
         {
           id: 'd9-w',
           time: '75 分钟',
-          title: '写作全真模考 1：小作文 20 分钟 + 大作文 40 分钟连写',
-          desc: '在《近期真题》里随机挑 1 道小作文 + 1 道大作文，连续计时 60 分钟写完，锻炼考场时间分配（小作文绝不超时），写完发给 AI 批改并订正。',
+          title: '写作全真模考 1：小作文 20 + 大作文 40 连写 + 初步复盘 15',
+          desc: '在《近期真题》里随机挑 1 道小作文 + 1 道大作文，连续计时 60 分钟写完（小作文绝不超时）。留 15 分钟做初步复盘：有没有漏答的小问、立场是否一贯、小作文有没有写概述、这次又犯了哪些反复出现的语言错误。',
           links: [
             ['小作文看图写作', '#/recent?task=1'],
             ['大作文近期真题', '#/recent']
@@ -697,8 +701,8 @@
         {
           id: 'd10-w',
           time: '75 分钟',
-          title: '写作全真模考 2：60 分钟连写 + 复盘前 9 天重写句',
-          desc: '再做一套“20 分钟小作文 + 40 分钟大作文”连写；并把这几天 AI 批改里让你重写的句子通读一遍，确保不再犯同类语法错。',
+          title: '写作全真模考 2：60 分钟连写 + 初步复盘 15',
+          desc: '再做一套“20 分钟小作文 + 40 分钟大作文”连写；留 15 分钟同样做初步复盘（漏答、立场、概述、反复出现的错误）。挑段落或错句重写放到 Day 11 做。',
           links: [
             ['近期真题（大小作文）', '#/recent'],
             ['AI 批改提示词与常用短语', '#/page/a-w-ai']
@@ -726,8 +730,8 @@
         {
           id: 'd11-w',
           time: '45 分钟',
-          title: '写作保温：过一遍大小作文总览、审题表与高频替换词',
-          desc: '不再写新文章，只看《小作文总览》《大作文总览》《Agree or disagree 审题表》和大小作文通识词表，核对拼写易错词，晚上早睡。',
+          title: '写作保温：过总览与审题表 + 重写最值得改的段落或错句',
+          desc: '不再写新文章：看《小作文总览》《大作文总览》《Agree or disagree 审题表》和大小作文通识词表，核对拼写易错词。再从 Day 9–10 两次模考的初步复盘里挑最值得改的 1–2 段或错句真正重写一遍（不要只看过一遍）。晚上早睡。',
           links: [
             ['小作文总览', '#/page/s-t1-overview'],
             ['大作文总览', '#/page/s-t2-overview'],
@@ -755,7 +759,7 @@
         {
           id: 'd12-w',
           time: '笔试/机考时',
-          title: '写作考场铁律：小作文严控 20 分钟（必写 Overview），大作文留足 40 分钟（先花 3 分钟审题）',
+          title: '写作考场铁律：小作文严控 20 分钟（必写 Overview），大作文留足 40 分钟（已含 3 分钟审题和 2 分钟检查）',
           desc: '大作文动笔前先看最后一句问什么、有没有比较词或绝对词、有几个问题要答；写完留 2 分钟检查主谓一致、单复数和过去时。',
           links: [
             ['大作文题型速查', '#/page/s-t2-overview']
@@ -826,15 +830,16 @@
       <div class="page-head">
         <div class="eyebrow">备考规划 · 2026 年 10 月 14 日 – 10 月 25 日</div>
         <h1>11 天冲刺计划（10 月 25 日考试）</h1>
-        <p class="lede">把 20 个 Part 1 新题、12 组 Part 2/3 串题（覆盖全部 45 张题卡）和 13 种大小作文题型拆到每天约 2.5 小时。跟着每天的“直达入口”点进去练、写提纲、计时录音和 AI 批改就行。</p>
+        <p class="lede">把 20 个 Part 1 新题、12 组 Part 2/3 串题（题库共 45 张题卡，串题覆盖其中 43 张；另外两张“快乐的人”“喜欢去的建筑”单独安排练习）和 13 种大小作文题型拆到每天约 2.5 小时。跟着每天的“直达入口”点进去练、写提纲、计时录音和 AI 批改就行。</p>
       </div>
       <div class="card">
         <b>每天怎么用这个网站（每天固定 3 步，约 2.5 小时）</b>
         <ol style="margin:8px 0 0;padding-left:22px">
           <li><b>口语 Part 1 热身（20 分钟）</b>：点当天分配的 3 个话题，看一眼中文思路，打开<a href="#/practice?mode=p1">计时器（25 秒/题）</a>直接开口说，说顺了点“标记练过”。</li>
           <li><b>口语 Part 2 & 3 串题 + 录音（50 分钟）</b>：按当天分配的 1–2 组串题（约 4–5 张题卡），先看参考口语稿，在每张卡下的<b>“我的提纲／关键词”</b>写下你自己的 5 个词和本题重心；再点“计时练这张”，开录音走完 <code>1 分钟准备 + 2 分钟陈述 + 3 道 P3</code>，回放听一下有没有卡壳和过去时错误。</li>
-          <li><b>写作模板 + 真题限时写 + AI 批改（75 分钟）</b>：花 15 分钟看当天题型的模板和审题表；在近期真题下点开写作框，<b>大作文计时 40 分钟 / 小作文计时 20 分钟</b>写完；点“复制给 AI 批改”，重点把 AI 最后列出的<b>“最值得重写的 3 处”</b>自己改写一遍。</li>
+          <li><b>写作：模板 + 限时写 + 订正（75 分钟）</b>：<b>大作文日</b>＝15 分钟审题与模板＋40 分钟限时写＋20 分钟订正；<b>小作文日</b>＝15 分钟读图与模板＋20 分钟限时写＋20 分钟订正＋20 分钟另一题型的骨架提纲（题目要求/主要特征＋立场/概述句＋主体段怎么分＋关键词，可用中英混合，不必写完整首段）。订正时点“复制给 AI 批改”，重点把 AI 列出的<b>“最值得重写的 3 处”</b>自己改写一遍。</li>
         </ol>
+        <p class="muted small" style="margin:8px 0 0">写作总量：前八天完成 <b>8 篇专项写作</b>，覆盖 7 类题型，其余 6 类练习骨架；随后完成两次大小作文连写，<b>全程共 12 篇</b>（大作文 6、小作文 6）。模考题型可能增加全篇覆盖范围。</p>
         <p class="muted small" style="margin:8px 0 0">注：听力和阅读建议每天另外保持 1 套剑桥真题（约 1.5 小时）维持做题手感；本计划重点帮你把口语和写作吃透。</p>
       </div>
       <div class="row" style="justify-content:space-between;margin:18px 0 8px">
@@ -897,7 +902,7 @@
       <h2 class="sec">内容</h2>
       <div class="grid">
         ${tile('#/p1', 'Part 1 新题', `${S.p1.length} 个话题`, '中英对照，每个话题附答题思路')}
-        ${tile('#/p2', 'Part 2 题卡', `${S.p2.length} 张`, '完整题卡和串题建议，能套原作者答案的都标了')}
+        ${tile('#/p2', 'Part 2 题卡', `${S.p2.length} 张`, '完整题卡和串题建议；能借用的原作者素材都标了，并注明借哪部分')}
         ${tile('#/p3', 'Part 3 追问', `${totalP3} 道`, '按 Part 2 题卡分组')}
         ${tile('#/chuanti', '串题', `${S.chuanti.length} 组故事`, '一个故事讲多道题')}
         ${tile('#/practice', '计时练习', '1 分钟 + 2 分钟', 'Part 2 准备、陈述、Part 3 连着练，可以录音')}
@@ -919,7 +924,7 @@
       <table class="qlist"><tbody>${t.qs.map(([en, zh]) => `<tr><td>${esc(en)}</td><td>${esc(zh)}</td></tr>`).join('')}</tbody></table>
       <p class="tip"><b>思路</b>　${esc(t.tip)}</p>
       ${t.note ? `<p class="note">${esc(t.note)}</p>` : ''}
-      ${t.see ? `<div class="links"><span class="lbl">原作者素材</span>${pageLinks(t.see)}</div>` : ''}
+      ${t.see ? `<div class="links"><span class="lbl">可借用素材</span>${pageLinks(t.see)}</div>` : ''}
       ${t.link ? `<div class="links"><span class="lbl">相关题</span>${itemLinks(t.link)}</div>` : ''}
       <div class="src">来源：${esc(srcLine(t.src, S.sources))}</div>
     </article>`;
@@ -1032,7 +1037,7 @@
       <ul class="say">${c.say.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
       <p class="tip"><b>思路 / 串题</b>　${esc(c.tip)}</p>
       ${c.note ? `<p class="note">${esc(c.note)}</p>` : ''}
-      ${c.see ? `<div class="links"><span class="lbl">${seeLabel(c.see)}</span>${pageLinks(c.see)}</div>` : ''}
+      ${c.see ? `<div class="links"><span class="lbl">${seeLabel(c.see)}</span>${pageLinks(c.see)}</div>${c.seeNote ? `<p class="muted small" style="margin:4px 0 0">借什么：${esc(c.seeNote)}</p>` : ''}` : ''}
       ${c.link ? `<div class="links"><span class="lbl">相关题</span>${itemLinks(c.link)}</div>` : ''}
       ${outlineBox(c.id)}
       <details class="p3"><summary>Part 3 追问（${c.p3.length}）</summary><ol>${c.p3.map((q) => `<li>${esc(q)}</li>`).join('')}</ol></details>
@@ -1436,7 +1441,7 @@
     <div class="say-label">You should say:</div>
     <ul class="say">${c.say.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
     ${outlineBox(c.id)}
-    <details class="p3"><summary>思路 / 串题</summary><p class="tip">${esc(c.tip)}</p>${c.see ? `<div class="links"><span class="lbl">${seeLabel(c.see)}</span>${pageLinks(c.see)}</div>` : ''}</details>`;
+    <details class="p3"><summary>思路 / 串题</summary><p class="tip">${esc(c.tip)}</p>${c.see ? `<div class="links"><span class="lbl">${seeLabel(c.see)}</span>${pageLinks(c.see)}</div>${c.seeNote ? `<p class="muted small" style="margin:4px 0 0">借什么：${esc(c.seeNote)}</p>` : ''}` : ''}</details>`;
 
   function viewPractice(_, query) {
     const mode = query.get('mode') || (query.get('topic') ? 'p1' : 'p2');
