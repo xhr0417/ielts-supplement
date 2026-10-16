@@ -23,7 +23,7 @@
 
 ## 原作者笔记收了什么、没收什么
 
-来自 [flamingoTOM/lxy_ILETS](https://github.com/flamingoTOM/lxy_ILETS)（作者 @小玉你待在家里），放在 `原作者笔记/`，正文没改。
+来自 [flamingoTOM/lxy_ILETS](https://github.com/flamingoTOM/lxy_ILETS)（作者 @小玉你待在家里），放在 `原作者笔记/`，保留原作者出处，本站做过语言校订。
 
 - 收录：口语 P1/P2/P3 素材，作文做题技巧（通识积累、地图、流程图、Agree or disagree、Discuss both views、Positive & Negative、AI 批改提示词）
 - 没收录：他听阅真题的错题和错因（`1-做题记录/`，含同义词替换表）、自己写的作文和批改（`作文/做题记录/`）、自批改表格、讲义 PDF、合并稿，以及每篇顶部的复习打卡表

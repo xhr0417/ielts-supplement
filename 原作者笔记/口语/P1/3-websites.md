@@ -55,6 +55,6 @@ But now, I ==spend more time on== learning platforms like Bilibili and GitHub. I
 
 ## 4. What kinds of websites are popular in your country?
 
-==A wide range of== websites are popular in China. First of all, ==social media platforms== such as WeChat and QQ are ==have become part of almost everyone’s daily life==. Besides, ==e-commerce websites== like Taobao ==attract huge numbers of users==. Many people ==shop online== because ==it is much more convenient.==
+==A wide range of== websites are popular in China. First of all, ==social media platforms== such as WeChat and QQ ==have become part of almost everyone’s daily life==. Besides, ==e-commerce websites== like Taobao ==attract huge numbers of users==. Many people ==shop online== because ==it is much more convenient.==
 
 在中国，多种多样的网站都很受欢迎。首先，微信、QQ 这类社交平台几乎融入每个人的日常生活。此外，像淘宝这样的电商网站吸引着大量用户。很多人选择网购，因为这样方便得多。

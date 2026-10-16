@@ -48,7 +48,7 @@ Absolutely, the park is a place where I can relax ==after a long week==. I usual
 
 ## 3.Would you like to see more parks in your city?
 
-**==Absolutely I would==**. Right now most of my ==spare time== ==is spent on my phone==. More parks would **give me ==a great place to** relax== ==after studying and working==, so I can ==**breathe some fresh air**== and ==**recharge my batteries== in the park. ==It’s definitely better than== ==staying at home all day.==
+**==Absolutely I would==**. Right now most of my ==spare time== ==is spent on my phone==. More parks would **give me a great place to relax** ==after studying and working==, so I can ==**breathe some fresh air**== and ==**recharge my batteries**== in the park. ==It’s definitely better than== ==staying at home all day.==
 
 我当然希望（建设更多公园）。目前我的大部分闲暇时间都耗在手机上。更多公园能为我提供学习、工作之余放松的好去处。我可以在公园里呼吸新鲜空气、恢复精力，这肯定比整天待在家里要好得多。
 
