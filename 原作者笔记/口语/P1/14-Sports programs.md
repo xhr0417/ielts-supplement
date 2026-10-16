@@ -13,7 +13,7 @@
 | watching alone at home.                       | 一个人在家看      |
 |                                               |             |
 | Chinese Super League match                    | 中超联赛        |
-| during my high school summer vacation         | 初中暑假        |
+| during my high school summer vacation         | 高中暑假        |
 | live atmosphere                               | 现场气氛        |
 | totally different from                        | 与 ... 完全不同  |
 |                                               |             |
@@ -45,7 +45,7 @@ I definitely prefer watching with my friends. It’s ==much more fun to== ==chee
 
 Yes, I went to a ==Chinese Super League match== in Shanghai with my dad during my ==high school summer vacation==. The ==live atmosphere== was fantastic, ==totally different from== watching on TV.
 
-看过。初中暑假我和爸爸去上海看了一场中超比赛。现场氛围特别激动人心，和看电视的感觉完全不一样。
+看过。高中暑假我和爸爸去上海看了一场中超比赛。现场氛围特别激动人心，和看电视的感觉完全不一样。
 
 ---
 

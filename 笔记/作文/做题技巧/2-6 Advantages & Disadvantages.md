@@ -40,7 +40,7 @@
 |  |  |
 | Admittedly, there are some drawbacks. | 诚然，这也有一些缺点。 |
 | The main disadvantage is that … | 主要的缺点是…… |
-| However, this problem is usually temporary / can be reduced by … | 不过这个问题通常是暂时的 / 可以通过……来减轻。 |
+| However, this problem can be addressed by … | 不过这个问题可以通过……来缓解。（不要默认它“通常是暂时的”） |
 |  |  |
 | In conclusion, although sth may bring some problems such as …, I believe its benefits outweigh its drawbacks, because it can … | 总之，尽管某事可能带来……等问题，我认为它利大于弊，因为它能…… |
 
@@ -58,8 +58,8 @@
 **主体段 2**：Another benefit is that studying abroad helps young people become more independent and open-minded. Because they live far away from their families, they have to cook, manage their money and solve problems on their own. Instead of only reading about other cultures, they can make friends from different countries and experience different ways of life. For instance, many international students learn to plan their budgets and deal with cultural differences within their first year.
 **译**：另一个好处是，留学让年轻人更独立、更开放。因为远离家人，他们必须自己做饭、管钱、解决问题。他们不只是在书上了解其他文化，而是能结交不同国家的朋友，体验不同的生活方式。举例来说，很多留学生在第一年就学会了规划开支、应对文化差异。
 
-**主体段 3**：Admittedly, there are some drawbacks. The main disadvantage is the high cost, as tuition fees and living expenses in many countries are very expensive. Some students may also feel lonely at the beginning. However, these problems are usually temporary or can be reduced. Students can apply for scholarships or work part-time, and most of them get used to the new environment after a few months.
-**译**：诚然，留学也有一些缺点。主要的缺点是花费高，很多国家的学费和生活费都很贵。有些学生刚开始也会感到孤独。不过这些问题通常是暂时的，或者可以减轻。学生可以申请奖学金或做兼职，而且大多数人几个月后就能适应新环境。
+**主体段 3**：Admittedly, there are some drawbacks. The main disadvantage is the high cost, as tuition fees and living expenses in many countries are very expensive. Some students may also feel lonely at the beginning. However, these problems can be addressed. Students can apply for scholarships or work part-time to ease the financial burden, and most universities run orientation and buddy programmes that help newcomers settle in.
+**译**：诚然，留学也有一些缺点。主要的缺点是花费高，很多国家的学费和生活费都很贵。有些学生刚开始也会感到孤独。不过这些问题都有办法缓解：学生可以申请奖学金或做兼职来减轻经济负担，多数学校也会安排迎新和伙伴计划，帮助新生更快适应。
 
 **结论**：In conclusion, although studying abroad may bring some problems such as financial pressure and loneliness, I believe its benefits outweigh its drawbacks, because it can provide a better education and help young people grow up.
 **译**：总之，尽管留学可能带来经济压力、孤独等问题，我认为它利大于弊，因为它能提供更好的教育，并帮助年轻人成长。

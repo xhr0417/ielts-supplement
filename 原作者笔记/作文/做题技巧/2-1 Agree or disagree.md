@@ -52,8 +52,8 @@
 | Specifically, | 具体而言， |
 | One case in point is that | 一个恰当的例子是 |
 |  |  |
-| In conclusion, although sth may occasionally bring minor downsides such as sth | 总而言之，尽管某事偶尔会带来一些小弊端，例如…… |
-| I still believe that sth is crucial for them to do sth, as it can do sth | 我依旧认为某事对他们做某事至关重要，因为它能够…… |
+| In conclusion, although sth does bring sth | 总而言之，尽管某事**确实**带来了……（如实承认代价，不要写成“偶尔”“轻微”） |
+| I still believe that sth is crucial for them to do sth, as it can do sth | 我依旧认为某事对他们做某事至关重要，因为它能够……（用理由回应反方，而不是贬低反方） |
 
 ## 四、例题（政策建议类）
 
@@ -95,7 +95,7 @@ Access to clean water is a basic human right. Therefore every home should have a
 
 ---
 
-==In conclusion, although== charging for tap water ==may occasionally bring minor downsides such as== financial pressure on poor citizens, 
-==I still believe that== water supply should not be completely free for all families, as it can prevent serious water waste and maintain public water infrastructure in the long run.
+==In conclusion, although== charging for tap water ==does put real pressure on== low-income families, 
+==I still believe that== water supply should not be completely free for all families: a basic free allowance with charges for extra use would protect essential access, while the charge itself prevents serious water waste and maintains public water infrastructure in the long run.
 
 **翻译**：总而言之，尽管自来水收费偶尔会带来一些小弊端，例如给贫困人群造成经济压力，我依旧认为不应当向所有家庭免费供水，因为从长远来看，该举措能够避免严重的水资源浪费，并且维持公共供水设施正常运转。
